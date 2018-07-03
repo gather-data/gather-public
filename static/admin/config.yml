@@ -5,12 +5,33 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
+  - label: "Config"
+    name: "config"
+    files:
+    - name: doc-category
+      label: Doc Category
+      file: content/doc-categories.yml
+      fields:
+        - {label: Name, name: name, widget: string}
+  - name: doc
+    label: Doc
+    folder: content/_docs
     create: true
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
+      - { name: slug, label: Slug }
       - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - label: Category
+        name: category
+        widget: relation
+        collection: doc-category
+        search_fields: ['name']
+        value_field: ['name']
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home"
+        name: "about"
+        file: content/pages/about.yml
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
