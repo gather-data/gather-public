@@ -14,8 +14,8 @@ collections:
       - { name: title, label: Title }
       - label: Category
         name: category
-        widget: string
-        pattern: ["(Getting Started|Guides|FAQ)"]
+        widget: Select
+        options: ["Getting Started", "Guides", "FAQ"]
   - label: "Pages"
     name: "pages"
     files:
