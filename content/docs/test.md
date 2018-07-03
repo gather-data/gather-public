@@ -1,6 +1,6 @@
 ---
-slug: test
-title: test
-category: test
+slug: introduction
+title: Introduction
+category: Getting Started
 ---
 
