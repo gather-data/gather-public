@@ -16,6 +16,7 @@ collections:
         name: category
         widget: select
         options: ["Getting Started", "Guides", "FAQ"]
+      - { name: body, label: Body, widget: markdown }
   - label: "Pages"
     name: "pages"
     files:
