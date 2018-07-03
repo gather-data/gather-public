@@ -5,14 +5,6 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
-  - label: "Config"
-    name: "config"
-    files:
-    - name: doc-category
-      label: Doc Category
-      file: content/doc-categories.yml
-      fields:
-        - {label: Name, name: name, widget: string}
   - name: doc
     label: Doc
     folder: content/docs
@@ -22,10 +14,8 @@ collections:
       - { name: title, label: Title }
       - label: Category
         name: category
-        widget: relation
-        collection: doc-category
-        search_fields: ['name']
-        value_field: ['name']
+        widget: string
+        pattern: ["(Getting Started|Guides|FAQ)"]
   - label: "Pages"
     name: "pages"
     files:
