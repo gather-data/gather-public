@@ -15,7 +15,7 @@ collections:
         - {label: Name, name: name, widget: string}
   - name: doc
     label: Doc
-    folder: content/_docs
+    folder: content/docs
     create: true
     fields:
       - { name: slug, label: Slug }
@@ -31,7 +31,7 @@ collections:
     files:
       - label: "Home"
         name: "about"
-        file: content/pages/about.yml
+        file: content/pages/home.yml
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
