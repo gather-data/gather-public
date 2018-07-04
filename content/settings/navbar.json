@@ -1,1 +1,21 @@
-{}
+{
+  "cta-text": "Free Trial",
+  "links": [
+    {
+      "label": "Product",
+      "to": "/"
+    },
+    {
+      "label": "Integrations",
+      "to": "/integrations"
+    },
+    {
+      "label": "Pricing",
+      "to": "/pricing"
+    },
+    {
+      "label": "Documentation",
+      "to": "/docs"
+    }
+  ]
+}
