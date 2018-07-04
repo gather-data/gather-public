@@ -1,1 +1,77 @@
-{}
+{
+  "copyright": "© 2018 Gather, Inc. All rights reserved.",
+  "made-in": "Proudly made in NYC.",
+  "link-groups": [
+    {
+      "title": "Product",
+      "links": [
+        {
+          "label": "Sign up",
+          "to": "https://app.gatherdata.co/signup"
+        },
+        {
+          "label": "Login",
+          "to": "https://app.gatherdata.co/login"
+        },
+        {
+          "label": "Features",
+          "to": "/"
+        },
+        {
+          "label": "Integrations",
+          "to": "/integrations"
+        },
+        {
+          "label": "Pricing",
+          "to": "/pricing"
+        }
+      ]
+    },
+    {
+      "title": "Resources",
+      "links": [
+        {
+          "label": "Docs",
+          "to": "/docs"
+        },
+        {
+          "label": "FAQ",
+          "to": "/docs/faq"
+        },
+        {
+          "label": "Security",
+          "to": "/docs/security"
+        },
+        {
+          "label": "Privacy",
+          "to": "/legal/privacy"
+        },
+        {
+          "label": "Terms",
+          "to": "/legal/terms"
+        }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        {
+          "label": "Blog",
+          "to": "https://blog.gatherdata.co"
+        },
+        {
+          "label": "We're hiring!",
+          "to": "mailto:hiring@gatherdata.co"
+        },
+        {
+          "label": "Twitter",
+          "to": "https://twitter.com/gatherdataco"
+        },
+        {
+          "label": "Contact Us",
+          "to": "/contact"
+        }
+      ]
+    }
+  ]
+}
