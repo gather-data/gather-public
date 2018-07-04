@@ -5,24 +5,161 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
+  - label: "Settings"
+    name: "settings"
+    files:
+      - label: "Navbar"
+        name: "navbar"
+        file: content/settings/navbar.json
+        fields:
+          - {label: 'CTA Text', name: cta-text, widget: string}
+          - label: Links
+            name: links
+            widget: list
+            fields:
+              - label: label
+                name: label
+                width: string
+              - label: to
+                name: to
+                width: string
+      - label: "Footer"
+        name: "footer"
+        file: content/settings/footer.json
+        fields:
+          - {label: Copyright, name: copyright, widget: string}
+          - {label: 'Made In', name: made-in, widget: string}
+          - label: 'Link Groups'
+            name: link-groups
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                width: string
+              - label: Links
+                name: links
+                widget: list
+                fields:
+                  - label: Label
+                    name: label
+                    width: string
+                  - label: To
+                    name: to
+                    width: string
   - name: doc
     label: Doc
     folder: content/docs
     create: true
     fields:
-      - { name: slug, label: Slug }
-      - { name: title, label: Title }
+      - {name: slug, label: Slug}
+      - {name: title, label: Title}
       - label: Category
         name: category
         widget: select
         options: ["Getting Started", "Guides", "FAQ"]
-      - { name: body, label: Body, widget: markdown }
+      - {name: body, label: Body, widget: markdown}
   - label: "Pages"
     name: "pages"
     files:
       - label: "Home"
-        name: "about"
-        file: content/pages/home.yml
+        name: "home"
+        file: content/pages/home.json
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: 'CTA Text', name: cta-text, widget: string}
+          - {label: 'Trial Text', name: trial-text, widget: string}
+          - label: 'Feature 1 - Data'
+            name: feature-data
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Copy
+                name: copy
+                widget: string
+              - label: Tag
+                name: tag
+                widget: string
+          - label: 'Feature 2 - Magic Actions'
+            name: feature-magic-actions
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Copy
+                name: copy
+                widget: string
+              - label: Tag
+                name: tag
+                widget: string
+          - label: 'Feature 3 - Customer Timeline'
+            name: feature-timeline
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Copy
+                name: copy
+                widget: string
+              - label: Tag
+                name: tag
+                widget: string
+          - label: 'Feature 4 - Data Driven'
+            name: feature-data-actions
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Copy
+                name: copy
+                widget: string
+              - label: Tag
+                name: tag
+                widget: string
+          - label: 'Feature 5 - Privacy Compliance'
+            name: feature-privacy-actions
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Copy
+                name: copy
+                widget: string
+              - label: Tag
+                name: tag
+                widget: string
+          - label: 'Customers'
+            name: customers
+            widget: list
+            fields:
+              - label: Testimonial
+                name: testimonial
+                widget: string
+              - label: Name
+                name: name
+                widget: string
+              - label: Job
+                name: job
+                widget: string
+              - label: Image
+                name: image
+                widget: image
+          - label: 'Footer CTA'
+            name: footer-cta
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: subtitle
+                name: subtitle
+                widget: string
+              - label: 'CTA Text'
+                name: cta-text
+                widget: string
