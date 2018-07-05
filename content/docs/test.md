@@ -15,14 +15,14 @@ Gather unblocks customer support teams by empowering them to build the internal 
 
 Only for set up - which should take 15 minutes for connections and maximum 1 hour for automations.
 
-**Setting up connections:**\
+**Setting up Connections:**\
 You will need an API key for 2 of our integrations: your own database and Chargify. All of our other supported integrations use OAuth. This means if you have the login for the connection you want to add, all you have to do is click a “connect” button.
 
-
+**Setting up Magic Actions:**
 
 ## Is it secure?
 
-Yes. We treat security very seriously. We store your API keys encrypted. We don't don't store data, only metadata. We encrypt all data in transit.
+Yes. We treat security very seriously. We encrypt API keys. We don't don't store data, only metadata. We encrypt all data in transit.
 
 ## Have more questions?
 
