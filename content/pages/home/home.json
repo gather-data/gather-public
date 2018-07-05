@@ -1,0 +1,51 @@
+{
+    "featureData": {
+        "title": "Data at your fingertips",
+        "copy":
+            "Customer context in a single view. Purchases, billing, previous interactions - anything you need. Reduce time navigating administrative tools so you can focus on communicating with the customer.",
+        "tag": "Data view"
+    },
+    "featurePrivacy": {
+        "title": "Ensure privacy complaince",
+        "copy":
+            "Decide what data each support team member gets to see and which actions are available to them. Ensure GDPR privacy compliance with data auditing capability. ",
+        "tag": "ACCESS & PERMISSIONS"
+    },
+    "trialText": "14 day free trial, no credit card required.",
+    "featureMagicActions": {
+        "title": "Magic Actions",
+        "copy":
+            "Automate repetitive workflows without code. Stop wasting time with manual data entry and Google Sheets. Perform tasks automatically instead.",
+        "tag": "WORKFLOW AUTOMATION BUILDER"
+    },
+    "ctaText": "Free Trial",
+    "featureAnalytics": {
+        "title": "Be Data Driven",
+        "copy":
+            "See every action taken. Easily add and read through notes from teammates for seamless interactions with customers.",
+        "tag": "Analytics"
+    },
+    "customers": [
+        {
+            "testimonial":
+                "Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio.",
+            "name": "Karim Butt",
+            "job": "CEO, Gloss Genius",
+            "image": "/assets/0.jpeg"
+        }
+    ],
+    "subtitle":
+        "See customer context and automate repetitive workflows to stay in control when ticket volumes grow. ",
+    "featureTimeline": {
+        "title": "Continuity between interactions",
+        "copy":
+            "See every action taken. Easily add and read through notes from teammates for seamless interactions with customers.",
+        "tag": "Customer timeline"
+    },
+    "title": "Mission Control For Growing Support Teams",
+    "footerCta": {
+        "title": "Let's get started",
+        "subtitle": "14 day free trial, no credit card required.",
+        "cta-text": "Start Free Trial"
+    }
+}

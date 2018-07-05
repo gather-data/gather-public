@@ -10,7 +10,7 @@ collections:
     files:
       - label: "Navbar"
         name: "navbar"
-        file: content/settings/navbar.json
+        file: content/settings/navbar/navbar.json
         fields:
           - {label: 'CTA Text', name: cta-text, widget: string}
           - label: Links
@@ -25,7 +25,7 @@ collections:
                 width: string
       - label: "Footer"
         name: "footer"
-        file: content/settings/footer.json
+        file: content/settings/footer/footer.json
         fields:
           - {label: Copyright, name: copyright, widget: string}
           - {label: 'Made In', name: made-in, widget: string}
