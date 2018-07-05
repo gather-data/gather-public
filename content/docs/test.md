@@ -13,12 +13,15 @@ Gather unblocks customer support teams by empowering them to build the internal 
 
 ## Do developers need to be involved?
 
-Gather is designed to remove the burden of building internal tools, so naturally developers aren’t required to do much. Usually a developer will add the database connection and any other connections that only they have access too (Stripe, for instance). That’s enough to allow the customer support team to build all of the views that aggregate the data in the way they need. The CS team can also build many of the actions to automate manual processes, like refunds via Stripe, without involvement from the dev team. Sometimes though, the CS team will want to automate a process that needs to communicate with your API, in which case the dev might set up that action in Gather.
+Only for set up - which should take maximum 1 hour. 
+
+**Setting up connections:**\
+You will need an API key for 2 of our integrations: your database and Chargify. All others are OAuth, which means if you have the login for that, all you have to do is click a “connect” button
 
 ## Is it secure?
 
-Yes. 
+Yes. We treat security very seriously. We store your API keys encrypted. We don't don't store data, only metadata. We encrypt all data in transit.
 
-## Have more questions
+## Have more questions?
 
 Check out our FAQ
