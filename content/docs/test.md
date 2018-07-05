@@ -9,7 +9,7 @@ Gather is a powerful, customizable admin tool for customer support teams that ag
 
 ## Why use Gather?
 
-Gather unblocks customer support teams by empowering them with tools designed to be easy to use, allowing them to build the internal tools they need right now, instead of waiting for developer resources. For developers, Gather removes the burden of managing an entirely separate internal tool and building all of the process-based integrations, allowing them to get back to work on the product.
+Gather unblocks customer support teams by empowering them with tools designed to be easy to use to build the internal tools they need right now, instead of waiting for developer resources. For developers, Gather removes the burden of managing an entirely separate internal tool and building all of the process-based integrations, allowing them to get back to work on the product.
 
 ## Do developers need to be involved?
 
