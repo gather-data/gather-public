@@ -31,7 +31,7 @@ const Navbar = ({ navbarData }) => (
         </Link>
       ))}
     </Flex>
-    <Link type="buttonPrimary" to="/signup">
+    <Link type="buttonPrimary" href="https://app.gatherdata.co/signup">
       {navbarData.cta_text}
     </Link>
   </Container>

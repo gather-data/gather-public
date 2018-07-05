@@ -14,12 +14,14 @@ import {
   LinkTypes,
   colors,
   mt,
+  mb,
 } from 'gather-style';
 
 import demo from './demo.svg';
 
 const Container = styled(Row)`
   background: ${colors.purple};
+  ${mb(30)};
 `;
 
 const CtaRow = styled(Flex)`
@@ -38,9 +40,9 @@ const ImageContainer = styled(Column)`
 
 const Demo = () => (
   <Container fluid>
-    <Column fluid>
+    <ImageContainer fluid>
       <HeroImage src={demo} />
-    </Column>
+    </ImageContainer>
   </Container>
 );
 

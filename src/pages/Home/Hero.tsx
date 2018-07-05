@@ -51,7 +51,7 @@ const Hero = ({ title, subtitle, cta_text, trial_text }) => (
           <Link to="/" type={LinkTypes.BUTTON_PRIMARY}>
             {cta_text}
           </Link>
-          <Text color={colors.navy} ml={2} type={TextTypes.BODY_SMALL}>
+          <Text color={colors.purple80} ml={2} type={TextTypes.BODY_SMALL}>
             {trial_text}
           </Text>
         </CtaRow>

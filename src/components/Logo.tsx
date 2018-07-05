@@ -30,13 +30,15 @@ const StyledImg = styled.img`
 
 const StyledText = styled(Text)``;
 
-const Logo = () => {
+const Logo = ({ showName = true }) => {
   return (
     <StyledLink to="/">
       <StyledImg src={gather} />
-      <StyledText ml={2} color={colors.navy} type={TextTypes.BODY} heavy>
-        GATHER
-      </StyledText>
+      {showName && (
+        <StyledText ml={2} color={colors.navy} type={TextTypes.BODY} heavy>
+          GATHER
+        </StyledText>
+      )}
     </StyledLink>
   );
 };
