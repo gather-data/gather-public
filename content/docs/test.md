@@ -3,7 +3,7 @@ slug: introduction
 title: Introduction
 category: Getting Started
 ---
-## What is Gather
+## What is Gather?
 
 Gather is a powerful, customizable admin tool for customer support teams that aggregates customer data, like charges from Stripe or order info from Shopify, and automates repetitive backend processes, like issuing refunds via Chargify or changing account information in your database. Gather is so easy to configure, any non-technical manager can build custom automations and data views in minutes to supercharge their team’s productivity.
 
