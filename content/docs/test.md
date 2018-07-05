@@ -5,7 +5,7 @@ category: Getting Started
 ---
 ## What is Gather?
 
-Gather is a powerful, customizable admin tool for customer support teams that aggregates customer data, like charges from Stripe or order info from Shopify, and automates repetitive backend processes, like issuing refunds via Chargify or changing account information in your database. Gather is so easy to configure, any non-technical manager can build custom automations and data views in minutes to supercharge their team’s productivity.
+Gather is a powerful, customizable admin tool for customer support teams. Gather aggregates customer data, like charges from Stripe or order info from Shopify, and automates repetitive backend processes, like issuing refunds via Chargify or changing account information in your database. Gather is so easy to configure, any non-technical manager can build custom automations and data views in minutes to supercharge their team’s productivity.
 
 ## Why use Gather?
 
@@ -13,10 +13,12 @@ Gather unblocks customer support teams by empowering them to build the internal 
 
 ## Do developers need to be involved?
 
-Only for set up - which should take maximum 1 hour. 
+Only for set up - which should take 15 minutes for connections and maximum 1 hour for automations.
 
 **Setting up connections:**\
-You will need an API key for 2 of our integrations: your database and Chargify. All others are OAuth, which means if you have the login for that, all you have to do is click a “connect” button
+You will need an API key for 2 of our integrations: your own database and Chargify. All of our other supported integrations use OAuth. This means if you have the login for the connection you want to add, all you have to do is click a “connect” button.
+
+
 
 ## Is it secure?
 
