@@ -22,7 +22,7 @@ You will need an API key for 2 of our integrations: your own database and Chargi
 
 ## Is it secure?
 
-Yes. We treat security very seriously. We encrypt API keys. We don't don't store data, only metadata. We encrypt all data in transit.
+Yes. We treat security very seriously. We encrypt API keys. We don't don't store data, only metadata. We encrypt all data in transit. See more details **here**.
 
 ## Have more questions?
 
