@@ -14,8 +14,12 @@
             "to": "/pricing"
         },
         {
-            "label": "Documentation",
-            "to": "/docs"
+            "label": "Help",
+            "to": "/help"
+        },
+        {
+            "label": "Log in",
+            "to": "https://app.gatherdata.co/signup"
         }
     ]
 }

@@ -9,6 +9,7 @@ module.exports = {
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-resolve-src',
     'gatsby-transformer-json',
+    'gatsby-transformer-remark',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -31,6 +32,19 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/pages/pricing`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/pages/help`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/docs`,
+        name: 'pages',
       },
     },
     {

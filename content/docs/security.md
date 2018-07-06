@@ -1,11 +1,12 @@
 ---
-slug: security
+path: /help/security
 title: Security
 category: Guides
 ---
+
 PLACEHOLDER
 
-Notes: 
+Notes:
 
 https://www.kayako.com/security
 
@@ -14,8 +15,6 @@ https://keen.io/docs/security/
 penetration testing
 
 https://www.kustomer.com/security/
-
-
 
 From Keen:
 
@@ -27,8 +26,6 @@ Where is data stored?
 
 Is data encrypted in transit? At rest?
 
-
-
 **Compliance**
 
 Privacy Shield
@@ -39,16 +36,10 @@ GDPR
 
 Keen IO welcomes the GDPR. It protects citizens’ fundamental right to privacy and the protection of personal data. It will raise the bar for data protection, security, and compliance across our industry. Keen IO is committed to meeting the requirements of GDPR. Contact Us for more details if GDPR is important to your business.
 
-
-
 **API Security Features**
 
 Encrypted Communication
 
-
-
 API Keys
-
-
 
 ETC!!!!!!!!!!

@@ -11,6 +11,7 @@ import {
   pt,
   pb,
   ph,
+  mb,
   Page,
   smallPageWidth,
   Flex,
@@ -23,6 +24,7 @@ import customerImage from './customer-image.svg';
 const Container = styled(Flex)`
   background: ${colors.purple};
   ${pt(10)};
+  ${mb(10)};
 `;
 
 const Testimonial = styled.div`

@@ -1,16 +1,27 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Sticky } from 'react-sticky';
-
+import { utils } from 'hedron';
+import onClickOutside from 'react-onclickoutside';
+import { withRouter } from 'react-router-dom';
 import styled from 'styled-components';
 import {
   Flex,
   Link,
+  LinkTypes,
   Text,
   configureGlobal,
   ph,
   pv,
   colors,
   boxShadow,
+  border,
+  borderRadius,
+  mb,
+  mh,
+  mt,
+  p,
+  pt,
+  pb,
 } from 'gather-style';
 
 import Logo from './Logo';
@@ -21,6 +32,8 @@ const Container = styled(Flex)`
   ${ph(3)};
   ${pv(2)};
   background: ${colors.white};
+  position: relative;
+  z-index: 1;
 
   ${props =>
     props.isSticky &&
@@ -39,33 +52,132 @@ const Container = styled(Flex)`
   `};
 `;
 
-const Navbar = ({ navbarData }) => (
-  <Sticky>
-    {({ distanceFromTop, isSticky }) => (
-      <Container isSticky={isSticky} showShadow={distanceFromTop < 0}>
-        <Logo />
-        <Flex flex1 justifyContent="flex-end">
-          {navbarData.links.map(link => (
-            <Link
-              key={link.label}
-              exact
-              title={link.label}
-              isNavLink
-              to={link.to && !link.to.startsWith('https') && link.to}
-              href={link.href && link.href.startsWith('https') && link.href}
-              type="text"
-              mr={3}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </Flex>
-        <Link type="buttonPrimary" href="https://app.gatherdata.co/signup">
-          {navbarData.cta_text}
-        </Link>
-      </Container>
-    )}
-  </Sticky>
-);
+const MobileMenu = styled(Link)`
+  ${utils.breakpoint(
+    'md',
+    () => `
+    display: none;
+  `
+  )};
+`;
 
-export default Navbar;
+const Items = styled(Flex)`
+  flex-flow: column;
+  display: none;
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+      flex-flow: row;
+      display: flex;
+    `
+  )};
+`;
+
+const MobileItems = styled(Flex)`
+  display: ${props => (props.isOpen ? 'flex' : 'none')};
+  position: absolute;
+  background: ${colors.white};
+  top: ${props => (props.isSticky ? '86px' : '70px')};
+  right: 24px;
+  ${borderRadius};
+  ${border};
+  ${boxShadow};
+  ${ph(3)};
+  ${pt(3)};
+  ${pb(1)};
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+      display: none;
+    `
+  )};
+`;
+
+const NavLink = styled(Link)`
+  margin: 0;
+  ${mb(2)};
+
+  &:last-child {
+    ${mt(1)};
+  }
+  border-bottom: 0;
+
+  &.active,
+  &:hover {
+    border-bottom: 0;
+  }
+`;
+
+class Navbar extends Component {
+  state = {
+    isOpen: false,
+  };
+
+  handleClickOutside = evt => {
+    this.setState({ isOpen: false });
+  };
+
+  componentDidUpdate(prevProps) {
+    if (this.props.location !== prevProps.location) {
+      this.setState({ isOpen: false });
+    }
+  }
+
+  render() {
+    const { navbarData } = this.props;
+    const { isOpen } = this.state;
+
+    const links = [
+      ...navbarData.links.map(link => (
+        <NavLink
+          key={link.label}
+          exact
+          title={link.label}
+          isNavLink
+          to={link.to && !link.to.startsWith('https') && link.to}
+          href={link.to && link.to.startsWith('https') && link.to}
+          type="text"
+          mr={3}
+        >
+          {link.label}
+        </NavLink>
+      )),
+      <NavLink type="buttonPrimary" href="https://app.gatherdata.co/signup">
+        {navbarData.cta_text}
+      </NavLink>,
+    ];
+
+    return (
+      <Sticky>
+        {({ distanceFromTop, isSticky }) => (
+          <Container
+            alignItems="stretch"
+            flow="column"
+            isSticky={isSticky}
+            showShadow={distanceFromTop < 0}
+          >
+            <Flex justifyContent="space-between">
+              <Logo />
+              <MobileMenu
+                onClick={() => this.setState({ isOpen: !isOpen })}
+                type={LinkTypes.BUTTON_DEFAULT}
+              >
+                Menu
+              </MobileMenu>
+              <Items isOpen={isOpen} flex1 justifyContent="flex-end">
+                {links}
+              </Items>
+            </Flex>
+            <MobileItems isSticky={isSticky} isOpen={isOpen} flow="column">
+              {links}
+            </MobileItems>
+          </Container>
+        )}
+      </Sticky>
+    );
+  }
+}
+
+export default withRouter(onClickOutside(Navbar));

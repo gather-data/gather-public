@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { utils } from 'hedron';
 import {
   Text,
   TextTypes,
@@ -26,10 +27,17 @@ import IOSCheckmarkOutline from 'react-icons/lib/io/ios-checkmark-outline';
 import FooterCta from '../components/FooterCta';
 
 const TitleContainer = styled(Column)`
-  ${pv(12)};
+  ${pv(6)};
   display: flex;
   flex-flow: column;
   align-items: center;
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+      ${pv(12)()};
+    `
+  )};
 `;
 
 const Title = styled(Text)`
@@ -37,8 +45,18 @@ const Title = styled(Text)`
 `;
 
 const PricingBoxes = styled(Flex)`
+  align-items: stretch;
+  flex-flow: column;
   justify-content: stretch;
   width: 100%;
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+      flex-flow: row;
+      align-items: center;
+    `
+  )};
 `;
 
 const StandardBox = styled.div`
@@ -46,7 +64,15 @@ const StandardBox = styled.div`
   background: ${colors.purple};
   ${pv(3)};
   ${ph(4)};
+  ${mb(3)};
   flex: 1;
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+      ${mb(0)()};
+    `
+  )};
 `;
 
 const EnterpriseBox = styled.div`
@@ -75,8 +101,15 @@ const Benefit = styled.div`
 `;
 
 const FAQs = styled(Flex)`
-  ${mt(30)};
-  ${mb(10)};
+  ${mt(5)};
+  ${mb(3)};
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+      ${mt(15)()};
+    `
+  )};
 `;
 
 const Questions = styled(Row)`
@@ -125,6 +158,7 @@ const Pricing = ({ data: { pricingJson: pricing, footerJson: footer } }) => {
                   color={colors.white}
                   href="https://app.gatherdata.co/signup"
                   mb={3}
+                  size="large"
                 >
                   {pricing.standard.cta}
                 </Link>
@@ -155,6 +189,7 @@ const Pricing = ({ data: { pricingJson: pricing, footerJson: footer } }) => {
                 <Link
                   mt={3}
                   type={LinkTypes.BUTTON_DEFAULT}
+                  size="large"
                   href="https://app.gatherdata.co/signup"
                 >
                   {pricing.enterpise.cta}
@@ -166,7 +201,9 @@ const Pricing = ({ data: { pricingJson: pricing, footerJson: footer } }) => {
         <Row>
           <Column>
             <FAQs flow="column">
-              <Text type={TextTypes.HEADING_2}>Frequently Asked Questions</Text>
+              <Text align="center" type={TextTypes.HEADING_2}>
+                Frequently Asked Questions
+              </Text>
               <Flex>
                 <Text>Have another question?</Text>
                 <Link href="mailto:support@gatherdata.co" heavy ml={1}>

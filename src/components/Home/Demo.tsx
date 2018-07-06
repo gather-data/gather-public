@@ -15,6 +15,8 @@ import {
   colors,
   mt,
   mb,
+  ph,
+  maxWidth,
 } from 'gather-style';
 
 import demo from './demo.svg';
@@ -39,6 +41,8 @@ const HeroImage = styled.img`
   transform: translate(0, 20px);
   width: 100%;
   height: 100%;
+  ${ph(3)};
+  max-width: 1320px;
 
   ${utils.breakpoint(
     'md',

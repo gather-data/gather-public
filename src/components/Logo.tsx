@@ -16,9 +16,11 @@ import {
 
 const StyledLink = styled(Link)`
   align-items: flex-start;
-  color: ${colors.green};
   display: flex;
   pointer-events: all;
+  &:hover {
+    text-decoration: none;
+  }
 `;
 
 const StyledImg = styled.img`
@@ -28,7 +30,11 @@ const StyledImg = styled.img`
   margin: 0;
 `;
 
-const StyledText = styled(Text)``;
+const StyledText = styled(Text)`
+  font-family: cornerstone, sans-serif;
+  font-weight: normal;
+  color: ${colors.navy};
+`;
 
 const Logo = ({ showName = true }) => {
   return (

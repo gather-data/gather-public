@@ -35,7 +35,7 @@ const StyledPage = styled(Page)`
   ${utils.breakpoint(
     'md',
     () => `
-    ${mt(-20)()};
+    ${mt(-30)()};
   `
   )};
 `;
@@ -51,7 +51,13 @@ const TitleContainer = styled(Column)`
   align-items: center;
 
   ${mt(10)};
-  ${mb(0)};
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+    ${mb(-5)};
+  `
+  )};
 `;
 
 const Title = styled(Text)`

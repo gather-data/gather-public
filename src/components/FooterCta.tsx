@@ -29,7 +29,7 @@ const InnerContainer = styled(Flex)`
     'md',
     () => `
       ${pt(30)()};
-      ${pb(15)()};
+      ${pb(30)()};
       flex-flow: row;
     `
   )};
@@ -37,7 +37,7 @@ const InnerContainer = styled(Flex)`
 
 const FooterImage = styled.img`
   margin: 0;
-  transform: translate(0, 1px);
+  transform: translate(0, 2px) scale(1.01);
   width: 100%;
 `;
 

@@ -24,8 +24,7 @@ import hero from './Hero.svg';
 const Container = styled(Row)`
   align-items: center;
   transform: translate(0, -30px);
-  ${pt(10)};
-  ${pb(5)};
+  ${pt(6)};
 
   ${utils.breakpoint(
     'md',
@@ -51,7 +50,7 @@ const HeroImage = styled.img`
   display: none;
 
   ${utils.breakpoint(
-    'md',
+    'lg',
     () => `
       transform: scale(1.4) translate(40px, 0);
       display: block;
@@ -73,7 +72,7 @@ const TrialText = styled(Text)`
 const Hero = ({ title, subtitle, cta_text, trial_text }) => (
   <Page width={pageSmallWidth}>
     <Container>
-      <Column md={6}>
+      <Column md={12} lg={6}>
         <Text type={TextTypes.HEADING_1}>{title}</Text>
         <Text mt={2} type={TextTypes.BODY}>
           {subtitle}
@@ -87,7 +86,7 @@ const Hero = ({ title, subtitle, cta_text, trial_text }) => (
           </TrialText>
         </CtaRow>
       </Column>
-      <Column md={6}>
+      <Column md={12} lg={6}>
         <HeroImage src={hero} />
       </Column>
     </Container>

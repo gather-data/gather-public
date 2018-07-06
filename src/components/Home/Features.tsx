@@ -22,20 +22,13 @@ import {
   Column,
 } from 'gather-style';
 
+import Tag from '../Tag';
+
 import dataImage from './features/data.svg';
 import privacyImage from './features/privacy.svg';
 import actionsImage from './features/actions.svg';
 import timelineImage from './features/timeline.svg';
 import analyticsImage from './features/analytics.svg';
-
-const Tag = styled(Text)`
-  background: ${colors.beige};
-  color: ${colors.white};
-  text-transform: uppercase;
-  ${borderRadius};
-  ${pv(0.5)};
-  ${ph(1)};
-`;
 
 const FeatureContainer = styled(Row)`
   ${mb(10)};
