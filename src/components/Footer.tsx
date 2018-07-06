@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { utils } from 'hedron';
 
 import {
   Page,
@@ -23,9 +24,35 @@ const Container = styled(Flex)`
   ${pv(6)};
 `;
 
-const LinksContainer = styled(Column)`
+const LinkGroupsContainer = styled(Column)`
   display: flex;
   justify-content: flex-end;
+`;
+
+const LinksContainer = styled(Flex)`
+  align-items: center;
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+    align-items: flex-start;
+  `
+  )};
+`;
+
+const CompanyContainer = styled(Flex)`
+  align-items: center;
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+    align-items: flex-start;
+  `
+  )};
+`;
+
+const LinkGroupsInner = styled(Row)`
+  width: 100%;
 `;
 
 const Footer = ({ copyright, madeIn, linkGroups }) => (
@@ -33,7 +60,7 @@ const Footer = ({ copyright, madeIn, linkGroups }) => (
     <Page width={pageSmallWidth}>
       <Row>
         <Column md={6}>
-          <Flex flow="column" alignItems="flex-start">
+          <CompanyContainer flow="column" alignItems="flex-start">
             <Logo showName={false} />
             <Text
               color={colors.textWhiteFaded}
@@ -45,13 +72,13 @@ const Footer = ({ copyright, madeIn, linkGroups }) => (
             <Text color={colors.textWhiteFaded} type={TextTypes.BODY_SMALL}>
               {madeIn}
             </Text>
-          </Flex>
+          </CompanyContainer>
         </Column>
-        <LinksContainer md={6} fluid>
-          <Row>
+        <LinkGroupsContainer md={6} fluid>
+          <LinkGroupsInner>
             {linkGroups.map(linkGroup => (
               <Column md={4}>
-                <Flex flow="Column" alignItems="flex-start">
+                <LinksContainer flow="Column" alignItems="flex-start">
                   <Text color={colors.white} mb={2} heavy type={TextTypes.BODY}>
                     {linkGroup.title}
                   </Text>
@@ -64,11 +91,11 @@ const Footer = ({ copyright, madeIn, linkGroups }) => (
                       {link.label}
                     </Link>
                   ))}
-                </Flex>
+                </LinksContainer>
               </Column>
             ))}
-          </Row>
-        </LinksContainer>
+          </LinkGroupsInner>
+        </LinkGroupsContainer>
       </Row>
     </Page>
   </Container>

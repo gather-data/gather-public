@@ -21,7 +21,13 @@ import demo from './demo.svg';
 
 const Container = styled(Row)`
   background: ${colors.purple};
-  ${mb(30)};
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+      ${mb(30)};
+    `
+  )};
 `;
 
 const CtaRow = styled(Flex)`
@@ -30,7 +36,16 @@ const CtaRow = styled(Flex)`
 
 const HeroImage = styled.img`
   margin: 0;
-  transform: translate(0, 60px);
+  transform: translate(0, 20px);
+  width: 100%;
+  height: 100%;
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+      transform: translate(0, 60px);
+    `
+  )};
 `;
 
 const ImageContainer = styled(Column)`

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import AndroidArrowForward from 'react-icons/lib/io/android-arrow-forward';
+import { utils } from 'hedron';
 
 import {
   colors,
@@ -8,6 +9,8 @@ import {
   pv,
   ph,
   mb,
+  mt,
+  mh,
   Flex,
   Text,
   TextTypes,
@@ -15,6 +18,7 @@ import {
   LinkTypes,
   pageSmallWidth,
   Page,
+  Row,
   Column,
 } from 'gather-style';
 
@@ -33,29 +37,93 @@ const Tag = styled(Text)`
   ${ph(1)};
 `;
 
-const FeatureContainer = styled(Flex)`
-  ${mb(30)};
+const FeatureContainer = styled(Row)`
+  ${mb(10)};
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+      ${mb(30)()};
+    `
+  )};
 `;
+
 const FeatureContent = styled(Column)`
   display: flex;
   flex-flow: column;
   align-items: flex-start;
-`;
-const Container = styled(Page)``;
+  order: 1;
 
-const DataImage = styled.img`
+  ${utils.breakpoint(
+    'md',
+    () => `
+      order: unset;
+    `
+  )};
+`;
+
+const Container = styled(Page)`
+  ${mt(15)};
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+      ${mt(35)()};
+    `
+  )};
+`;
+
+const ImageContainer = styled(Column)`
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  ${mb(8)};
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+      order: unset;
+      padding: 0;
+      ${mb(0)()};
+    `
+  )};
+`;
+
+const BaseImage = styled.img`
+  height: 100%;
+  width: 70%;
+  ${mh(3)};
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+      height: 100%;
+      width: 100%;
+      ${mh(0)()};
+    `
+  )};
+`;
+
+const DataImage = styled(BaseImage)`
   transform: scale(1.6);
 `;
-const PrivacyImage = styled.img`
+const PrivacyImage = styled(BaseImage)`
   transform: scale(1.3);
 `;
-const ActionsImage = styled.img`
+const ActionsImage = styled(BaseImage)`
   transform: scale(1.3);
 `;
-const TimelineImage = styled.img`
-  transform: scale(1.25);
+const TimelineImage = styled(BaseImage)`
+  transform: scale(1.4);
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+      transform: scale(1.25);
+    `
+  )};
 `;
-const AnalyticsImage = styled.img`
+const AnalyticsImage = styled(BaseImage)`
   transform: scale(1.2) translate(0, 20px);
 `;
 
@@ -68,7 +136,7 @@ const Features = ({
 }) => (
   <Container width={pageSmallWidth}>
     <FeatureContainer>
-      <FeatureContent md={6}>
+      <FeatureContent sm={12} md={6}>
         <Tag type={TextTypes.BODY_TINY} heavy>
           {featureData.tag}
         </Tag>
@@ -90,15 +158,15 @@ const Features = ({
           </Link>
         )}
       </FeatureContent>
-      <Column md={6} mdShift={1}>
+      <ImageContainer sm={12} md={5} mdShift={1}>
         <DataImage src={dataImage} />
-      </Column>
+      </ImageContainer>
     </FeatureContainer>
     <FeatureContainer>
-      <Column md={6}>
+      <ImageContainer sm={12} md={5}>
         <ActionsImage src={actionsImage} />
-      </Column>
-      <FeatureContent md={6} mdShift={1}>
+      </ImageContainer>
+      <FeatureContent sm={12} md={6} mdShift={1}>
         <Tag type={TextTypes.BODY_TINY} heavy>
           {featureMagicActions.tag}
         </Tag>
@@ -122,7 +190,7 @@ const Features = ({
       </FeatureContent>
     </FeatureContainer>
     <FeatureContainer>
-      <FeatureContent md={6}>
+      <FeatureContent sm={12} md={6}>
         <Tag type={TextTypes.BODY_TINY} heavy>
           {featureTimeline.tag}
         </Tag>
@@ -144,15 +212,15 @@ const Features = ({
           </Link>
         )}
       </FeatureContent>
-      <Column md={6} mdShift={1}>
+      <ImageContainer sm={12} md={5} mdShift={1}>
         <TimelineImage src={timelineImage} />
-      </Column>
+      </ImageContainer>
     </FeatureContainer>
     <FeatureContainer>
-      <Column md={6}>
+      <ImageContainer sm={12} md={5}>
         <AnalyticsImage src={analyticsImage} />
-      </Column>
-      <FeatureContent md={6} mdShift={1}>
+      </ImageContainer>
+      <FeatureContent sm={12} md={6} mdShift={1}>
         <Tag type={TextTypes.BODY_TINY} heavy>
           {featureAnalytics.tag}
         </Tag>
@@ -176,7 +244,7 @@ const Features = ({
       </FeatureContent>
     </FeatureContainer>
     <FeatureContainer>
-      <FeatureContent md={6}>
+      <FeatureContent sm={12} md={6}>
         <Tag type={TextTypes.BODY_TINY} heavy>
           {featurePrivacy.tag}
         </Tag>
@@ -198,9 +266,9 @@ const Features = ({
           </Link>
         )}
       </FeatureContent>
-      <Column md={6} mdShift={1}>
+      <ImageContainer sm={12} md={5} mdShift={1}>
         <PrivacyImage src={privacyImage} />
-      </Column>
+      </ImageContainer>
     </FeatureContainer>
   </Container>
 );

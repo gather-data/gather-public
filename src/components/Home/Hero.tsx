@@ -14,14 +14,18 @@ import {
   LinkTypes,
   colors,
   mt,
+  pv,
+  pt,
+  pb,
 } from 'gather-style';
 
 import hero from './Hero.svg';
 
 const Container = styled(Row)`
-  height: 100vh;
   align-items: center;
   transform: translate(0, -30px);
+  ${pt(10)};
+  ${pb(5)};
 
   ${utils.breakpoint(
     'md',
@@ -33,10 +37,37 @@ const Container = styled(Row)`
 
 const CtaRow = styled(Flex)`
   ${mt(3)};
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+    flex-flow: row;
+    align-items: center;
+  `
+  )};
 `;
 
 const HeroImage = styled.img`
-  transform: scale(1.4) translate(40px, 0);
+  display: none;
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+      transform: scale(1.4) translate(40px, 0);
+      display: block;
+    `
+  )};
+`;
+
+const TrialText = styled(Text)`
+  ${mt(1)};
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+      ${mt(0)};
+    `
+  )};
 `;
 
 const Hero = ({ title, subtitle, cta_text, trial_text }) => (
@@ -47,13 +78,13 @@ const Hero = ({ title, subtitle, cta_text, trial_text }) => (
         <Text mt={2} type={TextTypes.BODY}>
           {subtitle}
         </Text>
-        <CtaRow alignItems="center">
-          <Link to="/" type={LinkTypes.BUTTON_PRIMARY}>
+        <CtaRow alignItems="flex-start" flow="column">
+          <Link to="/" type={LinkTypes.BUTTON_PRIMARY} mr={2}>
             {cta_text}
           </Link>
-          <Text color={colors.purple80} ml={2} type={TextTypes.BODY_SMALL}>
+          <TrialText color={colors.purple80} type={TextTypes.BODY_SMALL}>
             {trial_text}
-          </Text>
+          </TrialText>
         </CtaRow>
       </Column>
       <Column md={6}>

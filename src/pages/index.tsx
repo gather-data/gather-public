@@ -2,10 +2,10 @@ import React from 'react';
 
 import FooterCta from '../components/FooterCta';
 
-import Hero from './Home/Hero';
-import Demo from './Home/Demo';
-import Features from './Home/Features';
-import Customers from './Home/Customers';
+import Hero from '../components/Home/Hero';
+import Demo from '../components/Home/Demo';
+import Features from '../components/Home/Features';
+import Customers from '../components/Home/Customers';
 
 const Home = ({ data: { homeJson: home, footerJson: footer } }) => (
   <div>
