@@ -108,7 +108,7 @@ collections:
               - label: Benefits
                 name: benefits
                 widget: list
-                field:
+                fields:
                   - {label: Text, name: text, widget: string}
           - label: Enterpise
             name: enterpise
@@ -120,7 +120,7 @@ collections:
               - label: Benefits
                 name: benefits
                 widget: list
-                field:
+                fields:
                   - {label: Text, name: text, widget: string}
           - label: FAQs
             name: faqs
