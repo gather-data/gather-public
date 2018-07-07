@@ -108,6 +108,8 @@ collections:
               - label: Benefits
                 name: benefits
                 widget: list
+                field:
+                  - {label: Text, name: text, widget: string}
           - label: Enterpise
             name: enterpise
             widget: object
@@ -118,6 +120,8 @@ collections:
               - label: Benefits
                 name: benefits
                 widget: list
+                field:
+                  - {label: Text, name: text, widget: string}
           - label: FAQs
             name: faqs
             widget: list
@@ -167,7 +171,7 @@ collections:
                 widget: string
                 required: false
               - label: CTA To
-                name: ctaText
+                name: ctaTo
                 widget: string
                 required: false
           - label: 'Feature 2 - Magic Actions'

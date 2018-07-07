@@ -4,19 +4,19 @@
         "pricePerMonth": 50,
         "cta": "Start Free Trial",
         "benefits": [
-            "Aggregated data views",
-            "Automate with Magic Actions",
-            "All integrations includes",
-            "Customer timeline",
-            "Audit history and analytics"
+            { "text": "Aggregated data views" },
+            { "text": "Automate with Magic Actions" },
+            { "text": "All integrations includes" },
+            { "text": "Customer timeline" },
+            { "text": "Audit history and analytics" }
         ]
     },
     "enterpise": {
         "cta": "Contact Sales",
         "benefits": [
-            "Unlimited users",
-            "Personal onboarding assistance",
-            "Dedicated support"
+            { "text": "Unlimited users" },
+            { "text": "Personal onboarding assistance" },
+            { "text": "Dedicated support" }
         ]
     },
     "faqs": [

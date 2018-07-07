@@ -167,7 +167,7 @@ const Pricing = ({ data: { pricingJson: pricing, footerJson: footer } }) => {
                     <Benefit>
                       <IOSCheckmarkOutline size={24} color={colors.blue} />
                       <Text color={colors.white} ml={1}>
-                        {benefit}
+                        {benefit.text}
                       </Text>
                     </Benefit>
                   ))}
@@ -182,7 +182,7 @@ const Pricing = ({ data: { pricingJson: pricing, footerJson: footer } }) => {
                   {pricing.enterpise.benefits.map(benefit => (
                     <Benefit>
                       <IOSCheckmarkOutline size={24} color={colors.blue} />
-                      <Text ml={1}>{benefit}</Text>
+                      <Text ml={1}>{benefit.text}</Text>
                     </Benefit>
                   ))}
                 </Flex>
@@ -256,11 +256,15 @@ export const query = graphql`
       standard {
         pricePerMonth
         cta
-        benefits
+        benefits {
+          text
+        }
       }
       enterpise {
         cta
-        benefits
+        benefits {
+          text
+        }
       }
       faqs {
         question
