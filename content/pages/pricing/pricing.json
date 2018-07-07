@@ -1,18 +1,22 @@
 {
-    "title": "Simple and transparent pricing",
-    "standard": {
-        "pricePerMonth": 50,
-        "cta": "Start Free Trial",
-        "benefits": []
-    },
-    "enterpise": {
-        "cta": "Contact Sales",
-        "benefits": []
-    },
-    "faqs": [],
-    "footerCta": {
-        "title": "Let's get started",
-        "subtitle": "14 day free trial, no credit card required.",
-        "ctaText": "Start Free Trial"
-    }
+  "title": "Simple and transparent pricing",
+  "standard": {
+    "pricePerMonth": 50,
+    "cta": "Start Free Trial",
+    "benefits": [
+      {
+        "text": "Yolo"
+      }
+    ]
+  },
+  "enterpise": {
+    "cta": "Contact Sales",
+    "benefits": []
+  },
+  "faqs": [],
+  "footerCta": {
+    "title": "Let's get started",
+    "subtitle": "14 day free trial, no credit card required.",
+    "ctaText": "Start Free Trial"
+  }
 }
