@@ -36,9 +36,9 @@ const StyledText = styled(Text)`
   color: ${colors.navy};
 `;
 
-const Logo = ({ showName = true }) => {
+const Logo = ({ showName = true, className }) => {
   return (
-    <StyledLink to="/">
+    <StyledLink to="/" className={className}>
       <StyledImg src={gather} />
       {showName && (
         <StyledText ml={2} color={colors.navy} type={TextTypes.BODY} heavy>

@@ -22,6 +22,7 @@ import {
   p,
   pt,
   pb,
+  mr,
 } from 'gather-style';
 
 import Logo from './Logo';
@@ -108,6 +109,23 @@ const NavLink = styled(Link)`
   &:hover {
     border-bottom: 0;
   }
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+      ${mb(0)()};
+      ${mr(2)()};
+      width: max-content;
+      &:last-child {
+        ${mt(0)()};
+      }
+    `
+  )};
+`;
+
+const StyledLogo = styled(Logo)`
+  flex: 1;
+  justify-content: flex-start;
 `;
 
 class Navbar extends Component {
@@ -158,8 +176,15 @@ class Navbar extends Component {
             isSticky={isSticky}
             showShadow={distanceFromTop < 0}
           >
-            <Flex justifyContent="space-between">
-              <Logo />
+            <Flex alignItems="center">
+              <StyledLogo />
+              <MobileMenu
+                href="https://app.gatherdata.co/signup"
+                mr={2}
+                type={LinkTypes.BUTTON_PRIMARY}
+              >
+                {navbarData.cta_text}
+              </MobileMenu>
               <MobileMenu
                 onClick={() => this.setState({ isOpen: !isOpen })}
                 type={LinkTypes.BUTTON_DEFAULT}
