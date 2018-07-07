@@ -19,7 +19,7 @@ import {
   pb,
 } from 'gather-style';
 
-import hero from './Hero.svg';
+import hero from './hero.svg';
 
 const Container = styled(Row)`
   align-items: center;
