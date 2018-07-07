@@ -131,7 +131,7 @@ collections:
                 widget: string
               - label: Answer
                 name: answer
-                widget: list
+                widget: string
           - label: 'Footer CTA'
             name: footerCta
             widget: object

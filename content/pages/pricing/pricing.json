@@ -1,29 +1,59 @@
 {
-  "title": "Simple and transparent pricing",
-  "standard": {
-    "pricePerMonth": 50,
-    "cta": "Start Free Trial",
-    "benefits": [
-      {
-        "text": "Yolo"
-      }
-    ]
-  },
-  "enterpise": {
-    "cta": "Contact Sales",
-    "benefits": []
-  },
-  "faqs": [
-    {
-      "question": "Yo",
-      "answer": [
-        "Lo"
-      ]
+    "title": "Simple and transparent pricing",
+    "standard": {
+        "pricePerMonth": 50,
+        "cta": "Start Free Trial",
+        "benefits": [
+            { "text": "Aggregated data views" },
+            { "text": "Automate with Magic Actions" },
+            { "text": "All integrations includes" },
+            { "text": "Customer timeline" },
+            { "text": "Audit history and analytics" }
+        ]
+    },
+    "enterpise": {
+        "cta": "Contact Sales",
+        "benefits": [
+            { "text": "Unlimited users" },
+            { "text": "Personal onboarding assistance" },
+            { "text": "Dedicated support" }
+        ]
+    },
+    "faqs": [
+        {
+            "question": "Some sort of question",
+            "answer":
+                "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi."
+        },
+        {
+            "question": "Some sort of question",
+            "answer":
+                "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi."
+        },
+        {
+            "question": "Some sort of question",
+            "answer":
+                "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi."
+        },
+        {
+            "question": "Some sort of question",
+            "answer":
+                "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi."
+        },
+        {
+            "question": "Some sort of question",
+            "answer":
+                "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi."
+        },
+        {
+            "question": "Some sort of question",
+            "answer":
+                "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi."
+        }
+    ],
+    "footerCta": {
+        "title": "Let's get started",
+        "subtitle": "14 day free trial, no credit card required.",
+        "ctaText": "Start Free Trial"
     }
-  ],
-  "footerCta": {
-    "title": "Let's get started",
-    "subtitle": "14 day free trial, no credit card required.",
-    "ctaText": "Start Free Trial"
-  }
 }
