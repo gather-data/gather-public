@@ -51,7 +51,7 @@ collections:
     folder: content/docs
     create: true
     fields:
-      - {name: slug, label: Slug}
+      - {name: path, label: Path}
       - {name: title, label: Title}
       - label: Category
         name: category
@@ -61,16 +61,96 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
+      - label: "Help"
+        name: "help"
+        file: content/pages/help.json
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: 'Contact Us Text', name: contactUsText, widget: string}
+          - {label: 'Contact Us CTA', name: contactUsCta, widget: string}
+          - {label: 'Contact Us Title', name: contactUsTitle, widget: string}
+          - {label: 'Contact Us Email', name: contactUsEmail, widget: string}
+          - {label: 'Blog Text', name: blogText, widget: string}
+          - {label: 'Blog CTA', name: blogCta, widget: string}
+          - {label: 'Blog Title', name: blogTitle, widget: string}
+          - {label: 'Twitter Text', name: twitterText, widget: string}
+          - {label: 'Twitter CTA', name: twitterCta, widget: string}
+          - {label: 'Twitter Title', name: twitterTitle, widget: string}
+          - label: 'Footer CTA'
+            name: footerCta
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: subtitle
+                name: subtitle
+                widget: string
+              - label: 'CTA Text'
+                name: cta-text
+                widget: string
+      - label: "Pricing"
+        name: "pricing"
+        file: content/pages/pricing.json
+        fields:
+          - {label: Title, name: title, widget: string}
+          - label: Standard
+            name: standard
+            widget: object
+            fields:
+              - label: Price Per Month
+                name: pricePerMonth
+                widget: string
+              - label: CTA
+                name: cta
+                widget: string
+              - label: Benefits
+                name: benefits
+                widget: list
+          - label: Enterpise
+            name: enterpise
+            widget: object
+            fields:
+              - label: CTA
+                name: cta
+                widget: string
+              - label: Benefits
+                name: benefits
+                widget: list
+          - label: FAQs
+            name: faqs
+            widget: list
+            fields:
+              - label: Question
+                name: question
+                widget: string
+              - label: Answer
+                name: answer
+                widget: list
+          - label: 'Footer CTA'
+            name: footerCta
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: subtitle
+                name: subtitle
+                widget: string
+              - label: 'CTA Text'
+                name: cta-text
+                widget: string
       - label: "Home"
         name: "home"
         file: content/pages/home.json
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
-          - {label: 'CTA Text', name: cta-text, widget: string}
-          - {label: 'Trial Text', name: trial-text, widget: string}
+          - {label: 'CTA Text', name: ctaText, widget: string}
+          - {label: 'Trial Text', name: trialText, widget: string}
           - label: 'Feature 1 - Data'
-            name: feature-data
+            name: featureData
             widget: object
             fields:
               - label: Title
@@ -82,8 +162,16 @@ collections:
               - label: Tag
                 name: tag
                 widget: string
+              - label: CTA
+                name: ctaText
+                widget: string
+                required: false
+              - label: CTA To
+                name: ctaText
+                widget: string
+                required: false
           - label: 'Feature 2 - Magic Actions'
-            name: feature-magic-actions
+            name: featureMagicActions
             widget: object
             fields:
               - label: Title
@@ -95,8 +183,16 @@ collections:
               - label: Tag
                 name: tag
                 widget: string
+              - label: CTA
+                name: ctaText
+                widget: string
+                required: false
+              - label: CTA To
+                name: ctaText
+                widget: string
+                required: false
           - label: 'Feature 3 - Customer Timeline'
-            name: feature-timeline
+            name: featureTimeline
             widget: object
             fields:
               - label: Title
@@ -108,8 +204,16 @@ collections:
               - label: Tag
                 name: tag
                 widget: string
+              - label: CTA
+                name: ctaText
+                widget: string
+                required: false
+              - label: CTA To
+                name: ctaText
+                widget: string
+                required: false
           - label: 'Feature 4 - Data Driven'
-            name: feature-data-actions
+            name: featureAnalytics
             widget: object
             fields:
               - label: Title
@@ -121,8 +225,16 @@ collections:
               - label: Tag
                 name: tag
                 widget: string
+              - label: CTA
+                name: ctaText
+                widget: string
+                required: false
+              - label: CTA To
+                name: ctaText
+                widget: string
+                required: false
           - label: 'Feature 5 - Privacy Compliance'
-            name: feature-privacy-actions
+            name: featurePrivacy
             widget: object
             fields:
               - label: Title
@@ -134,6 +246,14 @@ collections:
               - label: Tag
                 name: tag
                 widget: string
+              - label: CTA
+                name: ctaText
+                widget: string
+                required: false
+              - label: CTA To
+                name: ctaText
+                widget: string
+                required: false
           - label: 'Customers'
             name: customers
             widget: list
@@ -151,7 +271,7 @@ collections:
                 name: image
                 widget: image
           - label: 'Footer CTA'
-            name: footer-cta
+            name: footerCta
             widget: object
             fields:
               - label: Title

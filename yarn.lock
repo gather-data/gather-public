@@ -2,6 +2,22 @@
 # yarn lockfile v1
 
 
+"@types/color-convert@*":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@types/color-convert/-/color-convert-1.9.0.tgz#bfa8203e41e7c65471e9841d7e306a7cd8b5172d"
+  dependencies:
+    "@types/color-name" "*"
+
+"@types/color-name@*":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.0.tgz#926f76f7e66f49cc59ad880bb15b030abbf0b66d"
+
+"@types/color@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@types/color/-/color-3.0.0.tgz#40f8a6bf2fd86e969876b339a837d8ff1b0a6e30"
+  dependencies:
+    "@types/color-convert" "*"
+
 "@types/configstore@^2.1.1":
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/@types/configstore/-/configstore-2.1.1.tgz#cd1e8553633ad3185c3f2f239ecff5d2643e92b6"
@@ -29,6 +45,12 @@
     "@types/events" "*"
     "@types/minimatch" "*"
     "@types/node" "*"
+
+"@types/hedron@0.7.2":
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/@types/hedron/-/hedron-0.7.2.tgz#34229b5ab5de61a78ccbd6b9dd11f09217da7376"
+  dependencies:
+    "@types/react" "*"
 
 "@types/history@*", "@types/history@^4.6.2":
   version "4.6.2"
@@ -1855,7 +1877,7 @@ color-convert@^0.5.3:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-0.5.3.tgz#bdb6c69ce660fadffe0b0007cc447e1b9f7282bd"
 
-color-convert@^1.3.0, color-convert@^1.9.0:
+color-convert@^1.3.0, color-convert@^1.9.0, color-convert@^1.9.1:
   version "1.9.2"
   resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.2.tgz#49881b8fba67df12a96bdf3f56c0aab9e7913147"
   dependencies:
@@ -1874,6 +1896,20 @@ color-string@^0.3.0:
   resolved "https://registry.yarnpkg.com/color-string/-/color-string-0.3.0.tgz#27d46fb67025c5c2fa25993bfbf579e47841b991"
   dependencies:
     color-name "^1.0.0"
+
+color-string@^1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/color-string/-/color-string-1.5.2.tgz#26e45814bc3c9a7cbd6751648a41434514a773a9"
+  dependencies:
+    color-name "^1.0.0"
+    simple-swizzle "^0.2.2"
+
+color@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/color/-/color-3.0.0.tgz#d920b4328d534a3ac8295d68f7bd4ba6c427be9a"
+  dependencies:
+    color-convert "^1.9.1"
+    color-string "^1.5.2"
 
 color@^0.10.1:
   version "0.10.1"
@@ -3348,9 +3384,20 @@ fuzzy@^0.1.1:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/fuzzy/-/fuzzy-0.1.3.tgz#4c76ec2ff0ac1a36a9dccf9a00df8623078d4ed8"
 
-gather-style@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/gather-style/-/gather-style-1.0.0.tgz#bfa8b3f276425bddb2c64c247a8f95bfcc8d3dd8"
+gather-style@1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/gather-style/-/gather-style-1.0.3.tgz#ebca9c8f91c9d5e5ecba631c6767525019272fef"
+  dependencies:
+    "@types/color" "3.0.0"
+    "@types/hedron" "0.7.2"
+    "@types/react-router-dom" "4.2.7"
+    color "3.0.0"
+    hedron "0.7.1"
+    hex-rgb "3.0.0"
+    react-router-hash-link "1.2.0"
+    react-scrollchor "5.1.0"
+    styled-components "3.3.3"
+    typescript "2.9.2"
 
 gatsby-1-config-css-modules@^1.0.11:
   version "1.0.11"
@@ -4141,6 +4188,10 @@ hedron@0.7.1:
     opencollective "^1.0.3"
     prop-types "^15.5.8"
 
+hex-rgb@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/hex-rgb/-/hex-rgb-3.0.0.tgz#bdff98ce1c18daec8ed87797fe13b02831a9515a"
+
 history@^4.6.2, history@^4.7.2:
   version "4.7.2"
   resolved "https://registry.yarnpkg.com/history/-/history-4.7.2.tgz#22b5c7f31633c5b8021c7f4a8a954ac139ee8d5b"
@@ -4492,6 +4543,10 @@ is-alphanumerical@^1.0.0:
 is-arrayish@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
+
+is-arrayish@^0.3.1:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.3.2.tgz#4574a2ae56f7ab206896fb431eaeed066fdf8f03"
 
 is-binary-path@^1.0.0:
   version "1.0.1"
@@ -7152,7 +7207,7 @@ querystringify@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.0.0.tgz#fa3ed6e68eb15159457c89b37bc6472833195755"
 
-raf@^3.3.0:
+raf@^3.3.0, raf@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/raf/-/raf-3.4.0.tgz#a28876881b4bc2ca9117d4138163ddb80f781575"
   dependencies:
@@ -7420,6 +7475,12 @@ react-router-dom@^4.1.1, react-router-dom@^4.2.2:
     react-router "^4.3.1"
     warning "^4.0.1"
 
+react-router-hash-link@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-router-hash-link/-/react-router-hash-link-1.2.0.tgz#ce824cc5f0502ce9b0686bb6dd9c08659b24094c"
+  dependencies:
+    prop-types "^15.6.0"
+
 react-router-redux@^5.0.0-alpha.8:
   version "5.0.0-alpha.9"
   resolved "https://registry.yarnpkg.com/react-router-redux/-/react-router-redux-5.0.0-alpha.9.tgz#825431516e0e6f1fd93b8807f6bd595e23ec3d10"
@@ -7443,6 +7504,12 @@ react-router@^4.1.1, react-router@^4.2.0, react-router@^4.3.1:
 react-scroll-sync@^0.4.0:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/react-scroll-sync/-/react-scroll-sync-0.4.1.tgz#f2749f90c7a10c2acb9ce83a2a998cbb88770e2c"
+
+react-scrollchor@5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/react-scrollchor/-/react-scrollchor-5.1.0.tgz#2f4fdebeb381d84ecc7761614c3715406a5dc052"
+  dependencies:
+    requestanimationframe-timer "1.x.x"
 
 react-side-effect@^1.1.0:
   version "1.1.5"
@@ -8023,6 +8090,12 @@ request@^2.58.0, request@^2.67.0, request@^2.74.0:
     tunnel-agent "^0.6.0"
     uuid "^3.1.0"
 
+requestanimationframe-timer@1.x.x:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/requestanimationframe-timer/-/requestanimationframe-timer-1.0.4.tgz#3b48fe55f4359f07c54745caec7437e2532f89d8"
+  dependencies:
+    raf "^3.4.0"
+
 require-directory@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/require-directory/-/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
@@ -8460,6 +8533,12 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
 signedsource@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/signedsource/-/signedsource-1.0.0.tgz#1ddace4981798f93bd833973803d80d52e93ad6a"
+
+simple-swizzle@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/simple-swizzle/-/simple-swizzle-0.2.2.tgz#a4da6b635ffcccca33f70d17cb92592de95e557a"
+  dependencies:
+    is-arrayish "^0.3.1"
 
 slash@^1.0.0:
   version "1.0.0"
@@ -9262,7 +9341,7 @@ type-of@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/type-of/-/type-of-2.0.1.tgz#e72a1741896568e9f628378d816d6912f7f23972"
 
-typescript@^2.2.1:
+typescript@2.9.2, typescript@^2.2.1:
   version "2.9.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.9.2.tgz#1cbf61d05d6b96269244eb6a3bce4bd914e0f00c"
 
