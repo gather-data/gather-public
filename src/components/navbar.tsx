@@ -163,7 +163,7 @@ class Navbar extends Component {
         </NavLink>
       )),
       <NavLink type="buttonPrimary" href="https://app.gatherdata.co/signup">
-        {navbarData.cta_text}
+        {navbarData.ctaText}
       </NavLink>,
     ];
 
@@ -183,7 +183,7 @@ class Navbar extends Component {
                 mr={2}
                 type={LinkTypes.BUTTON_PRIMARY}
               >
-                {navbarData.cta_text}
+                {navbarData.ctaText}
               </MobileMenu>
               <MobileMenu
                 onClick={() => this.setState({ isOpen: !isOpen })}

@@ -69,7 +69,7 @@ const TrialText = styled(Text)`
   )};
 `;
 
-const Hero = ({ title, subtitle, cta_text, trial_text }) => (
+const Hero = ({ title, subtitle, ctaText, trialText }) => (
   <Page width={pageSmallWidth}>
     <Container>
       <Column md={12} lg={6}>
@@ -79,10 +79,10 @@ const Hero = ({ title, subtitle, cta_text, trial_text }) => (
         </Text>
         <CtaRow alignItems="flex-start" flow="column">
           <Link to="/" type={LinkTypes.BUTTON_PRIMARY} mr={2}>
-            {cta_text}
+            {ctaText}
           </Link>
           <TrialText color={colors.purple80} type={TextTypes.BODY_SMALL}>
-            {trial_text}
+            {trialText}
           </TrialText>
         </CtaRow>
       </Column>

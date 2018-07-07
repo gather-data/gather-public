@@ -12,8 +12,8 @@ const Home = ({ data: { homeJson: home, footerJson: footer } }) => (
     <Hero
       title={home.title}
       subtitle={home.subtitle}
-      cta_text={home.ctaText}
-      trial_text={home.trialText}
+      ctaText={home.ctaText}
+      trialText={home.trialText}
     />
     <Demo />
     <Features

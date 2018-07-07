@@ -23,7 +23,7 @@ export default Layout;
 export const query = graphql`
   query LayoutQuery {
     navbarJson {
-      cta_text
+      ctaText
       links {
         label
         to

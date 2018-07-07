@@ -12,7 +12,7 @@ collections:
         name: "navbar"
         file: content/settings/navbar/navbar.json
         fields:
-          - {label: 'CTA Text', name: cta-text, widget: string}
+          - {label: 'CTA Text', name: ctaText, widget: string}
           - label: Links
             name: links
             widget: list
@@ -28,9 +28,9 @@ collections:
         file: content/settings/footer/footer.json
         fields:
           - {label: Copyright, name: copyright, widget: string}
-          - {label: 'Made In', name: made-in, widget: string}
+          - {label: 'Made In', name: madeIn, widget: string}
           - label: 'Link Groups'
-            name: link-groups
+            name: linkGroups
             widget: list
             fields:
               - label: Title
@@ -63,7 +63,7 @@ collections:
     files:
       - label: "Help"
         name: "help"
-        file: content/pages/help.json
+        file: content/pages/help/help.json
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
@@ -88,11 +88,11 @@ collections:
                 name: subtitle
                 widget: string
               - label: 'CTA Text'
-                name: cta-text
+                name: ctaText
                 widget: string
       - label: "Pricing"
         name: "pricing"
-        file: content/pages/pricing.json
+        file: content/pages/pricing/pricing.json
         fields:
           - {label: Title, name: title, widget: string}
           - label: Standard
@@ -139,11 +139,11 @@ collections:
                 name: subtitle
                 widget: string
               - label: 'CTA Text'
-                name: cta-text
+                name: ctaText
                 widget: string
       - label: "Home"
         name: "home"
-        file: content/pages/home.json
+        file: content/pages/home/home.json
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
@@ -281,5 +281,5 @@ collections:
                 name: subtitle
                 widget: string
               - label: 'CTA Text'
-                name: cta-text
+                name: ctaText
                 widget: string
