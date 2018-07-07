@@ -13,7 +13,14 @@
     "cta": "Contact Sales",
     "benefits": []
   },
-  "faqs": [],
+  "faqs": [
+    {
+      "question": "Yo",
+      "answer": [
+        "Lo"
+      ]
+    }
+  ],
   "footerCta": {
     "title": "Let's get started",
     "subtitle": "14 day free trial, no credit card required.",
