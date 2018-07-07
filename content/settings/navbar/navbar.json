@@ -1,25 +1,25 @@
 {
-    "ctaText": "Free Trial",
-    "links": [
-        {
-            "label": "Product",
-            "to": "/"
-        },
-        {
-            "label": "Integrations",
-            "to": "/integrations"
-        },
-        {
-            "label": "Pricing",
-            "to": "/pricing"
-        },
-        {
-            "label": "Help",
-            "to": "/help"
-        },
-        {
-            "label": "Log in",
-            "to": "https://app.gatherdata.co/signup"
-        }
-    ]
+  "ctaText": "Free Trial",
+  "links": [
+    {
+      "label": "Product",
+      "to": "/"
+    },
+    {
+      "label": "Integrations",
+      "to": "/integrations"
+    },
+    {
+      "label": "Pricing",
+      "to": "/pricing"
+    },
+    {
+      "label": "Help",
+      "to": "/help"
+    },
+    {
+      "label": "Log in",
+      "to": "https://app.gatherdata.co/login"
+    }
+  ]
 }
