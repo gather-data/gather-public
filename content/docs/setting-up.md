@@ -1,5 +1,5 @@
 ---
-path: help/getting-started/setting-up
+path: /help/getting-started/setting-up
 title: Setting Up
 category: Getting Started
 ---
