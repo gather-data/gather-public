@@ -15,6 +15,8 @@ Gather unblocks customer support teams by empowering them to build the internal 
 
 **Does Gather replace my helpdesk?**
 
+No. Keep your favorite helpdesk to talk to communicate with your customers. Gather is the link between your external communications and your internal processes. Helping you 
+
 **Does Gather integrate with other applications?**
 
 Yes. We integrate with a wide range of partners including Zendesk, Stripe, Chargify, Slack, Salesforce, databases and more. Don’t see the one you need? Let us know at integrations@gatherdata.co. It could already be on our roadmap!
@@ -31,7 +33,7 @@ Only for set up - which should take 15 minutes for connections and maximum 1 hou
 
 Setting up Connections: You will need an API key for 2 of our integrations: your own database and Chargify. All of our other supported integrations use OAuth. This means if you have the login for the connection you want to add, all you have to do is click a “connect” button.
 
-Setting up Magic Actions:
+Setting up Magic Actions: 
 
 ## **Account and Billing**
 
