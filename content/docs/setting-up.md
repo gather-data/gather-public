@@ -29,7 +29,7 @@ On the left side navigation bar, go to Team Settings > Members. Then click "Invi
 
 **\[Insert Screenshot]**
 
-## **Views**
+## Views
 
 **Adding Views**
 
@@ -61,7 +61,7 @@ Navigate to an item that you want to add more detail to (for example, a Customer
 
 Click edit 
 
-## **Magic actions**
+## Magic actions
 
 **Adding actions**\
 For 3rd party services that you have account details for, you can configure it all yourself using our easy step-by-step Builder. If your actions involve your database or internal API, you will need to get help from your developer team. This could include actions like extending a trial. The developer would create an API endpoint and hook it up to an action that triggers it. It can be as simple or as complex as you want it to be.
