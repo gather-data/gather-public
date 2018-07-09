@@ -32,9 +32,10 @@ On the left side navigation bar, go to Team Settings > Members. Then click "Invi
 ## Step 2: Views
 
 ### Adding Views
-On the left side navigation bar, head over to "All Views". Click the "Add View" button on the top right.
+On the left side navigation bar, head over to "All Views". Click the "Add View" button in top right corner.
 
 A modal will pop up:
+[INSERT ADD VIEW POP UP HERE]
 
 Just enter the name for the View (ex. Customers, Orders, Partners, Users) and select the data source from the Connections you've already added.
 
