@@ -15,7 +15,7 @@ Gather unblocks customer support teams by empowering them to build the internal 
 
 **Does Gather replace my helpdesk?**
 
-No. Keep your favorite helpdesk to talk to communicate with your customers. Gather is the link between your external communications and your internal processes. Helping you 
+No. Keep your favorite helpdesk to communicate with your customers. Gather is the link between your external communications and your internal processes. We help streamline those processes by aggregating data into a single view and automating your repetitive workflows.
 
 **Does Gather integrate with other applications?**
 
