@@ -52,7 +52,7 @@ const StyledPage = styled(Page)`
   ${utils.breakpoint(
     'lg',
     () => `
-    ${mt(-20)()};
+    ${mt(-28)()};
   `
   )};
 `;
