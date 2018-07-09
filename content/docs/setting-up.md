@@ -79,9 +79,18 @@ Repeat this step as needed for each Module you want to see on each View.
 
 ### Configuring Modules
 
+Be sure you're in the "Configure" mode. Within the Module, a green edit icon will appear in the top right corner. Click the icon.
 
+A window will pop up:
 
-Click edit 
+[INSERT WINDOW]
+
+You can add new fields, reorder them by dragging the tags and delete the fields by clicking the "x".
+
+\[INSERT GIF]
+
+A default 
+
 
 ## Step 4: Magic actions
 
