@@ -7,7 +7,7 @@ This article will help you set up Connections and Magic Actions, inviting your t
 
 For more in-depth walkthroughs, check out our Guides \[INSERT LINK] section.
 
-## **Starting out**
+## Starting out
 
 Think about which Connections you need and what automations you’d like to prioritize.
 
@@ -47,14 +47,14 @@ On the left side navigation bar, go to Team Settings > Members. Then click "Invi
 
 **\[Insert Screenshot]**
 
-## Invite your team
+## **Invite your team**
 
 **Invite team members**\
 On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
 
 **\[Insert Screenshot]**
 
-## Configuration
+## **Configuration**
 
 **Views**
 
