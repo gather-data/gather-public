@@ -41,8 +41,12 @@ Just enter the name for the View (ex. Customers, Payments, Partners, Users, etc.
 
 Repeat this step as needed for each view you want to see.
 
+### Editing and Deleting Views
+
+On the left side navigation bar, head over to "All Views". Find the View you want to edit or delete and click the "..." to access the drop down menu.
+
 ### Configuring Views
-On the left side navigation bar, head over to "All Views". Click on the View from the list. Once you're in the View you want to change, click "Configure" on the top right.  
+From "All Views", click into the selected View from the list. Once you're in the View you want to change, click "Configure" on the top right.  
 
 A modal will pop up:
 
