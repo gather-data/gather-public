@@ -34,12 +34,10 @@ On the left side navigation bar, go to Team Settings > Members. Then click "Invi
 **Adding actions**\
 For 3rd party services that you have account details for, you can configure it all yourself using our easy step-by-step Builder. If your actions involve your database or internal API, you will need to get help from your developer team. This could include actions like extending a trial. The developer would create an API endpoint and hook it up to an action that triggers it. It can be as simple or as complex as you want it to be.
 
-Not sure what to add?
+Not sure what to add? Check out our Guides:
 
-**Refund flow \[INSERT LINK]**
-
-**Extending free trial \[INSERT LINK]**
-
+**Refund flow \[INSERT LINK]**\
+**Extending free trial \[INSERT LINK]**\
 **Order check \[INSERT LINK]**
 
 **Invite your developer**\
