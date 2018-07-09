@@ -54,7 +54,16 @@ On the left side navigation bar, go to Team Settings > Members. Then click "Invi
 
 ## **Configuration**
 
-**Views**
+In order to configure changes to Views, Modules and Actions, you have to be in "Configure" mode.\
+\
+**Views**\
+On the left side navigation bar, head over to "All Views". Click the "Configure" button on the top right. A modal will pop up:
+
+\[INSERT MODAL]
+
+You can add new fields, reorder them by dragging the tags and delete the fields by clicking the "x".
+
+\[INSERT GIF]
 
 **Modules**
 
