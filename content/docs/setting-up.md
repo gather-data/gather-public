@@ -11,7 +11,7 @@ For more in-depth walkthroughs, check out our Guides \[INSERT LINK] section.
 
 Think about which Connections you need and what automations you’d like to prioritize.
 
-## **Connections**
+## Connections
 
 **Adding connections**
 
