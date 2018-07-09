@@ -28,10 +28,5 @@ export const query = graphql`
         to
       }
     }
-    site {
-      siteMetadata {
-        title
-      }
-    }
   }
 `;
