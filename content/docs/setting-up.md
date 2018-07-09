@@ -11,7 +11,7 @@ For more in-depth walkthroughs, check out our Guides \[INSERT LINK] section.
 
 Think about which Connections you need and what automations you’d like to prioritize.
 
-## Connections
+## Step 1: Connections
 
 ### Adding connections
 
@@ -29,10 +29,14 @@ On the left side navigation bar, go to Team Settings > Members. Then click "Invi
 
 **\[Insert Screenshot]**
 
-## Views
+## Step 2: Views
 
 ### Adding Views
 On the left side navigation bar, head over to "All Views". Click the "Add View" button on the top right.
+
+A modal will pop up:
+
+Just enter the name for the View (ex. Customers, Orders, Partners, Users) and select the data source from the Connections you've already added.
 
 ### Configuring Views
 On the left side navigation bar, head over to "All Views". Click on the View from the list. Once you're in the View you want to change, click "Configure" on the top right.  
@@ -49,7 +53,7 @@ You can add searchable fields by entering them in "Search Fields" to make it eas
 
 \[INSERT GIF]
 
-## Modules
+## Step 3: Modules
 
 In order to add or modify a Modules, you have to be in "Configure" mode. Navigate to an item that you want to add more detail to (for example, a Customer page) then click the "Configure" button in the top right corner. Once the Configure button switches to green, you are in "Configure" mode, which allows you to modify Modules and Actions.
 
@@ -63,7 +67,7 @@ In order to add or modify a Modules, you have to be in "Configure" mode. Navigat
 
 Click edit 
 
-## Magic actions
+## Step 4: Magic actions
 
 **Adding actions**\
 For 3rd party services that you have account details for, you can configure it all yourself using our easy step-by-step Builder. If your actions involve your database or internal API, you will need to get help from your developer team. This could include actions like extending a trial. The developer would create an API endpoint and hook it up to an action that triggers it. It can be as simple or as complex as you want it to be.
