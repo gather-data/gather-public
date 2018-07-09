@@ -1,6 +1,6 @@
 ---
 path: /help/general
-title: General
+title: General - What is Gather?
 category: Getting Started
 ---
 ## What is Gather?
