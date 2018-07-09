@@ -89,8 +89,6 @@ You can add new fields, reorder them by dragging the tags and delete the fields 
 
 \[INSERT GIF]
 
-A default 
-
 
 ## Step 4: Magic actions
 
