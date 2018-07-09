@@ -4,6 +4,7 @@ import Fuse from 'fuse.js';
 import { utils } from 'hedron';
 import AndroidArrowForward from 'react-icons/lib/io/android-arrow-forward';
 import Helmet from 'react-helmet';
+import sortBy from 'lodash/sortBy';
 
 import {
   Column,
@@ -105,7 +106,7 @@ class IntegrationsContainer extends Component {
 
     let services = servicesWithNodes
       .map(sn => sn.node)
-      .filter(s => s.is_available && s.name);
+      .filter(s => s.show_marketing && s.name);
 
     // Create a service for each of its categories
     services = services
@@ -149,8 +150,11 @@ class IntegrationsContainer extends Component {
     }
 
     let serviceGroups = Object.entries(groupBy(services, 'category'));
-    serviceGroups.sort(([category]) => {
-      if (category === 'Popular') {
+    serviceGroups = sortBy(serviceGroups, ([category]) =>
+      category.toLowerCase()
+    );
+    serviceGroups.sort(([categoryA], [categoryB]) => {
+      if (categoryA === 'Popular') {
         return -1;
       }
 

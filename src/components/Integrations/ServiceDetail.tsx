@@ -61,11 +61,13 @@ const Logo = styled.img`
 
 const StatusLabel = styled(Text)`
   color: ${colors.white};
-  background: ${colors.primary};
+  background: ${colors.navy};
+  position: absolute;
+  top: 0;
+  right: 0;
   ${ph(1)};
   ${pv(0.5)};
-  ${mb(0.5)};
-  ${borderRadius};
+  border-radius: 0 0 0 4px;
 `;
 
 const ServiceDetail = ({ service }) => (
