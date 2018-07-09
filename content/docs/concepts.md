@@ -11,7 +11,7 @@ Connections are integrations. Adding a Connection to a 3rd party tool like Strip
 
 ## Magic Actions
 
-Step by step automations created in Builder. Create a single button to handle repetitive internal processes for customer requests. 
+Step by step automations created in Builder. Create a single button to handle repetitive internal processes for customer requests like refunding payments and resetting passwords. 
 
 \[Insert image]
 
