@@ -5,7 +5,7 @@ category: Getting Started
 ---
 ## Connections
 
-Connections are integrations. Adding a Connection to a 3rd party tool like Stripe, Chargify or Salesforce allows you to set up Views or Modules within Gather. You can also push data across to perform Magic Actions (like giving a refund via Stripe).
+In order for Gather pull data from a third-party source or to perform an operation in another app, you need to add a connection. Connections in Gather have two main functions: providing data to views and modules and providing operations that can be used in Magic Actions. For example, the database connection can be used to create views that show all your customers or their order data. And the Stripe connection provides operations like creating refunds that can be used as steps in Magic Actions. All credentials and sensitive information about a connection are stored fully encrypted in Gather.
 
 \[Insert image]
 
