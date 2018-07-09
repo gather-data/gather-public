@@ -63,6 +63,6 @@ Yes. We treat security very seriously. We encrypt API keys. We don't don't store
 
 Yes. Customer security and privacy is core to our values at Gather, and our team has extensive experience building secure applications.
 
-## Contact
+## **Contact**
 
 Have more questions? Reach out at support@gatherdata.co. We're here to help!
