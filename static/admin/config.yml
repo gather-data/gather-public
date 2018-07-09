@@ -55,8 +55,7 @@ collections:
       - {name: title, label: Title}
       - label: Category
         name: category
-        widget: select
-        options: ["Getting Started", "Guides", "FAQ"]
+        widget: string
       - {name: body, label: Body, widget: markdown}
   - label: "Pages"
     name: "pages"
