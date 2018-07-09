@@ -1,7 +1,7 @@
 ---
 path: /help/security
 title: Security
-category: Guides
+category: Security
 ---
 
 PLACEHOLDER
