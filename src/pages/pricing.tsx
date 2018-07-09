@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { utils } from 'hedron';
+import Helmet from 'react-helmet';
 import {
   Text,
   TextTypes,
@@ -118,6 +119,7 @@ const Questions = styled(Row)`
 const Pricing = ({ data: { pricingJson: pricing, footerJson: footer } }) => {
   return (
     <div>
+      <Helmet title={`Pricing | Gather`} />
       <Page width={pageSmallWidth}>
         <Row>
           <TitleContainer>

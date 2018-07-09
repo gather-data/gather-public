@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { utils } from 'hedron';
+import Helmet from 'react-helmet';
 import {
   Text,
   TextTypes,
@@ -100,6 +101,7 @@ const Help = ({
   },
 }) => (
   <div>
+    <Helmet title={`Help | Gather`} />
     <Page width={pageSmallWidth}>
       <Row>
         <TitleContainer>

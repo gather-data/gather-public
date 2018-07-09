@@ -9,7 +9,6 @@ import './index.css';
 const Layout = ({ children, data }) => (
   <BreakpointProvider breakpoints={{ sm: 768, md: 992, lg: 1200 }}>
     <div>
-      <Helmet title={data.site.siteMetadata.title} />
       <StickyContainer>
         <Navbar navbarData={data.navbarJson} />
         <div>{children()}</div>

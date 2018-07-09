@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Fuse from 'fuse.js';
 import { utils } from 'hedron';
 import AndroidArrowForward from 'react-icons/lib/io/android-arrow-forward';
+import Helmet from 'react-helmet';
 
 import {
   Column,
@@ -169,6 +170,7 @@ class IntegrationsContainer extends Component {
 
     return (
       <Container>
+        <Helmet title={`Integrations | Gather`} />
         <TitleContainer>
           <Title align="center" mb={5} type={TextTypes.HEADING_1}>
             Integrations for all your data

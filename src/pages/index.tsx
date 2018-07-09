@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 import FooterCta from '../components/FooterCta';
 
@@ -9,6 +10,7 @@ import Customers from '../components/Home/Customers';
 
 const Home = ({ data: { homeJson: home, footerJson: footer } }) => (
   <div>
+    <Helmet title={`Gather | ${home.title}`} />
     <Hero
       title={home.title}
       titleHighlight={home.titleHighlight}
