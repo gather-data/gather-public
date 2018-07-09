@@ -65,6 +65,10 @@ You can add new fields, reorder them by dragging the tags and delete the fields 
 
 \[INSERT GIF]
 
+You can add searchable fields by entering them in "Search Fields" to make it easier to navigate to the right item in the view.
+
+\[INSERT GIF]
+
 **Modules**
 
 **Configuring actions through Builder**
