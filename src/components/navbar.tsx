@@ -25,6 +25,7 @@ import {
   mr,
   ml,
 } from 'gather-style';
+import AndroidArrowForward from 'react-icons/lib/io/android-arrow-forward';
 
 import Logo from './Logo';
 
@@ -165,7 +166,12 @@ class Navbar extends Component {
           {link.label}
         </NavLink>
       )),
-      <NavLink type="buttonPrimary" href="https://app.gatherdata.co/signup">
+      <NavLink
+        type="buttonPrimary"
+        href="https://app.gatherdata.co/signup"
+        iconEnd
+        icon={<AndroidArrowForward size={24} />}
+      >
         {navbarData.ctaText}
       </NavLink>,
     ];

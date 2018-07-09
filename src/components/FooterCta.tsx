@@ -29,7 +29,7 @@ import Footer from './Footer';
 import footerImage from './footer.svg';
 
 const InnerContainer = styled(Flex)`
-  ${mt(14)};
+  ${mt(5)};
   ${mb(7)};
   ${pv(6)};
   ${ph(3)};
@@ -43,8 +43,8 @@ const InnerContainer = styled(Flex)`
   ${utils.breakpoint(
     'md',
     () => `
-      ${mt(30)()};
-      ${mb(20)()};
+      ${mt(15)()};
+      ${mb(15)()};
       flex-flow: row;
     `
   )};

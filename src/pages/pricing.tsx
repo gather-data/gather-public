@@ -102,7 +102,6 @@ const Benefit = styled.div`
 
 const FAQs = styled(Flex)`
   ${mt(5)};
-  ${mb(3)};
 
   ${utils.breakpoint(
     'md',
@@ -212,7 +211,7 @@ const Pricing = ({ data: { pricingJson: pricing, footerJson: footer } }) => {
               </Flex>
               <Questions>
                 {pricing.faqs.map(faq => (
-                  <Column md={6}>
+                  <Column sm={6}>
                     <Text heavy mb={1}>
                       {faq.question}
                     </Text>

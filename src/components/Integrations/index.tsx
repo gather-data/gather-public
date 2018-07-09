@@ -53,7 +53,7 @@ const Integrations = ({
           <SearchInput query={query} updateQuery={updateQuery} />
         </SearchColumn>
       </Row>
-      {Object.entries(serviceGroups).map(([category, servicesForCategory]) => (
+      {serviceGroups.map(([category, servicesForCategory]) => (
         <CategoryGroup
           category={category}
           servicesForCategory={servicesForCategory}

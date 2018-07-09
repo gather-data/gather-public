@@ -26,7 +26,7 @@ import customerImage from './customer-image.svg';
 const Container = styled(Flex)`
   background: ${colors.purple};
   ${pt(8)};
-  ${mb(8)};
+  ${mb(15)};
 `;
 
 const Testimonial = styled.div`

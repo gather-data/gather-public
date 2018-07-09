@@ -33,6 +33,7 @@ const TitleContainer = styled(Column)`
 
 const ContentColumn = styled(Column)`
   order: 1;
+  ${p(1.5)};
 
   ${utils.breakpoint(
     'md',
@@ -44,6 +45,7 @@ const ContentColumn = styled(Column)`
 
 const ContactColumn = styled(Column)`
   order: 0;
+  ${p(1.5)};
 
   ${utils.breakpoint(
     'md',
@@ -108,7 +110,7 @@ const Help = ({
         </TitleContainer>
       </Row>
       <Row>
-        <ContentColumn md={6}>
+        <ContentColumn sm={6}>
           {groupDocs(docs).map(([category, items]) => (
             <Box key={category}>
               <Text color={colors.navy} heavy mb={1}>
@@ -122,7 +124,7 @@ const Help = ({
             </Box>
           ))}
         </ContentColumn>
-        <ContactColumn md={6}>
+        <ContactColumn sm={6}>
           <Box>
             <Text color={colors.navy} heavy mb={1}>
               {help.contactUsTitle}

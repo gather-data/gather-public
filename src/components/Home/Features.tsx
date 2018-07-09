@@ -129,7 +129,7 @@ const Features = ({
 }) => (
   <Container width={pageSmallWidth}>
     <FeatureContainer>
-      <FeatureContent sm={12} md={6}>
+      <FeatureContent sm={6}>
         <Tag type={TextTypes.BODY_TINY} heavy>
           {featureData.tag}
         </Tag>
@@ -151,15 +151,15 @@ const Features = ({
           </Link>
         )}
       </FeatureContent>
-      <ImageContainer sm={12} md={5} mdShift={1}>
+      <ImageContainer sm={5} mdShift={1}>
         <DataImage src={dataImage} />
       </ImageContainer>
     </FeatureContainer>
     <FeatureContainer>
-      <ImageContainer sm={12} md={5}>
+      <ImageContainer sm={5}>
         <ActionsImage src={actionsImage} />
       </ImageContainer>
-      <FeatureContent sm={12} md={6} mdShift={1}>
+      <FeatureContent sm={6} mdShift={1}>
         <Tag type={TextTypes.BODY_TINY} heavy>
           {featureMagicActions.tag}
         </Tag>
@@ -183,7 +183,7 @@ const Features = ({
       </FeatureContent>
     </FeatureContainer>
     <FeatureContainer>
-      <FeatureContent sm={12} md={6}>
+      <FeatureContent sm={6}>
         <Tag type={TextTypes.BODY_TINY} heavy>
           {featureTimeline.tag}
         </Tag>
@@ -205,15 +205,15 @@ const Features = ({
           </Link>
         )}
       </FeatureContent>
-      <ImageContainer sm={12} md={5} mdShift={1}>
+      <ImageContainer sm={5} mdShift={1}>
         <TimelineImage src={timelineImage} />
       </ImageContainer>
     </FeatureContainer>
     <FeatureContainer>
-      <ImageContainer sm={12} md={5}>
+      <ImageContainer sm={5}>
         <AnalyticsImage src={analyticsImage} />
       </ImageContainer>
-      <FeatureContent sm={12} md={6} mdShift={1}>
+      <FeatureContent sm={6} mdShift={1}>
         <Tag type={TextTypes.BODY_TINY} heavy>
           {featureAnalytics.tag}
         </Tag>
@@ -237,7 +237,7 @@ const Features = ({
       </FeatureContent>
     </FeatureContainer>
     <FeatureContainer>
-      <FeatureContent sm={12} md={6}>
+      <FeatureContent sm={6}>
         <Flex>
           <Tag type={TextTypes.BODY_TINY} heavy>
             {featurePrivacy.tag}
@@ -264,7 +264,7 @@ const Features = ({
           </Link>
         )}
       </FeatureContent>
-      <ImageContainer sm={12} md={5} mdShift={1}>
+      <ImageContainer sm={5} mdShift={1}>
         <PrivacyImage src={privacyImage} />
       </ImageContainer>
     </FeatureContainer>

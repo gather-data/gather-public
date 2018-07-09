@@ -54,6 +54,7 @@ const Inner = styled.div`
 `;
 
 const Logo = styled.img`
+  margin: 0;
   ${maxWidth(16)};
   ${maxHeight(7)};
 `;

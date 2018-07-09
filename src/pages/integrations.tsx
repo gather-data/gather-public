@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Fuse from 'fuse.js';
 import { utils } from 'hedron';
+import AndroidArrowForward from 'react-icons/lib/io/android-arrow-forward';
 
 import {
   Column,
@@ -32,10 +33,25 @@ const Container = styled.div`
 const StyledPage = styled(Page)`
   flex: 1;
   ${mb(15)};
+
+  ${utils.breakpoint(
+    'sm',
+    () => `
+    ${mt(-5)()};
+  `
+  )};
+
   ${utils.breakpoint(
     'md',
     () => `
-    ${mt(-30)()};
+    ${mt(-10)()};
+  `
+  )};
+
+  ${utils.breakpoint(
+    'lg',
+    () => `
+    ${mt(-20)()};
   `
   )};
 `;
@@ -43,6 +59,7 @@ const StyledPage = styled(Page)`
 const IntegrationsBackground = styled.img`
   width: 100%;
   pointer-events: none;
+  z-index: -1;
 `;
 
 const TitleContainer = styled(Column)`
@@ -55,7 +72,7 @@ const TitleContainer = styled(Column)`
   ${utils.breakpoint(
     'md',
     () => `
-    ${mb(-5)};
+    ${mb(-10)()};
   `
   )};
 `;
@@ -76,7 +93,7 @@ function groupBy(objectArray, property) {
 }
 
 class IntegrationsContainer extends Component {
-  state = { category: '', query: '' };
+  state = { category: null, query: '' };
 
   getServices = () => {
     const {
@@ -85,7 +102,9 @@ class IntegrationsContainer extends Component {
       },
     } = this.props;
 
-    let services = servicesWithNodes.map(sn => sn.node).filter(s => s.name);
+    let services = servicesWithNodes
+      .map(sn => sn.node)
+      .filter(s => s.is_available && s.name);
 
     // Create a service for each of its categories
     services = services
@@ -128,7 +147,14 @@ class IntegrationsContainer extends Component {
       services = fuse.search(query);
     }
 
-    const serviceGroups = groupBy(services, 'category');
+    let serviceGroups = Object.entries(groupBy(services, 'category'));
+    serviceGroups.sort(([category]) => {
+      if (category === 'Popular') {
+        return -1;
+      }
+
+      return 0;
+    });
     return serviceGroups;
   };
 
@@ -150,6 +176,8 @@ class IntegrationsContainer extends Component {
           <Link
             type={LinkTypes.BUTTON_PRIMARY}
             href="https://app.gatherdata.co/signup"
+            iconEnd
+            icon={<AndroidArrowForward size={24} />}
           >
             Free Trial
           </Link>

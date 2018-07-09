@@ -51,7 +51,7 @@ const HeroImage = styled.img`
   display: none;
 
   ${utils.breakpoint(
-    'lg',
+    'md',
     () => `
       transform: scale(1.4) translate(40px, 0);
       display: block;
@@ -88,7 +88,7 @@ const Hero = ({ title, titleHighlight, subtitle, ctaText, trialText }) => {
   return (
     <Page width={pageSmallWidth}>
       <Container>
-        <Column md={12} lg={6}>
+        <Column sm={6}>
           <span>
             {first && (
               <Text
@@ -133,7 +133,7 @@ const Hero = ({ title, titleHighlight, subtitle, ctaText, trialText }) => {
             {trialText}
           </TrialText>
         </Column>
-        <Column md={12} lg={6}>
+        <Column sm={6}>
           <HeroImage src={hero} />
         </Column>
       </Container>
