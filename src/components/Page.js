@@ -188,11 +188,12 @@ export default function Doc({ data, pathContext }) {
             <Text color={colors.navy} heavy mb={1}>
               {`More from ${post.frontmatter.category}`}
             </Text>
-            {otherPostsFromCategory.edges.map(({ node: item }) => (
-              <Link mb={0.5} to={item.frontmatter.path}>
-                {item.frontmatter.title}
-              </Link>
-            ))}
+            {otherPostsFromCategory &&
+              otherPostsFromCategory.edges.map(({ node: item }) => (
+                <Link mb={0.5} to={item.frontmatter.path}>
+                  {item.frontmatter.title}
+                </Link>
+              ))}
           </Box>
         </Flex>
       </StyledPage>
