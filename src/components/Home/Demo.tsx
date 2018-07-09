@@ -40,7 +40,7 @@ const HeroImage = styled.img`
   ${utils.breakpoint(
     'md',
     () => `
-      transform: translate(0, 60px);
+      transform: translate(0, 40px);
     `
   )};
 `;
@@ -48,6 +48,13 @@ const HeroImage = styled.img`
 const ImageContainer = styled(Column)`
   display: flex;
   justify-content: center;
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+      margin-bottom: -60px;
+    `
+  )};
 `;
 
 const Demo = () => (
