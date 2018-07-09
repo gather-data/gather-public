@@ -13,7 +13,9 @@ Gather unblocks customer support teams by empowering them to build the internal 
 
 **Does Gather replace my helpdesk?**
 
-No. Keep your favorite helpdesk to communicate with your customers. Gather is the link between your external communications and your internal processes. We help streamline those processes by aggregating data into a single view and automating your repetitive workflows.
+No, keep your favorite helpdesk to communicate with your customers! Gather is the link between your external communications and your internal processes. We help streamline those processes by aggregating data into a single view and automating your repetitive workflows, making the communication seamless.
+
+We currently work with these helpdesks \[INSERT INTEGRATION LINK].
 
 **Can I try Gather for free?**
 
@@ -21,4 +23,4 @@ Of course! You can trial Gather free for 14 days - [sign up here](https://app.ga
 
 **FAQ & Contact**
 
-Need assistance or have a question we haven't answered? Check out our [FAQ](/help/faq) or get in touch at support@gatherdata.co_**. **_We're here to help!
+Need assistance or have a question we haven't answered? Check out our [FAQ](/help/faq) or get in touch at support@gatherdata.co**.  **We're here to help!

@@ -3,44 +3,72 @@ path: /help/getting-started/setting-up
 title: Setting Up
 category: Getting Started
 ---
-Set up should only take about 15 minutes for connections and maximum 1 hour for automations. You might need a developer to help with set up. This is the only stage where they might need to be involved. Think about which connections you need and what automations you’d like to prioritize to start out. 
+This article will help you set up Connections and Magic Actions, inviting your team members and configurations. Set up should only take about 15 minutes for connections and maximum 1 hour for automations. You might need a developer to help with set up. This is the only stage where they might need to be involved. 
 
-Connections
+For more in-depth walkthroughs, check out our Guides \[INSERT LINK] section.
 
-Adding connections
+## Starting out
 
-You will need an API key for 2 of our integrations: your own database and Chargify. All of our other supported integrations use OAuth. This means if you have the login for the connection you want to add, all you have to do is click a “connect” button.
+Think about which Connections you need and what automations you’d like to prioritize.
 
-Database
+## **Connections**
 
-Chargify
+**Adding connections**
 
-All other integrations
+**Database**\
+You will need an API key to connect to your database(s).
 
-Invite your developer
+**Chargify**\
+You will need an API key to connect to your Chargify account.
 
-Magic actions
+**All other integrations**\
+Make sure you have account and login details for the connection you want to add. All you have to do is click the “Connect” button. If you don't have login details to the 3rd party service, you might have to ask whoever is the admin it to help.
 
-Adding actions
+**Invite your developer**\
+On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
 
-Refund flow
+**\[Insert Screenshot]**
 
-Extending free trial
+## **Magic actions**
 
-Order check
+**Adding actions**\
+For 3rd party services that you have account details for, you can configure it all yourself using our easy step-by-step Builder. If your actions involve your database or internal API, you will need to get help from your developer team. This could include actions like extending a trial. The developer would create an API endpoint and hook it up to an action that triggers it. It can be as simple or as complex as you want it to be.
 
-Invite your developer
+Not sure what to add? Check out our Guides:
 
-Invite your team
+**Refund flow \[INSERT LINK]**\
+**Extending free trial \[INSERT LINK]**\
+**Order check \[INSERT LINK]**
 
-Invite other users
+**Invite your developer**\
+On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
 
-Invite developers?
+**\[Insert Screenshot]**
 
-Configuration
+## **Invite your team**
 
-Views
+**Invite team members**\
+On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
 
-Modules
+**\[Insert Screenshot]**
 
-Configuring actions through Builder
+## **Configuration**
+
+In order to configure changes to Views, Modules and Actions, you have to be in "Configure" mode.\
+\
+**Views**\
+On the left side navigation bar, head over to "All Views". Click the "Configure" button on the top right. A modal will pop up:
+
+\[INSERT MODAL]
+
+You can add new fields, reorder them by dragging the tags and delete the fields by clicking the "x".
+
+\[INSERT GIF]
+
+You can add searchable fields by entering them in "Search Fields" to make it easier to navigate to the right item in the view.
+
+\[INSERT GIF]
+
+**Modules**
+
+**Configuring actions through Builder**
