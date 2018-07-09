@@ -36,7 +36,7 @@ const FeatureContainer = styled(Row)`
   ${utils.breakpoint(
     'md',
     () => `
-      ${mb(30)()};
+      ${mb(22)()};
     `
   )};
 `;
@@ -61,7 +61,7 @@ const Container = styled(Page)`
   ${utils.breakpoint(
     'md',
     () => `
-      ${mt(35)()};
+      ${mt(30)()};
     `
   )};
 `;
@@ -133,10 +133,10 @@ const Features = ({
         <Tag type={TextTypes.BODY_TINY} heavy>
           {featureData.tag}
         </Tag>
-        <Text mt={2} type={TextTypes.HEADING_2}>
+        <Text mt={2} type={TextTypes.HEADING_2} color={colors.primary}>
           {featureData.title}
         </Text>
-        <Text mt={1} type={TextTypes.BODY}>
+        <Text color={colors.navy80} mt={1} type={TextTypes.BODY}>
           {featureData.copy}
         </Text>
         {featureData.ctaTo && (
@@ -163,10 +163,10 @@ const Features = ({
         <Tag type={TextTypes.BODY_TINY} heavy>
           {featureMagicActions.tag}
         </Tag>
-        <Text mt={2} type={TextTypes.HEADING_2}>
+        <Text mt={2} type={TextTypes.HEADING_2} color={colors.primary}>
           {featureMagicActions.title}
         </Text>
-        <Text mt={1} type={TextTypes.BODY}>
+        <Text mt={1} type={TextTypes.BODY} color={colors.navy80}>
           {featureMagicActions.copy}
         </Text>
         {featureMagicActions.ctaTo && (
@@ -187,10 +187,10 @@ const Features = ({
         <Tag type={TextTypes.BODY_TINY} heavy>
           {featureTimeline.tag}
         </Tag>
-        <Text mt={2} type={TextTypes.HEADING_2}>
+        <Text mt={2} type={TextTypes.HEADING_2} color={colors.primary}>
           {featureTimeline.title}
         </Text>
-        <Text mt={1} type={TextTypes.BODY}>
+        <Text mt={1} type={TextTypes.BODY} color={colors.navy80}>
           {featureTimeline.copy}
         </Text>
         {featureTimeline.ctaTo && (
@@ -217,10 +217,10 @@ const Features = ({
         <Tag type={TextTypes.BODY_TINY} heavy>
           {featureAnalytics.tag}
         </Tag>
-        <Text mt={2} type={TextTypes.HEADING_2}>
+        <Text mt={2} type={TextTypes.HEADING_2} color={colors.primary}>
           {featureAnalytics.title}
         </Text>
-        <Text mt={1} type={TextTypes.BODY}>
+        <Text mt={1} type={TextTypes.BODY} color={colors.navy80}>
           {featureAnalytics.copy}
         </Text>
         {featureAnalytics.ctaTo && (
@@ -238,13 +238,18 @@ const Features = ({
     </FeatureContainer>
     <FeatureContainer>
       <FeatureContent sm={12} md={6}>
-        <Tag type={TextTypes.BODY_TINY} heavy>
-          {featurePrivacy.tag}
-        </Tag>
-        <Text mt={2} type={TextTypes.HEADING_2}>
+        <Flex>
+          <Tag type={TextTypes.BODY_TINY} heavy>
+            {featurePrivacy.tag}
+          </Tag>
+          <Tag type={TextTypes.BODY_TINY} heavy color={colors.blue}>
+            Coming soon
+          </Tag>
+        </Flex>
+        <Text mt={2} type={TextTypes.HEADING_2} color={colors.primary}>
           {featurePrivacy.title}
         </Text>
-        <Text mt={1} type={TextTypes.BODY}>
+        <Text mt={1} type={TextTypes.BODY} color={colors.navy80}>
           {featurePrivacy.copy}
         </Text>
         {featurePrivacy.ctaTo && (

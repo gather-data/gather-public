@@ -23,6 +23,7 @@ import {
   pt,
   pb,
   mr,
+  ml,
 } from 'gather-style';
 
 import Logo from './Logo';
@@ -118,6 +119,7 @@ const NavLink = styled(Link)`
       width: max-content;
       &:last-child {
         ${mt(0)()};
+        ${ml(2)()};
       }
     `
   )};
@@ -158,6 +160,7 @@ class Navbar extends Component {
           href={link.to && link.to.startsWith('https') && link.to}
           type="text"
           mr={3}
+          color={colors.navy}
         >
           {link.label}
         </NavLink>

@@ -11,6 +11,7 @@ const Home = ({ data: { homeJson: home, footerJson: footer } }) => (
   <div>
     <Hero
       title={home.title}
+      titleHighlight={home.titleHighlight}
       subtitle={home.subtitle}
       ctaText={home.ctaText}
       trialText={home.trialText}
@@ -55,6 +56,7 @@ export const query = graphql`
     }
     homeJson {
       title
+      titleHighlight
       ctaText
       trialText
       subtitle

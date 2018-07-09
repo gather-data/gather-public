@@ -149,6 +149,7 @@ collections:
         file: content/pages/home/home.json
         fields:
           - {label: Title, name: title, widget: string}
+          - {label: Title Highlight, name: titleHighlight, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: 'CTA Text', name: ctaText, widget: string}
           - {label: 'Trial Text', name: trialText, widget: string}

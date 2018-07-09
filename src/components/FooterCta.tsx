@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { utils } from 'hedron';
+import AndroidArrowForward from 'react-icons/lib/io/android-arrow-forward';
 
 import {
   Flex,
@@ -12,24 +13,38 @@ import {
   pb,
   ml,
   mb,
+  mt,
+  pv,
+  ph,
+  colors,
+  boxShadow,
+  borderRadius,
+  Page,
   Column,
+  Row,
+  pageSmallWidth,
 } from 'gather-style';
 
 import Footer from './Footer';
 import footerImage from './footer.svg';
 
 const InnerContainer = styled(Flex)`
-  ${pt(20)};
-  ${pb(14)};
+  ${mt(14)};
+  ${mb(7)};
+  ${pv(6)};
+  ${ph(3)};
+  ${borderRadius} ${boxShadow}
   flex-flow: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  display: flex;
+  background: ${colors.purple};
 
   ${utils.breakpoint(
     'md',
     () => `
-      ${pt(30)()};
-      ${pb(30)()};
+      ${mt(30)()};
+      ${mb(20)()};
       flex-flow: row;
     `
   )};
@@ -37,7 +52,7 @@ const InnerContainer = styled(Flex)`
 
 const FooterImage = styled.img`
   margin: 0;
-  transform: translate(0, 2px) scale(1.01);
+  transform: translate(0, 2px) scaley(1.01);
   width: 100%;
 `;
 
@@ -72,22 +87,33 @@ const FooterCta = ({
   linkGroups,
 }) => (
   <Flex flow="column">
-    <Column>
-      <InnerContainer>
-        <TextContainer alignItems="flex-start" flow="column">
-          <Text type={TextTypes.HEADING_3}>{title}</Text>
-          <Text type={TextTypes.BODY_SMALL}>{subtitle}</Text>
-        </TextContainer>
-        <CtaLink
-          type={LinkTypes.BUTTON_PRIMARY}
-          size="large"
-          href="https://app.gatherdata.co/signup"
-        >
-          {ctaText}
-        </CtaLink>
-      </InnerContainer>
-    </Column>
-    <FooterImage src={footerImage} />
+    <Page width={pageSmallWidth}>
+      <Row>
+        <Column>
+          <InnerContainer>
+            <TextContainer alignItems="flex-start" flow="column">
+              <Text color={colors.white} type={TextTypes.HEADING_3}>
+                {title}
+              </Text>
+              <Text color={colors.textWhiteFaded} type={TextTypes.BODY_SMALL}>
+                {subtitle}
+              </Text>
+            </TextContainer>
+            <CtaLink
+              type={LinkTypes.BUTTON_PRIMARY}
+              size="large"
+              href="https://app.gatherdata.co/signup"
+              iconEnd
+              icon={<AndroidArrowForward size={24} />}
+              color={colors.white}
+              textColor={colors.primary}
+            >
+              {ctaText}
+            </CtaLink>
+          </InnerContainer>
+        </Column>
+      </Row>
+    </Page>
     <Footer copyright={copyright} madeIn={madeIn} linkGroups={linkGroups} />
   </Flex>
 );

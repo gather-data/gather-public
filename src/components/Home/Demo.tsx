@@ -23,13 +23,6 @@ import demo from './demo.svg';
 
 const Container = styled(Row)`
   background: ${colors.purple};
-
-  ${utils.breakpoint(
-    'md',
-    () => `
-      ${mb(30)};
-    `
-  )};
 `;
 
 const CtaRow = styled(Flex)`

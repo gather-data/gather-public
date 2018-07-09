@@ -20,7 +20,6 @@ import Logo from './Logo';
 
 const Container = styled(Flex)`
   align-self: stretch;
-  background: ${colors.purple};
   ${pv(6)};
 `;
 
@@ -62,14 +61,10 @@ const Footer = ({ copyright, madeIn, linkGroups }) => (
         <Column md={6}>
           <CompanyContainer flow="column" alignItems="flex-start">
             <Logo showName={false} />
-            <Text
-              color={colors.textWhiteFaded}
-              mt={1}
-              type={TextTypes.BODY_SMALL}
-            >
+            <Text color={colors.navy60} mt={2} type={TextTypes.BODY_SMALL}>
               {copyright}
             </Text>
-            <Text color={colors.textWhiteFaded} type={TextTypes.BODY_SMALL}>
+            <Text color={colors.navy60} type={TextTypes.BODY_SMALL}>
               {madeIn}
             </Text>
           </CompanyContainer>
@@ -79,15 +74,11 @@ const Footer = ({ copyright, madeIn, linkGroups }) => (
             {linkGroups.map(linkGroup => (
               <Column md={4}>
                 <LinksContainer flow="Column" alignItems="flex-start">
-                  <Text color={colors.white} mb={2} heavy type={TextTypes.BODY}>
+                  <Text mb={1} heavy type={TextTypes.BODY}>
                     {linkGroup.title}
                   </Text>
                   {linkGroup.links.map(link => (
-                    <Link
-                      color={colors.white}
-                      type={LinkTypes.Text}
-                      to={link.to}
-                    >
+                    <Link type={LinkTypes.Text} to={link.to}>
                       {link.label}
                     </Link>
                   ))}

@@ -15,7 +15,7 @@
         "ctaText": "",
         "ctaTo": ""
     },
-    "trialText": "14 day free trial, no credit card required.",
+    "trialText": "14 day free trial. No credit card required.",
     "featureMagicActions": {
         "title": "Magic Actions",
         "copy":
@@ -28,7 +28,7 @@
     "featureAnalytics": {
         "title": "Be Data Driven",
         "copy":
-            "See every action taken. Easily add and read through notes from teammates for seamless interactions with customers.",
+            "Track actions taken and answer simple questions like how many refunds were given this week. Use data to help improve internal policies.",
         "tag": "Analytics",
         "ctaText": "",
         "ctaTo": ""
@@ -56,9 +56,10 @@
         "ctaTo": ""
     },
     "title": "Mission Control For Growing Support Teams",
+    "titleHighlight": "Mission Control",
     "footerCta": {
         "title": "Let's get started",
-        "subtitle": "14 day free trial, no credit card required.",
+        "subtitle": "14 day free trial. No credit card required.",
         "ctaText": "Start Free Trial"
     }
 }

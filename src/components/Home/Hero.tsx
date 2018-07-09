@@ -1,6 +1,7 @@
 import React from 'react';
 import { utils } from 'hedron';
 import styled from 'styled-components';
+import AndroidArrowForward from 'react-icons/lib/io/android-arrow-forward';
 
 import {
   Page,
@@ -69,28 +70,75 @@ const TrialText = styled(Text)`
   )};
 `;
 
-const Hero = ({ title, subtitle, ctaText, trialText }) => (
-  <Page width={pageSmallWidth}>
-    <Container>
-      <Column md={12} lg={6}>
-        <Text type={TextTypes.HEADING_1}>{title}</Text>
-        <Text mt={2} type={TextTypes.BODY}>
-          {subtitle}
-        </Text>
-        <CtaRow alignItems="flex-start" flow="column">
-          <Link to="/" type={LinkTypes.BUTTON_PRIMARY} mr={2}>
-            {ctaText}
-          </Link>
-          <TrialText color={colors.purple80} type={TextTypes.BODY_SMALL}>
+function splitTextWithHighlight(text, highlight) {
+  const match = text.match(`(${highlight})`);
+  const start = match.index;
+  const end = start + highlight.length;
+
+  const first = text.slice(0, start);
+  const second = text.slice(start, end);
+  const last = text.slice(end);
+
+  return [first, second, last];
+}
+
+const Hero = ({ title, titleHighlight, subtitle, ctaText, trialText }) => {
+  const [first, second, last] = splitTextWithHighlight(title, titleHighlight);
+
+  return (
+    <Page width={pageSmallWidth}>
+      <Container>
+        <Column md={12} lg={6}>
+          <span>
+            {first && (
+              <Text
+                color={colors.primary}
+                type={TextTypes.HEADING_1}
+                heavy={false}
+              >
+                {first}
+              </Text>
+            )}
+            {second && (
+              <Text color={colors.primary} type={TextTypes.HEADING_1}>
+                {second}
+              </Text>
+            )}
+            {last && (
+              <Text
+                color={colors.primary}
+                type={TextTypes.HEADING_1}
+                heavy={false}
+              >
+                {last}
+              </Text>
+            )}
+          </span>
+          <Text mt={2} type={TextTypes.BODY} color={colors.navy80}>
+            {subtitle}
+          </Text>
+          <CtaRow alignItems="flex-start" flow="column">
+            <Link
+              to="/"
+              type={LinkTypes.BUTTON_PRIMARY}
+              mb={1}
+              size="large"
+              iconEnd
+              icon={<AndroidArrowForward size={24} />}
+            >
+              {ctaText}
+            </Link>
+          </CtaRow>
+          <TrialText color={colors.navy60} type={TextTypes.BODY_SMALL}>
             {trialText}
           </TrialText>
-        </CtaRow>
-      </Column>
-      <Column md={12} lg={6}>
-        <HeroImage src={hero} />
-      </Column>
-    </Container>
-  </Page>
-);
+        </Column>
+        <Column md={12} lg={6}>
+          <HeroImage src={hero} />
+        </Column>
+      </Container>
+    </Page>
+  );
+};
 
 export default Hero;
