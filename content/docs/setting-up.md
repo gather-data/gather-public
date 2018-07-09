@@ -37,7 +37,7 @@ On the left side navigation bar, head over to "All Views". Click the "Add View" 
 A modal will pop up:
 [INSERT ADD VIEW POP UP HERE]
 
-Just enter the name for the View (ex. Customers, Orders, Partners, Users) and select the data source from the Connections you've already added.
+Just enter the name for the View (ex. Customers, Payments, Partners, Users, etc.) and select the data source from the Connections you've already added.
 
 ### Configuring Views
 On the left side navigation bar, head over to "All Views". Click on the View from the list. Once you're in the View you want to change, click "Configure" on the top right.  
