@@ -17,36 +17,36 @@ Think about which Connections you need and what automations you’d like to prio
 
 You will need an API key for 2 of our integrations: your own database and Chargify. All of our other supported integrations use OAuth. This means if you have the login for the connection you want to add, all you have to do is click a “connect” button.
 
-Database
+**Database**
 
-Chargify
+**Chargify**
 
-All other integrations
+**All other integrations**
 
-Invite your developer
+**Invite your developer**
 
-**Magic actions**
+## **Magic actions**
 
-Adding actions
+**Adding actions**
 
-Refund flow
+**Refund flow**
 
-Extending free trial
+**Extending free trial**
 
-Order check
+**Order check**
 
-Invite your developer
+**Invite your developer**
 
-Invite your team
+## Invite your team
 
-Invite other users
+**Invite other users**
 
-Invite developers?
+**Invite developers?**
 
-Configuration
+## Configuration
 
-Views
+**Views**
 
-Modules
+**Modules**
 
-Configuring actions through Builder
+**Configuring actions through Builder**
