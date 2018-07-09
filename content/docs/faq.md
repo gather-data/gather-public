@@ -1,5 +1,5 @@
 ---
-path: /help/FAQ
+path: /help/faq
 title: FAQ
 category: FAQ
 ---
