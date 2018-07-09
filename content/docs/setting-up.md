@@ -25,6 +25,8 @@ You will need an API key for 2 of our integrations: your own database and Chargi
 
 **Invite your developer**
 
+**\[Insert Screenshot]**
+
 ## **Magic actions**
 
 **Adding actions**
