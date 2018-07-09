@@ -9,8 +9,7 @@ Gather, Inc.
 
 **Location**
 
-C/O Techstars, 303 Spring Street,\
-SA
+C/O Techstars, 303 Spring Street, New York, NY, 10013, USA
 
 **Additional information**
 
