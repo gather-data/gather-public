@@ -32,11 +32,12 @@ On the left side navigation bar, go to Team Settings > Members. Then click "Invi
 ## Views
 
 ### Adding Views
-
-
+On the left side navigation bar, head over to "All Views". Click the "Add View" button on the top right.
 
 ### Configuring Views
-On the left side navigation bar, head over to "All Views". Click the "Configure" button on the top right. A modal will pop up:
+On the left side navigation bar, head over to "All Views". Click on the View from the list. Once you're in the View you want to change, click "Configure" on the top right.  
+
+A modal will pop up:
 
 \[INSERT MODAL]
 
@@ -50,7 +51,7 @@ You can add searchable fields by entering them in "Search Fields" to make it eas
 
 ## Modules
 
-In order to add or modify a Modules, you have to be in "Configure" mode. Navigate to an item that you want to add more detail to (for example, a Customer page) then click the "Configure" button in the top right corner.
+In order to add or modify a Modules, you have to be in "Configure" mode. Navigate to an item that you want to add more detail to (for example, a Customer page) then click the "Configure" button in the top right corner. Once the Configure button switches to green, you are in "Configure" mode, which allows you to modify Modules and Actions.
 
 ### Adding Modules
 
