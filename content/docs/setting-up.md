@@ -39,6 +39,8 @@ A modal will pop up:
 
 Just enter the name for the View (ex. Customers, Payments, Partners, Users, etc.) and select the data source from the Connections you've already added.
 
+Repeat this step as needed for each view you want to see.
+
 ### Configuring Views
 On the left side navigation bar, head over to "All Views". Click on the View from the list. Once you're in the View you want to change, click "Configure" on the top right.  
 
