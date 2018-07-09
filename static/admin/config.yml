@@ -260,20 +260,27 @@ collections:
                 required: false
           - label: 'Customers'
             name: customers
-            widget: list
+            widget: object
             fields:
-              - label: Testimonial
+              - label: title
+                name: title
+                widget: string
+              - label: Testimonials
                 name: testimonial
-                widget: string
-              - label: Name
-                name: name
-                widget: string
-              - label: Job
-                name: job
-                widget: string
-              - label: Image
-                name: image
-                widget: image
+                widget: list
+                fields:
+                  - label: Testimonial
+                    name: testimonial
+                    widget: string
+                  - label: Name
+                    name: name
+                    widget: string
+                  - label: Job
+                    name: job
+                    widget: string
+                  - label: Image
+                    name: image
+                    widget: image
           - label: 'Footer CTA'
             name: footerCta
             widget: object
