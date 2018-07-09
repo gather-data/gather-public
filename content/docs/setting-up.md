@@ -46,7 +46,7 @@ Repeat this step as needed for each view you want to see.
 On the left side navigation bar, head over to "All Views". Find the View you want to edit or delete and click the "..." to access the drop down menu.
 
 ### Configuring Views
-From "All Views", click into the selected View from the list. Once you're in the View you want to change, click "Configure" on the top right.  
+From "All Views", click into the selected View from the list. Once you're in the View you want to configure, click "Configure" button in the top right corner.  
 
 A modal will pop up:
 
