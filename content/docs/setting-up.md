@@ -3,7 +3,7 @@ path: /help/getting-started/setting-up
 title: Setting Up
 category: Getting Started
 ---
-Set up should only take about 15 minutes for connections and maximum 1 hour for automations. You might need a developer to help with set up. This is the only stage where they might need to be involved. 
+Set up should only take about 15 minutes for connections and maximum 1 hour for automations. You might need a developer to help with set up. This is the only stage where they might need to be involved. For more in-depth Guides, look at our Guides \[INSERT LINK] section.
 
 ## **Starting out**
 
