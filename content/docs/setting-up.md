@@ -102,7 +102,21 @@ Not sure what to add? Check out our Guides:
 **Order check \[INSERT LINK]**
 
 **Configuring actions through Builder**\
-In order to add and modify Actions, you have to be in "Configure" mode. 
+In order to add and modify Actions, you have to be in "Configure" mode. Navigate to the View or List you want to create an action for.
+
+[INSERT EXAMPLE FOR VIEW AND LIST]
+
+Within the Actions module, click the "Create new action" button. 
+
+A window will pop up:
+
+[Create new Action NAME & CATEGORY GIF]
+
+Type what you want the Action to be called and what category of actions you want it to be grouped into and click "Next" to take you to the Builder tab.
+
+Within Builder...
+[TO DO]
+
 
 **Invite your developer**\
 On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
