@@ -34,7 +34,7 @@ On the left side navigation bar, go to Team Settings > Members. Then click "Invi
 ### Adding Views
 On the left side navigation bar, head over to "All Views". Click the "Add View" button in top right corner.
 
-A modal will pop up:
+A window will pop up:
 [INSERT ADD VIEW POP UP HERE]
 
 Just enter the name for the View (ex. Customers, Payments, Partners, Users, etc.) and select the data source from the Connections you've already added.
@@ -48,9 +48,9 @@ On the left side navigation bar, head over to "All Views". Find the View you wan
 ### Configuring Views
 From "All Views", click into the selected View from the list. Once you're in the View you want to configure, click "Configure" button in the top right corner.  
 
-A modal will pop up:
+A window will pop up:
 
-\[INSERT MODAL]
+\[INSERT WINDOW]
 
 You can add new fields, reorder them by dragging the tags and delete the fields by clicking the "x".
 
@@ -66,7 +66,11 @@ In order to add or modify a Module, you have to be in "Configure" mode. Navigate
 
 ### Adding Modules
 
+Click the "+ Add Module" button on the page below all of your current active Modules.
 
+A window will pop up:
+
+ 
 
 ### Configuring Modules
 
