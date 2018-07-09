@@ -117,7 +117,6 @@ Type what you want the Action to be called and what category of actions you want
 Within Builder...
 [TO DO]
 
-
 **Invite your developer**\
 On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
 
