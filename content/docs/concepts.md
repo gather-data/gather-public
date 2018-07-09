@@ -1,5 +1,5 @@
 ---
-path: help/getting-started/concepts
+path: /help/getting-started/concepts
 title: Concepts
 category: Getting Started
 ---
