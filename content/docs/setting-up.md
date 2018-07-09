@@ -15,28 +15,23 @@ Think about which Connections you need and what automations you’d like to prio
 
 **Adding connections**
 
-**Database**
-
+**Database**\
 You will need an API key to connect to your database(s).
 
-**Chargify**
-
+**Chargify**\
 You will need an API key to connect to your Chargify account.
 
 **All other integrations**\
-\
 Make sure you have account and login details for the connection you want to add. All you have to do is click the “Connect” button. If you don't have login details to the 3rd party service, you might have to ask whoever is the admin it to help.
 
-**Invite your developer**
-
+**Invite your developer**\
 On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
 
 **\[Insert Screenshot]**
 
 ## **Magic actions**
 
-**Adding actions**
-
+**Adding actions**\
 For 3rd party services that you have account details for, you can configure it all yourself using our easy step-by-step Builder. If your actions involve your database or internal API, you will need to get help from your developer team. This could include actions like extending a trial. The developer would create an API endpoint and hook it up to an action that triggers it. It can be as simple or as complex as you want it to be.
 
 Not sure what to add?
@@ -48,15 +43,13 @@ Not sure what to add?
 **Order check \[INSERT LINK]**
 
 **Invite your developer**\
-\
 On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
 
 **\[Insert Screenshot]**
 
 ## Invite your team
 
-**Invite team members**
-
+**Invite team members**\
 On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
 
 **\[Insert Screenshot]**
