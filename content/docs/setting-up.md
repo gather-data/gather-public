@@ -29,6 +29,8 @@ Make sure you have account and login details for the connection you want to add.
 
 **Invite your developer**
 
+On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
+
 **\[Insert Screenshot]**
 
 ## **Magic actions**
@@ -46,7 +48,10 @@ Not sure what to add?
 **Order check \[INSERT LINK]**
 
 **Invite your developer**\
-\[Insert Screenshot]
+\
+On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
+
+**\[Insert Screenshot]**
 
 ## Invite your team
 
