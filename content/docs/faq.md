@@ -33,7 +33,7 @@ Setting up Connections: You will need an API key for 2 of our integrations: your
 
 Setting up Magic Actions:
 
-## **Account**
+## **Account and Billing**
 
 **What happens after the trial?**
 
@@ -47,6 +47,10 @@ Yes. You can cancel anytime - hassle free.
 
 It’s really easy to add or remove reps whenever you like from within your account.
 
+**How many seats do I need to buy?**
+
+We have no minimum number of seats. If you need custom enterprise pricing, please contact us at sales@gatherdata.co.
+
 ## **Security**
 
 **Is it secure?**
@@ -57,8 +61,6 @@ Is my business data private and safe?
 
 Yes. Customer security and privacy is core to our values at Gather, and our team has extensive experience building secure applications.
 
-How many seats do I need to buy?
+## Contact
 
-We have no minimum number of seats. If you need custom enterprise pricing, please contact us at sales@gatherdata.co.
-
-Have more questions?
+Have more questions? Reach out at support@gatherdata.co. We're here to help!
