@@ -62,7 +62,7 @@ You can add searchable fields by entering them in "Search Fields" to make it eas
 
 ## Step 3: Modules
 
-In order to add or modify a Modules, you have to be in "Configure" mode. Navigate to an item that you want to add more detail to (for example, a Customer page) then click the "Configure" button in the top right corner. Once the Configure button switches to green, you are in "Configure" mode, which allows you to modify Modules and Actions.
+In order to add or modify a Module, you have to be in "Configure" mode. Navigate to an item that you want to add more detail to (for example, a Customer page) then click the "Configure" button in the top right corner. Once the Configure button switches to green, you are in "Configure" mode, which allows you to modify Modules and Actions.
 
 ### Adding Modules
 
