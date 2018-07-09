@@ -64,8 +64,7 @@ You can add searchable fields by entering them in "Search Fields" to make it eas
 
 ## Step 3: Modules
 
-In order to add or modify a Module, you have to be in "Configure" mode. Navigate to an item that you want to add more detail to (for example, a Customer page) then click the "Con
-figure" button in the top right corner. Once the Configure button switches to green, you are in "Configure" mode, which allows you to modify Modules and Actions.
+In order to add or modify a Module, you have to be in "Configure" mode. Navigate to an View that you want to add more detail to (for example, a Customer page) then click the "Configure" button in the top right corner. Once the Configure button switches to green, you are in "Configure" mode, which allows you to modify Modules and Actions.
 
 ### Adding Modules
 
@@ -94,7 +93,7 @@ You can add new fields, reorder them by dragging the tags and delete the fields 
 ## Step 4: Magic actions
 
 **Adding actions**\
-For 3rd party services that you have account details for, you can configure it all yourself using our easy step-by-step Builder. If your actions involve your database or internal API, you will need to get help from your developer team. This could include actions like extending a trial. The developer would create an API endpoint and hook it up to an action that triggers it. It can be as simple or as complex as you want it to be.
+For 3rd party services that you have account details for, you can build actions yourself using our easy step-by-step Builder. If your actions involve your database or internal API, you will need to get help from your developer team. This could include actions like extending a trial, resetting passwords, etc. The developer just needs to create an API endpoint and hook it up to an action that triggers it. It can be as simple or as complex as your team wants it to be.
 
 Not sure what to add? Check out our Guides:
 
@@ -103,7 +102,7 @@ Not sure what to add? Check out our Guides:
 **Order check \[INSERT LINK]**
 
 **Configuring actions through Builder**\
-In order to configure changes to Modules and Actions, you have to be in "Configure" mode.
+In order to add and modify Actions, you have to be in "Configure" mode. 
 
 **Invite your developer**\
 On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
