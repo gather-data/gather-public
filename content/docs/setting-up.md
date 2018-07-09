@@ -45,13 +45,16 @@ Not sure what to add?
 
 **Order check \[INSERT LINK]**
 
-**Invite your developer**
+**Invite your developer**\
+\[Insert Screenshot]
 
 ## Invite your team
 
-**Invite other users**
+**Invite team members**
 
+On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
 
+**\[Insert Screenshot]**
 
 ## Configuration
 
