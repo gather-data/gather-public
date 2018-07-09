@@ -33,7 +33,7 @@ All you have to do is just sign up. You will get a free 14 day trial just by cre
 
 Only for set up, which should take 15 minutes for connections and maximum 1 hour for automations.
 
-**Adding and Setting up Connections:** You will need an API key for 2 of our integrations: your own database and Chargify. All of our other supported integrations use OAuth. This means if you have an account and login details for the connection you want to add, all you have to do is click the “Connect” button. If you don't have login details to the 3rd party service, you might have to ask whoever is your admin to help.
+**Adding and Setting up Connections:** You will need an API key for 2 of our integrations: your own database and Chargify. All of our other supported integrations use OAuth. This means if you have an account and login details for the connection you want to add, all you have to do is click the “Connect” button. If you don't have login details to the 3rd party service, you might have to ask whoever is the admin to help.
 
 **Setting up Magic Actions:** For 3rd party services that you have account details for, you can configure it all yourself using our easy step-by-step Builder. If your actions involve your database or internal API, you will need to get help from your developer team. This could include actions like extending a trial. The developer would create an API endpoint and hook it up to an action that triggers it. It can be as simple or as complex as you want it to be.
 
