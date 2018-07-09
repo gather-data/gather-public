@@ -1,6 +1,6 @@
 ---
 path: /company/details
-title: Company details
+title: Company Details
 category: Company
 ---
 **Company name**
