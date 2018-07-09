@@ -17,4 +17,4 @@ Of course! You can trial Gather free for 14 days - [sign up here](https://app.ga
 
 ## Have more questions?
 
-Need assistance or have other questions we haven't answered? Check out our _**FAQ**_ or get in touch at support@gatherdata.co or **_chatting with us_**, we're here to help!
+Need assistance or have other questions we haven't answered? Check out our [FAQ](/help/faq) or get in touch at support@gatherdata.co or _**chatting with us**_, we're here to help!
