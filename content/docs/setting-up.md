@@ -39,7 +39,7 @@ A window will pop up:
 
 Just enter the name for the View (ex. Customers, Payments, Partners, Users, etc.) and select the data source from the Connections you've already added.
 
-Repeat this step as needed for each view you want to see.
+Repeat this step as needed for each View you want to see.
 
 ### Editing and Deleting Views
 
@@ -62,7 +62,8 @@ You can add searchable fields by entering them in "Search Fields" to make it eas
 
 ## Step 3: Modules
 
-In order to add or modify a Module, you have to be in "Configure" mode. Navigate to an item that you want to add more detail to (for example, a Customer page) then click the "Configure" button in the top right corner. Once the Configure button switches to green, you are in "Configure" mode, which allows you to modify Modules and Actions.
+In order to add or modify a Module, you have to be in "Configure" mode. Navigate to an item that you want to add more detail to (for example, a Customer page) then click the "Con
+figure" button in the top right corner. Once the Configure button switches to green, you are in "Configure" mode, which allows you to modify Modules and Actions.
 
 ### Adding Modules
 
@@ -70,7 +71,11 @@ Click the "+ Add Module" button on the page below all of your current active Mod
 
 A window will pop up:
 
- 
+[INSERT WINDOW]
+
+Just enter the name for the Module (ex. Customer Contact Information, Orders, Payments, Salesforce Account Information, etc.) and select the data source from the Connections you've already added.
+
+Repeat this step as needed for each Module you want to see on each View.
 
 ### Configuring Modules
 
