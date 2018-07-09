@@ -17,12 +17,12 @@ Step by step automations created in Builder.
 
 ## Views
 
-List view of your data.
+Views are windows into data. For example, a customer View will allow you to list all of your customers, filter them by location, search them by name, or view all the data for an individual customer.
 
 \[Insert image]
 
 ## Modules
 
-Detailed view of your data.
+When looking at an individual entity within a view (like an individual customer), you often want to see associated information about that entity. For example, when looking at an individual customer you probably need to see their Stripe account information or their latest order in Shopify. Modules are how you pull in that associated data.
 
 \[Insert image]
