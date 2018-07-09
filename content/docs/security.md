@@ -1,7 +1,7 @@
 ---
-path: /help/security
+path: /help/company/security
 title: Security
-category: Security
+category: Company
 ---
 
 PLACEHOLDER
