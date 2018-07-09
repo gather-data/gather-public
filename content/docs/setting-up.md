@@ -29,34 +29,13 @@ On the left side navigation bar, go to Team Settings > Members. Then click "Invi
 
 **\[Insert Screenshot]**
 
-## **Magic actions**
+## **Views**
 
-**Adding actions**\
-For 3rd party services that you have account details for, you can configure it all yourself using our easy step-by-step Builder. If your actions involve your database or internal API, you will need to get help from your developer team. This could include actions like extending a trial. The developer would create an API endpoint and hook it up to an action that triggers it. It can be as simple or as complex as you want it to be.
+**Adding Views**
 
-Not sure what to add? Check out our Guides:
 
-**Refund flow \[INSERT LINK]**\
-**Extending free trial \[INSERT LINK]**\
-**Order check \[INSERT LINK]**
 
-**Invite your developer**\
-On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
-
-**\[Insert Screenshot]**
-
-## **Invite your team**
-
-**Invite team members**\
-On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
-
-**\[Insert Screenshot]**
-
-## **Configuration**
-
-In order to configure changes to Views, Modules and Actions, you have to be in "Configure" mode.\
-\
-**Views**\
+**Configuring Views**\
 On the left side navigation bar, head over to "All Views". Click the "Configure" button on the top right. A modal will pop up:
 
 \[INSERT MODAL]
@@ -71,4 +50,39 @@ You can add searchable fields by entering them in "Search Fields" to make it eas
 
 **Modules**
 
-**Configuring actions through Builder**
+**Adding Modules**
+
+
+
+**Configuring Modules**\
+In order to configure changes to Modules and Actions, you have to be in "Configure" mode.
+
+Navigate to an item that you want to add more detail to (for example, a Customer page) then click the "Configure" button in the top right corner.
+
+Click edit 
+
+## **Magic actions**
+
+**Adding actions**\
+For 3rd party services that you have account details for, you can configure it all yourself using our easy step-by-step Builder. If your actions involve your database or internal API, you will need to get help from your developer team. This could include actions like extending a trial. The developer would create an API endpoint and hook it up to an action that triggers it. It can be as simple or as complex as you want it to be.
+
+Not sure what to add? Check out our Guides:
+
+**Refund flow \[INSERT LINK]**\
+**Extending free trial \[INSERT LINK]**\
+**Order check \[INSERT LINK]**
+
+**Configuring actions through Builder**\
+In order to configure changes to Modules and Actions, you have to be in "Configure" mode.
+
+**Invite your developer**\
+On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
+
+**\[Insert Screenshot]**
+
+## **Invite your team**
+
+**Invite team members**\
+On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
+
+**\[Insert Screenshot]**
