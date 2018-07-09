@@ -17,7 +17,7 @@ Gather unblocks customer support teams by empowering them to build the internal 
 
 No, keep your favorite helpdesk to communicate with your customers! Gather is the link between your external communications and your internal processes. We help streamline those processes by aggregating data into a single view and automating your repetitive workflows, making the communication seamless.
 
-Which helpdesks do we work with? \[INSERT INTEGRATION LINK]
+We currently work with these helpdesks \[INSERT INTEGRATION LINK].
 
 **Does Gather integrate with other applications?**
 
