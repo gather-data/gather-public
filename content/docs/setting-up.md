@@ -31,7 +31,7 @@ On the left side navigation bar, go to Team Settings > Members. Then click "Invi
 
 ## Views
 
-**Adding Views**
+### Adding Views
 
 
 
