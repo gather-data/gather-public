@@ -11,7 +11,7 @@ Connections are integrations. Adding a Connection to a 3rd party tool like Strip
 
 Magic Actions
 
-Step by step automations done through Builder. 
+Step by step automations created in Builder. 
 
 \[Insert image]
 
