@@ -13,6 +13,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           node {
             frontmatter {
               path
+              category
             }
           }
         }
@@ -40,6 +41,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         component: pageTemplate,
         context: {
           footer: result.data.footerJson,
+          category: node.frontmatter.category,
         }, // additional data can be passed via context
       });
     });

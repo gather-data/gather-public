@@ -11,6 +11,7 @@ import {
   pv,
   pb,
   pt,
+  p,
   border,
   borderRadius,
   Text,
@@ -38,6 +39,24 @@ const Divider = styled.div`
   background: ${colors.border};
   width: 100%;
   ${mv(6)};
+`;
+
+const Box = styled.div`
+  background: ${colors.purple10};
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  width: 100%;
+  ${borderRadius};
+  ${p(3)};
+
+  &:not(:last-child) {
+    ${mb(3)};
+  }
+`;
+
+const Contents = styled(Box)`
+  ${mt(3)};
 `;
 
 const Content = styled.div`
@@ -72,6 +91,17 @@ const Content = styled.div`
       ${LinkTypeToStyle[LinkTypes.TEXT]};
     }
 
+    h1,
+    h2,
+    h3,
+    h4 {
+      svg {
+        fill: ${colors.purple};
+        margin-bottom: 6px;
+        transform: translate(-8px, 0);
+      }
+    }
+
     h1 {
       color: ${colors.purple};
       ${TextTypeToStyle[TextTypes.HEADING_1]};
@@ -103,7 +133,10 @@ const Content = styled.div`
 `;
 
 export default function Doc({ data, pathContext }) {
-  const { markdownRemark: post } = data;
+  const {
+    markdownRemark: post,
+    allMarkdownRemark: otherPostsFromCategory,
+  } = data;
   const { footer } = pathContext;
   return (
     <div>
@@ -119,19 +152,48 @@ export default function Doc({ data, pathContext }) {
         <Text mt={3} mb={2} type={TextTypes.HEADING_1}>
           {post.frontmatter.title}
         </Text>
-        <Tag color={colors.white} heavy type={TextTypes.BODY_SMALL}>
+        <Tag heavy type={TextTypes.BODY_TINY}>
           {`${post.timeToRead} min read`}
         </Tag>
+        <Contents>
+          <Text color={colors.navy} heavy mb={1}>
+            Contents
+          </Text>
+          {post.headings.map(heading => (
+            <Link
+              mb={0.5}
+              to={`#${heading.value.toLowerCase().replace(' ', '-')}`}
+            >
+              {heading.value}
+            </Link>
+          ))}
+        </Contents>
         <Content>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </Content>
         <Divider />
-        <Flex>
-          <Link heavy to="/help">
-            All help articles
-          </Link>
-          <Text ml={1}>/</Text>
-          <Text ml={1}>{post.frontmatter.title}</Text>
+        <Flex flow="column" alignItems="flex-start">
+          <Flex>
+            <Link mb={3} heavy to="/help">
+              All help articles
+            </Link>
+            <Text mb={3} ml={1}>
+              /
+            </Text>
+            <Text mb={3} ml={1}>
+              {post.frontmatter.title}
+            </Text>
+          </Flex>
+          <Box>
+            <Text color={colors.navy} heavy mb={1}>
+              {`More from ${post.frontmatter.category}`}
+            </Text>
+            {otherPostsFromCategory.edges.map(({ node: item }) => (
+              <Link mb={0.5} to={item.frontmatter.path}>
+                {item.frontmatter.title}
+              </Link>
+            ))}
+          </Box>
         </Flex>
       </StyledPage>
       <Footer
@@ -144,13 +206,33 @@ export default function Doc({ data, pathContext }) {
 }
 
 export const pageQuery = graphql`
-  query DocByPath($path: String!) {
+  query DocByPath($path: String!, $category: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       timeToRead
+      headings(depth: h2) {
+        value
+        depth
+      }
       frontmatter {
         path
         title
+        category
+      }
+    }
+    allMarkdownRemark(
+      filter: {
+        frontmatter: { category: { eq: $category }, path: { ne: $path } }
+      }
+      limit: 1000
+    ) {
+      edges {
+        node {
+          frontmatter {
+            path
+            title
+          }
+        }
       }
     }
   }
