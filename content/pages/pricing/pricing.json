@@ -1,59 +1,69 @@
 {
-    "title": "Simple and transparent pricing",
-    "standard": {
-        "pricePerMonth": 50,
-        "cta": "Start Free Trial",
-        "benefits": [
-            { "text": "Aggregated data views" },
-            { "text": "Automate with Magic Actions" },
-            { "text": "All integrations includes" },
-            { "text": "Customer timeline" },
-            { "text": "Audit history and analytics" }
-        ]
+  "title": "Simple and transparent pricing",
+  "standard": {
+    "pricePerMonth": 50,
+    "cta": "Start Free Trial",
+    "benefits": [
+      {
+        "text": "Aggregated data views"
+      },
+      {
+        "text": "Automate with Magic Actions"
+      },
+      {
+        "text": "All integrations includes"
+      },
+      {
+        "text": "Customer timeline"
+      },
+      {
+        "text": "Audit history and analytics"
+      }
+    ]
+  },
+  "enterpise": {
+    "cta": "Contact Sales",
+    "benefits": [
+      {
+        "text": "Unlimited users"
+      },
+      {
+        "text": "Personal onboarding assistance"
+      },
+      {
+        "text": "Dedicated support"
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "How do I get started?",
+      "answer": "All you have to do is just sign up. You will get a free 14 day trial just by creating a new account. If you need any help, chat with us or email us at support@gatherdata.co."
     },
-    "enterpise": {
-        "cta": "Contact Sales",
-        "benefits": [
-            { "text": "Unlimited users" },
-            { "text": "Personal onboarding assistance" },
-            { "text": "Dedicated support" }
-        ]
+    {
+      "question": "What happens after the trial?",
+      "answer": "At the end of your trial, everything you set up and all of your configurations remain intact. You can login and fill in payment details to complete the purchase."
     },
-    "faqs": [
-        {
-            "question": "Some sort of question",
-            "answer":
-                "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi."
-        },
-        {
-            "question": "Some sort of question",
-            "answer":
-                "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi."
-        },
-        {
-            "question": "Some sort of question",
-            "answer":
-                "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi."
-        },
-        {
-            "question": "Some sort of question",
-            "answer":
-                "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi."
-        },
-        {
-            "question": "Some sort of question",
-            "answer":
-                "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi."
-        },
-        {
-            "question": "Some sort of question",
-            "answer":
-                "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi."
-        }
-    ],
-    "footerCta": {
-        "title": "Let's get started",
-        "subtitle": "14 day free trial, no credit card required.",
-        "ctaText": "Start Free Trial"
+    {
+      "question": "Can I cancel my plan?",
+      "answer": "Yes. You can cancel anytime - hassle free."
+    },
+    {
+      "question": "Does Gather integrate with other applications?",
+      "answer": "Yes. We integrate with a wide range of partners including Zendesk, Stripe, Chargify, Slack, databases and more. "
+    },
+    {
+      "question": "Is my business data private and safe?",
+      "answer": "Yes. Customer security and privacy is core to our values at Gather, and our team has extensive experience building secure applications."
+    },
+    {
+      "question": "How many seats do I need to buy?",
+      "answer": "We have no minimum number of seats. If you need custom enterprise pricing, please contact us at sales@gatherdata.co."
     }
+  ],
+  "footerCta": {
+    "title": "Let's get started",
+    "subtitle": "14 day free trial, no credit card required.",
+    "ctaText": "Start Free Trial"
+  }
 }
