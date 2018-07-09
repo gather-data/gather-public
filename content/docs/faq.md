@@ -3,7 +3,7 @@ path: /help/FAQ
 title: FAQ
 category: FAQ
 ---
-**General**
+## **General**
 
 **What is Gather?**
 
@@ -15,7 +15,11 @@ Gather unblocks customer support teams by empowering them to build the internal 
 
 **Does Gather replace my helpdesk?**
 
-**Set up**
+**Does Gather integrate with other applications?**
+
+Yes. We integrate with a wide range of partners including Zendesk, Stripe, Chargify, Slack, databases and more. Don’t see the one you need? Let us know \[Link to Drift]. It could already be on our roadmap!
+
+## **Set up**
 
 **How do I get started?**
 
@@ -29,7 +33,7 @@ Setting up Connections: You will need an API key for 2 of our integrations: your
 
 Setting up Magic Actions:
 
-**Account**
+## **Account**
 
 **What happens after the trial?**
 
@@ -43,25 +47,15 @@ Yes. You can cancel anytime - hassle free.
 
 It’s really easy to add or remove reps whenever you like from within your account.
 
-**Security**
+## **Security**
 
 **Is it secure?**
 
 Yes. We treat security very seriously. We encrypt API keys. We don't don't store data, only metadata. We encrypt all data in transit. See more details here.
 
-
-
-Does Gather integrate with other applications?
-
-Yes. We integrate with a wide range of partners including Zendesk, Stripe, Chargify, Slack, databases and more. Don’t see the one you need? Let us know \[Link to Drift]. It could already be on our roadmap!
-
-
-
 Is my business data private and safe?
 
 Yes. Customer security and privacy is core to our values at Gather, and our team has extensive experience building secure applications.
-
-
 
 How many seats do I need to buy?
 
