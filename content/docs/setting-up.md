@@ -13,7 +13,7 @@ Think about which Connections you need and what automations you’d like to prio
 
 ## Connections
 
-**Adding connections**
+### Adding connections
 
 **Database**\
 You will need an API key to connect to your database(s).
@@ -24,7 +24,7 @@ You will need an API key to connect to your Chargify account.
 **All other integrations**\
 Make sure you have account and login details for the connection you want to add. All you have to do is click the “Connect” button. If you don't have login details to the 3rd party service, you might have to ask whoever is the admin it to help.
 
-**Invite your developer**\
+### Invite your developer
 On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
 
 **\[Insert Screenshot]**
