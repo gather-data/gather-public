@@ -17,7 +17,7 @@ Gather unblocks customer support teams by empowering them to build the internal 
 
 **Does Gather integrate with other applications?**
 
-Yes. We integrate with a wide range of partners including Zendesk, Stripe, Chargify, Slack, Salesforce, databases and more. Don’t see the one you need? Let us know \[Link to Drift]. It could already be on our roadmap!
+Yes. We integrate with a wide range of partners including Zendesk, Stripe, Chargify, Slack, Salesforce, databases and more. Don’t see the one you need? Let us know at integrations@gatherdata.co. It could already be on our roadmap!
 
 ## **Set up**
 
