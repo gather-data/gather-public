@@ -4,8 +4,7 @@ title: Setting Up
 category: Getting Started
 published: true
 ---
-
-This article will help you set up and configure Connections, Views, Modules and Magic Actions as well inviting your team members. Set up should only take about 15 minutes for connections and most automations will take only 5 minutes each but some could take longer.
+This article will help you set up and configure integrations, Views, Modules and Magic Actions as well inviting your team members. Set up should only take about 15 minutes for integrations and most automations will take only 5 minutes each but some could take longer.
 
 You might need a developer to help with set up. Don't worry - this is the only stage where they would need to be involved and we will cover everything they need to know.
 
@@ -42,7 +41,7 @@ On the left side navigation bar, head over to "All Views". Click the "Add View" 
 
 A window will pop up:
 
-![](/assets/screen-shot-2018-07-09-at-10.37.49-pm.png)
+![null](/assets/screen-shot-2018-07-09-at-10.37.49-pm.png)
 
 Just enter the name for the View (ex. Customers, Payments, Partners, Users, etc.) and select the data source from the Connections you've already added.
 
@@ -58,7 +57,7 @@ From "All Views", click into the selected View from the list. Once you're in the
 
 A window will pop up:
 
-![](/assets/screen-shot-2018-07-09-at-3.05.57-pm.png)
+![null](/assets/screen-shot-2018-07-09-at-3.05.57-pm.png)
 
 You can add new fields, reorder them by dragging the tags and delete the fields by clicking the "x".
 
