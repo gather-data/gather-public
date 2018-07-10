@@ -14,6 +14,7 @@ import {
   p,
   border,
   borderRadius,
+  boxShadowBig,
   Text,
   TextTypes,
   TextTypeToStyle,
@@ -70,8 +71,12 @@ const Content = styled.div`
     video {
       height: auto;
       width: 100%;
+      max-height: 500px;
+      width: auto;
+      max-width: 100%;
 
       ${borderRadius};
+      ${boxShadowBig};
       ${border};
       ${mv(3)};
     }

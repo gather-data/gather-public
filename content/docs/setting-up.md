@@ -4,6 +4,7 @@ title: Setting Up
 category: Getting Started
 published: true
 ---
+
 This article will help you set up and configure Connections, Views, Modules and Magic Actions as well inviting your team members. Set up should only take about 15 minutes for connections and most automations will take only 5 minutes each but some could take longer.
 
 You might need a developer to help with set up. Don't worry - this is the only stage where they would need to be involved and we will cover everything they need to know.
@@ -29,7 +30,9 @@ Make sure you have account and login details for the connection you want to add.
 
 On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
 
-**\[Insert GIF]**
+<video autoplay loop>
+    <source src="/assets/invite-user.mp4" />
+</video>
 
 ## Step 2: Views
 
@@ -41,7 +44,7 @@ A window will pop up:
 
 ![](/assets/screen-shot-2018-07-09-at-10.37.49-pm.png)
 
-Just enter the name for the View (ex. Customers, Payments, Partners, Users, etc.) and select the data source from the Connections you've already added. 
+Just enter the name for the View (ex. Customers, Payments, Partners, Users, etc.) and select the data source from the Connections you've already added.
 
 Repeat this step as needed for each View you want to see.
 
@@ -53,17 +56,21 @@ On the left side navigation bar, head over to "All Views". Find the View you wan
 
 From "All Views", click into the selected View from the list. Once you're in the View you want to configure, click "Configure" button in the top right corner.
 
-A window will pop up: 
+A window will pop up:
 
 ![](/assets/screen-shot-2018-07-09-at-3.05.57-pm.png)
 
 You can add new fields, reorder them by dragging the tags and delete the fields by clicking the "x".
 
-\[INSERT GIF]
+<video autoplay loop>
+    <source src="/assets/edit-list-fields.mp4" />
+</video>
 
 You can add searchable fields by entering them in "Search Fields" to make it easier to navigate to the right item in the view.
 
-\[INSERT GIF]
+<video autoplay loop>
+    <source src="/assets/search-list-fields.mp4" />
+</video>
 
 ## Step 3: Modules
 
@@ -75,7 +82,9 @@ Click the "Add Module" button on the page below all of your current active Modul
 
 A window will pop up:
 
-\[INSERT WINDOW]
+<video autoplay loop>
+    <source src="/assets/add-module.mp4" />
+</video>
 
 Just enter the name for the Module (ex. Customer Contact Information, Orders, Payments, Salesforce Account Information, etc.) and select the data source from the Connections you've already added.
 
@@ -87,11 +96,11 @@ Be sure you're in the "Configure" mode. Within the Module, a green edit icon wil
 
 A window will pop up:
 
-\[INSERT WINDOW]
+<video autoplay loop>
+    <source src="/assets/configure-modules.mp4" />
+</video>
 
 You can add new fields, reorder them by dragging the tags and delete the fields by clicking the "x".
-
-\[INSERT GIF]
 
 ## Step 4: Magic actions
 
@@ -101,27 +110,29 @@ For 3rd party services that you have account details for, you can build actions 
 **Configuring actions through Builder**\
 In order to add and modify Actions, you have to be in "Configure" mode. Navigate to the View or List you want to create an action for.
 
-\[INSERT EXAMPLE FOR VIEW AND LIST]
-
 Within the Actions module, click the "Create new action" button.
 
 A window will pop up:
 
-\[Create new Action NAME & CATEGORY GIF]
+<video autoplay loop>
+    <source src="/assets/add-action.mp4" />
+</video>
 
 Type what you want the Action to be called and what category of actions you want it to be grouped into and click "Next" to take you to the Builder tab.
 
-Within Builder...
-\[TO DO]
+In the builder tab, we can start to build our action. For this example, we simply want to be able to extend a free trial. We already have an internal API that allows us to extend the free trial for a customer, so Gather simply needs to post a request to that API.
 
-**Invite your developer**\
-On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
+Actions are composed of one or more steps, each of which can use information from the customer the action is being run on. For now, we have a single step which is called `http`, which allows us to send an HTTP request to a URL. So here we just add that step and configure it to send along the user ID for the customer we're extending the trial for.
 
-**\[Insert Screenshot]**
+<video autoplay loop>
+    <source src="/assets/configure-action.mp4" />
+</video>
 
 ## Invite your team
 
 **Invite team members**\
 On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
 
-**\[Insert Screenshot]**
+<video autoplay loop>
+    <source src="/assets/invite-user.mp4" />
+</video>
