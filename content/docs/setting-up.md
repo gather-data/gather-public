@@ -2,8 +2,10 @@
 path: /help/getting-started/setting-up
 title: Setting Up
 category: Getting Started
+published: true
 ---
-This article will help you set up and configure Connections, Views, Modules and Magic Actions as well inviting your team members. Set up should only take about 15 minutes for connections and maximum 1 hour for automations. 
+
+This article will help you set up and configure Connections, Views, Modules and Magic Actions as well inviting your team members. Set up should only take about 15 minutes for connections and maximum 1 hour for automations.
 
 [//]: # (
 You might need a developer to help with set up. Don't worry - this is the only stage where they might need to be involved and we cover everything they need to know in our In-Depth documentation [INSERT LINK].
@@ -28,6 +30,7 @@ You will need an API key to connect to your Chargify account.
 Make sure you have account and login details for the connection you want to add. All you have to do is click the “Connect” button. If you don't have login details to the 3rd party service, you might have to ask whoever is the admin it to help.
 
 ### Invite your developer
+
 On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
 
 **\[Insert Screenshot]**
@@ -35,6 +38,7 @@ On the left side navigation bar, go to Team Settings > Members. Then click "Invi
 ## Step 2: Views
 
 ### Adding Views
+
 On the left side navigation bar, head over to "All Views". Click the "Add View" button in top right corner.
 
 A window will pop up:
@@ -49,7 +53,8 @@ Repeat this step as needed for each View you want to see.
 On the left side navigation bar, head over to "All Views". Find the View you want to edit or delete and click the "..." to access the drop down menu.
 
 ### Configuring Views
-From "All Views", click into the selected View from the list. Once you're in the View you want to configure, click "Configure" button in the top right corner.  
+
+From "All Views", click into the selected View from the list. Once you're in the View you want to configure, click "Configure" button in the top right corner.
 
 A window will pop up:
 
@@ -107,7 +112,7 @@ In order to add and modify Actions, you have to be in "Configure" mode. Navigate
 
 [INSERT EXAMPLE FOR VIEW AND LIST]
 
-Within the Actions module, click the "Create new action" button. 
+Within the Actions module, click the "Create new action" button.
 
 A window will pop up:
 

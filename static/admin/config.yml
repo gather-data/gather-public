@@ -4,8 +4,6 @@ backend:
 media_folder: static/assets
 public_folder: assets
 
-publish_mode: editorial_workflow
-
 collections:
   - label: "Settings"
     name: "settings"
@@ -58,6 +56,10 @@ collections:
       - label: Category
         name: category
         widget: string
+      - label: Published
+        name: published
+        widget: boolean
+        default: false
       - {name: body, label: Body, widget: markdown}
   - label: "Pages"
     name: "pages"

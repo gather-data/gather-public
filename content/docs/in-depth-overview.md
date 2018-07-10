@@ -2,6 +2,7 @@
 path: /help/in-depth-overview
 title: In-depth Overview
 category: Guides
+published: true
 ---
 
 If you're new to Gather, try the [Quickstart](quickstart). After that, come back to get an in-depth overview of Gather.

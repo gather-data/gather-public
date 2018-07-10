@@ -2,7 +2,9 @@
 path: /company/details
 title: Company Details
 category: Company
+published: true
 ---
+
 **Company name**
 
 Gather, Inc.

@@ -2,7 +2,9 @@
 path: /help/faq
 title: FAQ
 category: FAQ
+published: true
 ---
+
 ## General
 
 **What is Gather?**
@@ -59,7 +61,7 @@ We have no minimum number of seats. If you need custom enterprise pricing, pleas
 
 **Is Gather secure?**
 
-Yes. We treat security very seriously. We securely encrypt API keys, we don't don't store  any customer data, only metadata, and we encrypt all data in transit. We run on Google Cloud Platform with servers in the USA.
+Yes. We treat security very seriously. We securely encrypt API keys, we don't don't store any customer data, only metadata, and we encrypt all data in transit. We run on Google Cloud Platform with servers in the USA.
 
 **Is my business data private and safe?**
 

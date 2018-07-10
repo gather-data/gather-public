@@ -5,10 +5,12 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
   const pageTemplate = path.resolve(`src/components/Page.js`);
 
-  // sort: { order: ASC, fields: [frontmatter___order] }
   return graphql(`
     {
-      allMarkdownRemark(limit: 1000) {
+      allMarkdownRemark(
+        limit: 1000
+        filter: { frontmatter: { published: { eq: true } } }
+      ) {
         edges {
           node {
             frontmatter {
