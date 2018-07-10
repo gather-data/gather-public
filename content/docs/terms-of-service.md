@@ -13,7 +13,7 @@ Any new features or tools which are added to the Services, including updates, up
 
 You can find the most current version of the agreement at [https://gatherdata.co/legal/terms](https://gatherdata.co/legal/terms).
 
-**DEFINITIONS**  
+## DEFINITIONS 
 "Site" refers to our website, [gatherdata.co](https://gatherdata.co/).
 
 "Service" and "Services" means the Gather service provided on the website, together with any associated tools, products, services, media, downloaded software, and other content delivered to you through the Site or otherwise by Gather.
@@ -34,7 +34,7 @@ You can find the most current version of the agreement at [https://gatherdata.co
 
 "Parties" means you (the customer, including all Authorized Users) and Gather.
 
-1.  #### **SERVICES AND SUPPORT**
+1.  #### SERVICES AND SUPPORT
 
     1.  License. Subject to the terms of this Agreement, Gather grants you a revocable, non-exclusive, non-transferable, and non-sublicensable license to access and use the Services through your Active Staff User Accounts.
 
@@ -48,7 +48,7 @@ You can find the most current version of the agreement at [https://gatherdata.co
 
     6.  Support. Subject to the terms of this Agreement, Gather will provide a reasonable level of support to you as agreed to by you in writing (which can be satisfied via email).
 
-2.  #### **RESTRICTIONS AND RESPONSIBILITIES**
+2.  #### RESTRICTIONS AND RESPONSIBILITIES
 
     1.  No Unlawful Use or Objectionable Content. You shall not use the Services in any unlawful manner or in any manner that interferes with or disrupts the integrity or performance of the Services and its components or infringes on the rights of another party. You shall not modify, adapt or hack any protected (encrypted or compiled) parts of the Software, or otherwise attempt to gain unauthorized access to those parts or its related systems or networks. You undertake not to promote any material that is unlawful, threatening, abusive, malicious, defamatory, false, materially inaccurate, or otherwise objectionable. You will not reproduce, publish, or otherwise distribute content in connection with the Service that infringes any third party’s trademark, copyright, patent, trade secret, publicity, privacy, or other personal or proprietary right. Gather offers no assurance that your use of the Service under the terms of the Agreement will not violate any law or regulation applicable to you. We reserve the right to terminate your use of the Service or any related website for violating any of the prohibited uses.
 
@@ -64,7 +64,7 @@ You can find the most current version of the agreement at [https://gatherdata.co
 
     7.  Gather may revoke its license to you at any time for any reason without notice or explanation, and we shall not, in any event, be liable to you for any losses suffered as a result of any unanticipated cancellation of our Service. We will generally attempt to notify you prior to cancelling your access to our Service unless you have breached this Agreement or any applicable law, though we are not obligated to do so.
 
-3.  #### **CONFIDENTIALITY**
+3.  #### CONFIDENTIALITY
 
     1.  Each Party (the “Receiving Party”) understands that the other Party (the “Disclosing Party”) has disclosed or may disclose information relating to the Disclosing Party’s technology or business (hereinafter referred to as “Proprietary Information” of the Disclosing Party).
 
@@ -76,7 +76,7 @@ You can find the most current version of the agreement at [https://gatherdata.co
 
     5.  Privacy Policy. The privacy policy governs Gather’s use of information collected directly from Authorized Users; such information shall not be deemed Proprietary Information of yours hereunder, and is not subject to the terms of this Agreement, but rather is governed by the terms of such privacy policy. By agreeing to the Agreement, you accept the terms of Gather’s privacy policy. The privacy policy is available at [http://www.gatherdata.co/legal/privacy/](https://gatherdata.co/legal/privacy/).
 
-4.  #### **INTELLECTUAL PROPERTY RIGHTS**
+4.  #### INTELLECTUAL PROPERTY RIGHTS
 
     1.  Except as expressly set forth herein, Gather alone (and its licensors, where applicable) will retain all intellectual property rights relating to the Service and the Software and any suggestions, ideas, enhancement requests, feedback, recommendations or other information provided by you or any third party or Authorized User relating to the Service and/or the Software, which are hereby assigned to Gather. You and your Authorized Users will not copy, distribute, reproduce or use any of the foregoing except as expressly permitted under this Agreement. This Agreement is not a sale and does not convey to you any rights of ownership in or related to the Service or Software, or any intellectual property rights therein.
 
@@ -84,13 +84,13 @@ You can find the most current version of the agreement at [https://gatherdata.co
 
     3.  Notwithstanding anything to the contrary, Gather may freely use and disclose any data or other information provided by or collected from you in connection with its use of the Services, if it has been aggregated or otherwise anonymized such that it does not personally identify you or any of your personnel.
 
-5.  #### **PAYMENT OF FEES**
+5.  #### PAYMENT OF FEES
 
     1.  You will pay Gather the applicable fees as accepted and agreed to by you in writing (which can be satisfied via email) during the registration process for the Services (the “Fees”). To the extent applicable, you will pay Gather for additional services, such as integration fees or other consulting fees. All payments will be made in accordance with the payment method and schedule mutually agreed by the Parties in writing (which can be satisfied via email). You agree that Gather will charge you for the Fees on a recurring basis in accordance with such mutually agreed schedules. Specifically, if you submit credit card information to Gather for payment of Fees, unless your account is terminated, you hereby authorize Gather to charge such credit card for the Fees incurred automatically for a subscription term equivalent in length to the then expiring subscription term. If the Parties agree that Gather will invoice you for the Fees, payments will be due within fourteen (14) days of the date of the invoice.
 
     2.  Unpaid Fees are subject to a finance charge of one percent (1.0%) per month, or the maximum permitted by law, whichever is lower, plus all expenses of collection, including reasonable attorneys’ fees. You agree to pay any applicable taxes not otherwise included in the Fees (excluding US taxes based on Gather’s net income) unless you have provided Gather with a valid exemption certificate. In the case of any withholding requirements, you will pay any required withholding itself and will not reduce the amount paid to you on account thereof.
 
-6.  **TERM AND TERMINATION**
+6.  #### TERM AND TERMINATION
 
     1.  Subject to earlier termination as provided below, this Agreement will remain in effect for the term specified on the quote provided by Gather (the “Initial Service Term”) or until terminated in accordance with the terms of this Agreement. Following the Initial Service Term, this Agreement will automatically renew for successive renewal terms of equal length to the Initial Service Term, subject to early termination (each, a “Renewal Term”, and together with the Initial Term, the “Service Term”) unless either Party gives the other Party notice of non-renewal prior to the end of the then-current term.
 
@@ -100,23 +100,23 @@ You can find the most current version of the agreement at [https://gatherdata.co
 
     4.  Effect of Termination. The termination of your account with Gather for any reason results in the immediate termination of your license to use the Services and upon such termination (i) you shall immediately cease all use of the Services, (ii) you will lose access to all of your Content and Gather will delete it in the normal course of business operations, and (iii) you shall destroy all copies, full or partial, of any components of the Services and Software that may have been downloaded by you or otherwise transmitted to you electronically or otherwise in connection with the Services. Your information cannot be recovered once your account is terminated. No expiration or termination will affect your obligation to pay all Fees that may have become due before such expiration or termination.
 
-7.  **WARRANTY DISCLAIMER**
+7.  #### WARRANTY DISCLAIMER
 
 THE SERVICES, SOFTWARE, GATHER CONFIDENTIAL INFORMATION, AND ANY OTHER THING PROVIDED BY GATHER IN CONNECTION WITH THIS AGREEMENT ARE PROVIDED “AS IS” AND “WHERE AVAILABLE”. GATHER HEREBY DISCLAIMS ALL CONDITIONS AND WARRANTIES, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE. GATHER SPECIFICALLY DISCLAIMS ALL IMPLIED CONDITIONS AND WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT, AND ALL CONDITIONS AND WARRANTIES ARISING FROM COURSE OF DEALING, USAGE, OR TRADE PRACTICE. GATHER MAKES NO CONDITION OR WARRANTY OF ANY KIND THAT THE SERVICES, OR ANY PRODUCTS OR RESULTS OF THE USE THEREOF, WILL MEET YOUR OR ANY OTHER PERSON’S REQUIREMENTS, OPERATE WITHOUT INTERRUPTION, ACHIEVE ANY INTENDED RESULT, BE COMPATIBLE OR WORK WITH ANY SOFTWARE, SYSTEM OR OTHER SERVICES, OR BE SECURE, ACCURATE, COMPLETE, FREE OF HARMFUL CODE, OR ERROR FREE.
 
-8.  **LIMITATION OF LIABILITY**
+8.  #### LIMITATION OF LIABILITY
 
 IN NO EVENT WILL GATHER (OR ANY OF ITS AGENTS, AFFILIATES, LICENSORS OR SUPPLIERS) BE LIABLE FOR ANY INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES, OR COST OF PROCUREMENT OF SUBSTITUTE GOODS, SERVICES OR TECHNOLOGY, ARISING OUT OF OR IN ANY WAY CONNECTED WITH THE USE OF THE SERVICES, SOFTWARE, OR ANY OTHER THING PROVIDED BY GATHER IN CONNECTION WITH THIS AGREEMENT, THE DELAY OR INABILITY TO USE THE SERVICES, SOFTWARE,OR ANY OTHER THING PROVIDED IN CONNECTION WITH THIS AGREEMENT OR OTHERWISE ARISING FROM THIS AGREEMENT, INCLUDING WITHOUT LIMITATION, LOSS OF REVENUE OR ANTICIPATED PROFITS OR LOST BUSINESS OR LOST SALES, WHETHER BASED IN CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY, OR OTHERWISE, EVEN IF GATHER HAS BEEN ADVISED OF THE POSSIBILITY OF DAMAGES. THE TOTAL LIABILITY OF GATHER, WHETHER BASED IN CONTRACT, TORT (INCLUDING NEGLIGENCE OR STRICT LIABILITY), OR OTHERWISE, WILL NOT EXCEED, IN THE AGGREGATE, THE LESSER OF (i) FIVE THOUSAND DOLLARS, OR (ii) THE AGGREGATE FEES PAID TO GATHER HEREUNDER IN THE THREE MONTH PERIOD ENDING ON THE DATE THAT A CLAIM OR DEMAND IS FIRST ASSERTED. THE FOREGOING LIMITATIONS WILL APPLY NOTWITHSTANDING ANY FAILURE OF ESSENTIAL PURPOSE OF ANY LIMITED REMEDY.
 
-9.  **INDEMNITY**
+9.  #### INDEMNITY
 
 You agree to indemnify and hold us harmless for any claims by you or any third party which may arise from or relate to this Agreement or the provision of our Service to you, including any damages caused by your use of our Service. You also agree that you have a duty to defend us against such claims and we may require you to pay for an attorney(s) of our choice in such cases. You agree that this indemnity extends to requiring you to pay for our reasonable attorneys' fees, court costs, and disbursements. In the event of a claim such as one described in this paragraph, we may elect to settle with the party/parties making the claim, and you shall be liable for the damages as though we had proceeded with a trial.
 
-10. #### **U.S. GOVERNMENT MATTERS**
+10. #### U.S. GOVERNMENT MATTERS
 
 Notwithstanding anything else, you and your Authorized Users may not provide to any person or export or re-export or allow the export or re- export of the Services or any software or anything related thereto or any direct product thereof (collectively “Controlled Subject Matter”), in violation of any restrictions, laws or regulations of the United States Department of Commerce, the United States Department of Treasury Office of Foreign Assets Control, or any other United States or foreign agency or authority. Without limiting the foregoing you and your Authorized Users acknowledge and agree that the Controlled Subject Matter will not be used or transferred or otherwise exported or re-exported to countries as to which the United States maintains an embargo (collectively, “Embargoed Countries”), or to or by a national or resident thereof, or any person or entity on the U.S. Department of Treasury’s List of Specially Designated Nationals or the U.S. Department of Commerce’s Table of Denial Orders (collectively, “Designated Nationals”). The lists of Embargoed Countries and Designated Nationals are subject to change without notice.  Use of the Service is representation and warranty that the user is not located in, under the control of, or a national or resident of an Embargoed Country or Designated National. The Controlled Subject Matter may use or include encryption technology that is subject to licensing requirements under the U.S. Export Administration Regulations. As defined in FAR section 2.101, any software and documentation provided by Gather are “commercial items” and according to DFAR section 252.227-7014(a)(1) and (5) are deemed to be “commercial computer software” and “commercial computer software documentation.” Consistent with DFAR section 227.7202 and FAR section 12.212, any use modification, reproduction, release, performance, display, or disclosure of such commercial software or commercial software documentation by the U.S. Government will be governed solely by the terms of this Agreement and will be prohibited except to the extent expressly permitted by the terms of this Agreement.
 
-11. **MISCELLANEOUS**
+11. #### MISCELLANEOUS
 
 **Governing Law**
 
