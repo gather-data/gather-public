@@ -14,7 +14,7 @@ Lastly, we've put in place auditing and lock down procedures that allows us to q
 
 ## FAQs
 ### Where is my data stored?
-Gather *does not* store any of your customer data. All data accessible via Gather is fetched and aggregated efficiently on-demand, meaning it's not stored anywhere on our servers. Not even in cache.
+Gather **does not** store any of your customer data. All data accessible via Gather is fetched and aggregated efficiently on-demand, meaning it's not stored anywhere on our servers. Not even in cache.
 
 What we do store are the credentials for your database and other sources, but these are encrypted at-rest using regularly rotated keys stored in Google KMS. We also store metadata for any actions run within Gather, but here we only store the ID of the entity that the action was run for (for example, a customer ID).
 
