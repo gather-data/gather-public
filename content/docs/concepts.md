@@ -14,7 +14,7 @@ For our current list of Connections, [see this list](/integrations).
 
 Step-by-step automations created in Builder. Create a single button to handle repetitive internal processes for customer requests like refunding payments and resetting passwords.
 
-![](/assets/ezgif.com-optimize-5.gif)
+![null](/assets/ezgif.com-optimize-5.gif)
 
 ## Views
 
@@ -34,6 +34,6 @@ Views are the powerhouse of Gather. No matter how your data is structured, views
 
 ## Modules
 
-When looking at an individual entity within a View (like an individual customer), you often want to see associated information about that entity. For example, when looking at an individual customer you probably need to see their Stripe account information or their latest order in Shopify. Modules are where that associated data get displayed. Modules can display any data supported by a Connection in Gather, from Stripe payments, to Chargify subscriptions, to Shopify orders. 
+When looking at an individual entity within a View (like an individual customer), you often want to see associated information about that entity. For example, when looking at an individual customer you probably need to see their Stripe account information or their latest order in Shopify. Modules are where that associated data get displayed and can display any data supported by a Connection in Gather. 
 
-\[INSERT MODULES]
+\[Insert anatomy image]
