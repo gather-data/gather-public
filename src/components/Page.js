@@ -22,6 +22,7 @@ import {
   LinkTypes,
   LinkTypeToStyle,
   Page,
+  Column,
   pageSmallWidth,
   Flex,
 } from 'gather-style';
@@ -147,62 +148,64 @@ export default function Doc({ data, pathContext }) {
     <div>
       <Helmet title={`${post.frontmatter.title} | Gather`} />
       <StyledPage width="660px">
-        <Flex>
-          <Link heavy to="/help">
-            All help articles
-          </Link>
-          <Text ml={1}>/</Text>
-          <Text ml={1}>{post.frontmatter.title}</Text>
-        </Flex>
-        <Text mt={3} mb={2} type={TextTypes.HEADING_1}>
-          {post.frontmatter.title}
-        </Text>
-        <Tag heavy type={TextTypes.BODY_TINY}>
-          {`${post.timeToRead} min read`}
-        </Tag>
-        {Boolean(post.headings.length) && (
-          <Contents>
-            <Text color={colors.navy} heavy mb={1}>
-              Contents
-            </Text>
-            {post.headings.map(heading => (
-              <Link
-                mb={0.5}
-                to={`#${heading.value.toLowerCase().replace(' ', '-')}`}
-              >
-                {heading.value}
-              </Link>
-            ))}
-          </Contents>
-        )}
-        <Content>
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        </Content>
-        <Divider />
-        <Flex flow="column" alignItems="flex-start">
+        <Column>
           <Flex>
-            <Link mb={3} heavy to="/help">
+            <Link heavy to="/help">
               All help articles
             </Link>
-            <Text mb={3} ml={1}>
-              /
-            </Text>
-            <Text mb={3} ml={1}>
-              {post.frontmatter.title}
-            </Text>
+            <Text ml={1}>/</Text>
+            <Text ml={1}>{post.frontmatter.title}</Text>
           </Flex>
-          <Box>
-            <Text color={colors.navy} heavy mb={1}>
-              {`More from ${post.frontmatter.category}`}
-            </Text>
-            {otherPostsFromCategory &&
-              otherPostsFromCategory.edges.map(({ node: item }) => (
-                <Link mb={0.5} to={item.frontmatter.path}>
-                  {item.frontmatter.title}
+          <Text mt={3} mb={2} type={TextTypes.HEADING_1}>
+            {post.frontmatter.title}
+          </Text>
+          <Tag heavy type={TextTypes.BODY_TINY}>
+            {`${post.timeToRead} min read`}
+          </Tag>
+          {Boolean(post.headings.length) && (
+            <Contents>
+              <Text color={colors.navy} heavy mb={1}>
+                Contents
+              </Text>
+              {post.headings.map(heading => (
+                <Link
+                  mb={0.5}
+                  to={`#${heading.value.toLowerCase().replace(' ', '-')}`}
+                >
+                  {heading.value}
                 </Link>
               ))}
-          </Box>
-        </Flex>
+            </Contents>
+          )}
+          <Content>
+            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          </Content>
+          <Divider />
+          <Flex flow="column" alignItems="flex-start">
+            <Flex>
+              <Link mb={3} heavy to="/help">
+                All help articles
+              </Link>
+              <Text mb={3} ml={1}>
+                /
+              </Text>
+              <Text mb={3} ml={1}>
+                {post.frontmatter.title}
+              </Text>
+            </Flex>
+            <Box>
+              <Text color={colors.navy} heavy mb={1}>
+                {`More from ${post.frontmatter.category}`}
+              </Text>
+              {otherPostsFromCategory &&
+                otherPostsFromCategory.edges.map(({ node: item }) => (
+                  <Link mb={0.5} to={item.frontmatter.path}>
+                    {item.frontmatter.title}
+                  </Link>
+                ))}
+            </Box>
+          </Flex>
+        </Column>
       </StyledPage>
       <Footer
         copyright={footer.copyright}
