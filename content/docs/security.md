@@ -2,7 +2,7 @@
 path: /help/company/security
 title: Security Overview
 category: Company
-published: true
+published: false
 ---
 
 PLACEHOLDER
