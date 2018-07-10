@@ -32,7 +32,7 @@ All you have to do is just sign up. You will get a free 14 day trial just by cre
 
 **Do developers need to be involved?**
 
-Only for set up, which should take 15 minutes for integrations and maximum 1 hour for automations.
+Only for set up, which should take 15 minutes for integrations and most automations will take only 5 minutes each but some could take longer.
 
 **Adding and Setting up Integrations:** You will need an API key for 2 of our integrations: your own database and Chargify. All of our other supported integrations use OAuth. This means if you have an account and login details for the integration you want to add, all you have to do is click the “Connect” button. If you don't have login details to the 3rd party service, you might have to ask whoever is the admin to help.
 
