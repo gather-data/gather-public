@@ -71,7 +71,7 @@ In order to add or modify a Module, you have to be in "Configure" mode. Navigate
 
 ### Adding Modules
 
-Click the "+ Add Module" button on the page below all of your current active Modules.
+Click the "Add Module" button on the page below all of your current active Modules.
 
 A window will pop up:
 
