@@ -219,7 +219,7 @@ export const query = graphql`
         ctaText
       }
     }
-    allMarkdownRemark {
+    allMarkdownRemark(filter: { frontmatter: { published: { eq: true } } }) {
       edges {
         node {
           id
