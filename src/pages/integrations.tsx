@@ -181,7 +181,7 @@ class IntegrationsContainer extends Component {
           </Title>
           <Link
             type={LinkTypes.BUTTON_PRIMARY}
-            href="https://app.gatherdata.co/signup"
+            href="https://app.gatherdata.co/request-demo"
             iconEnd
             icon={<AndroidArrowForward size={24} />}
           >

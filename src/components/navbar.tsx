@@ -168,7 +168,7 @@ class Navbar extends Component {
       )),
       <NavLink
         type="buttonPrimary"
-        href="https://app.gatherdata.co/signup"
+        href="https://app.gatherdata.co/request-demo"
         iconEnd
         icon={<AndroidArrowForward size={24} />}
       >
@@ -188,7 +188,7 @@ class Navbar extends Component {
             <Flex alignItems="center">
               <StyledLogo />
               <MobileMenu
-                href="https://app.gatherdata.co/signup"
+                href="https://app.gatherdata.co/request-demo"
                 mr={2}
                 type={LinkTypes.BUTTON_PRIMARY}
               >

@@ -157,7 +157,7 @@ const Pricing = ({ data: { pricingJson: pricing, footerJson: footer } }) => {
                   type={LinkTypes.BUTTON_PRIMARY}
                   textColor={colors.purple}
                   color={colors.white}
-                  href="https://app.gatherdata.co/signup"
+                  href="https://app.gatherdata.co/request-demo"
                   mb={3}
                   size="large"
                 >
@@ -191,7 +191,7 @@ const Pricing = ({ data: { pricingJson: pricing, footerJson: footer } }) => {
                   mt={3}
                   type={LinkTypes.BUTTON_DEFAULT}
                   size="large"
-                  href="https://app.gatherdata.co/signup"
+                  href="https://app.gatherdata.co/request-demo"
                 >
                   {pricing.enterpise.cta}
                 </Link>
