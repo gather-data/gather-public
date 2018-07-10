@@ -31,16 +31,12 @@
             "title": "Resources",
             "links": [
                 {
-                    "label": "Docs",
-                    "to": "/docs"
+                    "label": "Help",
+                    "to": "/help"
                 },
                 {
                     "label": "FAQ",
-                    "to": "/docs/faq"
-                },
-                {
-                    "label": "Security",
-                    "to": "/docs/security"
+                    "to": "/help/faq"
                 },
                 {
                     "label": "Privacy",
@@ -69,7 +65,7 @@
                 },
                 {
                     "label": "Contact Us",
-                    "to": "/contact"
+                    "to": "mailto:hello@gatherdata.co"
                 }
             ]
         }

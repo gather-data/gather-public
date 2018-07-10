@@ -78,7 +78,11 @@ const Footer = ({ copyright, madeIn, linkGroups }) => (
                     {linkGroup.title}
                   </Text>
                   {linkGroup.links.map(link => (
-                    <Link type={LinkTypes.Text} to={link.to}>
+                    <Link
+                      type={LinkTypes.Text}
+                      to={link.to && link.to.startsWith('/') && link.to}
+                      href={link.to && !link.to.startsWith('/') && link.to}
+                    >
                       {link.label}
                     </Link>
                   ))}
