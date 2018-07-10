@@ -2,6 +2,7 @@
 path: /help/getting-started/setting-up
 title: Setting Up
 category: Getting Started
+published: true
 ---
 This article will help you set up and configure Connections, Views, Modules and Magic Actions as well inviting your team members. Set up should only take about 15 minutes for connections and most automations will take only 5 minutes each but some could take longer.
 
