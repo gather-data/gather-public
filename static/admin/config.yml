@@ -192,7 +192,7 @@ collections:
                 widget: string
                 required: false
               - label: CTA To
-                name: ctaText
+                name: ctaTo
                 widget: string
                 required: false
           - label: 'Feature 3 - Customer Timeline'
@@ -213,7 +213,7 @@ collections:
                 widget: string
                 required: false
               - label: CTA To
-                name: ctaText
+                name: ctaTo
                 widget: string
                 required: false
           - label: 'Feature 4 - Data Driven'
@@ -234,7 +234,7 @@ collections:
                 widget: string
                 required: false
               - label: CTA To
-                name: ctaText
+                name: ctaTo
                 widget: string
                 required: false
           - label: 'Feature 5 - Privacy Compliance'
@@ -255,7 +255,7 @@ collections:
                 widget: string
                 required: false
               - label: CTA To
-                name: ctaText
+                name: ctaTo
                 widget: string
                 required: false
           - label: 'Customers'
