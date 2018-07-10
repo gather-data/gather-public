@@ -98,12 +98,6 @@ You can add new fields, reorder them by dragging the tags and delete the fields 
 **Adding actions**\
 For 3rd party services that you have account details for, you can build actions yourself using our easy step-by-step Builder. If your actions involve your database or internal API, you will need to get help from your developer team. This could include actions like extending a trial, resetting passwords, etc. The developer just needs to create an API endpoint and hook it up to an action that triggers it. It can be as simple or as complex as your team wants it to be.
 
-Not sure what to add? Check out our Guides:
-
-**Refund flow \[INSERT LINK]**\
-**Extending free trial \[INSERT LINK]**\
-**Order check \[INSERT LINK]**
-
 **Configuring actions through Builder**\
 In order to add and modify Actions, you have to be in "Configure" mode. Navigate to the View or List you want to create an action for.
 
