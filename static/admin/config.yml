@@ -266,7 +266,7 @@ collections:
                 name: title
                 widget: string
               - label: Testimonials
-                name: testimonial
+                name: testimonials
                 widget: list
                 fields:
                   - label: Testimonial
