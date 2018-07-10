@@ -6,6 +6,12 @@ published: true
 ---
 We understand that by using Gather, you're trusting us with your most important asset: your customer data. The safety and security of that data is our highest priority as a company. Enforcing strict security is a multi-layered problem and we make the utmost effort to ensure best practices at every level.
 
+Firstly, we have strict team policies and procedures. We start by restricting all access to any sensitive customer data. All product development is done with our own test data and production information is securely inaccessible to anyone in the company.
+
+Next we built our product using world-class, modern cloud infrastructure with great security track records and standards. We bolster that with our own high-standards, including including regular backups, data encryption, sanitized logging, and common attack prevention.
+
+Lastly, we've put in place auditing and lock down procedures that allows us to quickly identify and stop any intrusions, should they occur.
+
 ## FAQs
 ### Where is my data stored?
 Gather *does not* store any of your customer data. All data accessible via Gather is fetched and aggregated efficiently on-demand, meaning it's not stored anywhere on our servers. Not even in cache.
@@ -36,4 +42,4 @@ We are building this now and will be releasing this feature soon.
 Our payments provider Stripe has been audited by an independent PCI Qualified Security Assessor and is certified as a PCI Level 1 Service Provider.
 
 ### Do you have a contact for security?
-Yes, please email [security@gatherdata.co](mailto:security@gatherdata.co) with any concerns, questions, or reports related to security.
+Yes, please email [mailto:security@gatherdata.co](security@gatherdata.co) with any concerns, questions, or reports related to security.
