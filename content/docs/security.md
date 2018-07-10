@@ -42,4 +42,4 @@ We are building this now and will be releasing this feature soon.
 Our payments provider Stripe has been audited by an independent PCI Qualified Security Assessor and is certified as a PCI Level 1 Service Provider.
 
 ### Do you have a contact for security?
-Yes, please email [mailto:security@gatherdata.co](security@gatherdata.co) with any concerns, questions, or reports related to security.
+Yes, please email [security@gatherdata.co](mailto:security@gatherdata.co) with any concerns, questions, or reports related to security.
