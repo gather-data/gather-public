@@ -22,11 +22,11 @@ Views are windows into data. For example, a customer View will allow you to list
 
 CUSTOMTABLEGIF.
 
-You could then add a view for your orders and Gather will intelligently link your customer view with your order view, allowing your to seamlessly navigate through your most important data.
+You could then add a view for your orders and Gather will intelligently link your customer View with your order View, allowing your to seamlessly navigate through your most important data.
 
 ORDERGIFLINKEDWITHCUSTOMER
 
-Views can also be added for third-party connections like Stripe. For example with a couple clicks, you can create a view that shows you all Stripe payments that have been made, again with the ability to filter and search to find the payment you need and automatically linked with the right customer using Gather’s intelligent linking functionality.
+Views can also be added for third-party connections like Stripe. For example with a couple clicks, you can create a view that shows you all Stripe payments that have been made - with the ability to filter and search to find the payment you need,  automatically linked with the right customer using Gather’s intelligent linking functionality.
 
 STRIPEVIEWGIF
 
@@ -34,10 +34,6 @@ Views are the powerhouse of Gather. No matter how your data is structured, views
 
 ## Modules
 
-When looking at an individual entity within a View (like an individual customer), you often want to see associated information about that entity. For example, when looking at an individual customer you probably need to see their Stripe account information or their latest order in Shopify. Modules are where that associated data get displayed.
+When looking at an individual entity within a View (like an individual customer), you often want to see associated information about that entity. For example, when looking at an individual customer you probably need to see their Stripe account information or their latest order in Shopify. Modules are where that associated data get displayed. Modules can display any data supported by a Connection in Gather, from Stripe payments, to Chargify subscriptions, to Shopify orders. 
 
 SHOWMODULEIMAGE
-
-Modules can display any data supported by an connection in Gather, from Stripe payments, to Chargify subscriptions, to Shopfiy orders. You just add a module to a view for any associated data you need with a couple of simple clicks. You can easily customise each module so that it shows you only the fields you need to see.
-
-SHOWMODULE CUSTOMISATIONGIF
