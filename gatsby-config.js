@@ -5,6 +5,46 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-resolve-src',
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-75187719-2',
+        // Puts tracking script in the head instead of the body
+        head: true,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-drift',
+      options: {
+        appId: 'mpb9rggby9x2',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `#5D75F6`,
+        // Disable the loading spinner.
+        showSpinner: false,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: './src/assets/images/favicon-big.png',
+        injectHTML: true,
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          twitter: false,
+          yandex: false,
+          windows: false,
+        },
+      },
+    },
     'gatsby-transformer-json',
     {
       resolve: 'gatsby-transformer-remark',
