@@ -27,7 +27,7 @@ Yes. We integrate with a wide range of partners including Zendesk, Stripe, Charg
 
 **How do I get started?**
 
-All you have to do is just sign up. You will get a free 14 day trial just by creating a new account. If you need any help, chat with us \[Link to Drift] or email us at sales@gatherdata.co.
+All you have to do is just sign up. You will get a free 14 day trial just by creating a new account. If you need any help, chat with us or email us at support@gatherdata.co.
 
 **Do developers need to be involved?**
 
