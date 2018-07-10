@@ -1,7 +1,7 @@
 ---
 path: /help/faq
 title: FAQ
-category: FAQ
+category: General
 published: true
 ---
 ## General
