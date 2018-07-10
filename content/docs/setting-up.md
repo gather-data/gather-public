@@ -3,7 +3,6 @@ path: /help/getting-started/setting-up
 title: Setting Up
 category: Getting Started
 ---
-
 This article will help you set up and configure Connections, Views, Modules and Magic Actions as well inviting your team members. Set up should only take about 15 minutes for connections and most automations will take only 5 minutes each but some could take longer.
 
 You might need a developer to help with set up. Don't worry - this is the only stage where they would need to be involved and we will cover everything they need to know.
@@ -38,7 +37,11 @@ On the left side navigation bar, go to Team Settings > Members. Then click "Invi
 On the left side navigation bar, head over to "All Views". Click the "Add View" button in top right corner.
 
 A window will pop up:
-[INSERT ADD VIEW POP UP HERE]
+
+![]()
+
+
+\[INSERT ADD VIEW POP UP HERE]
 
 Just enter the name for the View (ex. Customers, Payments, Partners, Users, etc.) and select the data source from the Connections you've already added.
 
@@ -54,7 +57,7 @@ From "All Views", click into the selected View from the list. Once you're in the
 
 A window will pop up:
 
-\[INSERT WINDOW]
+![](/assets/screen-shot-2018-07-09-at-3.05.57-pm.png)
 
 You can add new fields, reorder them by dragging the tags and delete the fields by clicking the "x".
 
@@ -74,7 +77,7 @@ Click the "+ Add Module" button on the page below all of your current active Mod
 
 A window will pop up:
 
-[INSERT WINDOW]
+\[INSERT WINDOW]
 
 Just enter the name for the Module (ex. Customer Contact Information, Orders, Payments, Salesforce Account Information, etc.) and select the data source from the Connections you've already added.
 
@@ -86,7 +89,7 @@ Be sure you're in the "Configure" mode. Within the Module, a green edit icon wil
 
 A window will pop up:
 
-[INSERT WINDOW]
+\[INSERT WINDOW]
 
 You can add new fields, reorder them by dragging the tags and delete the fields by clicking the "x".
 
@@ -106,18 +109,18 @@ Not sure what to add? Check out our Guides:
 **Configuring actions through Builder**\
 In order to add and modify Actions, you have to be in "Configure" mode. Navigate to the View or List you want to create an action for.
 
-[INSERT EXAMPLE FOR VIEW AND LIST]
+\[INSERT EXAMPLE FOR VIEW AND LIST]
 
 Within the Actions module, click the "Create new action" button.
 
 A window will pop up:
 
-[Create new Action NAME & CATEGORY GIF]
+\[Create new Action NAME & CATEGORY GIF]
 
 Type what you want the Action to be called and what category of actions you want it to be grouped into and click "Next" to take you to the Builder tab.
 
 Within Builder...
-[TO DO]
+\[TO DO]
 
 **Invite your developer**\
 On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
