@@ -59,7 +59,7 @@ We have no minimum number of seats. If you need custom enterprise pricing, pleas
 
 **Is Gather secure?**
 
-Yes. We treat security very seriously. We encrypt API keys. We don't don't store data, only metadata. We encrypt all data in transit. See more details here \[INSERT LINK].
+Yes. We treat security very seriously. We securely encrypt API keys. We don't don't store  any customer data, only metadata and we encrypt all data in transit and we run on GCP with servers in the USA. [/](/See more details here)
 
 **Is my business data private and safe?**
 
