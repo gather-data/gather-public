@@ -20,7 +20,7 @@ Step-by-step automations created in Builder. Create a single button to handle re
 
 Views are windows into data. For example, a customer View will allow you to list all of your customers, filter them by location, search them by name, or view all the data for an individual customer.
 
-CUSTOMTABLEGIF.
+VIEWSCUSTOM
 
 You could then add a view for your orders and Gather will intelligently link your customer View with your order View, allowing your to seamlessly navigate through your most important data.
 
