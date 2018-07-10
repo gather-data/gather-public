@@ -5,9 +5,10 @@ category: Getting Started
 ---
 This article will help you set up and configure Connections, Views, Modules and Magic Actions as well inviting your team members. Set up should only take about 15 minutes for connections and maximum 1 hour for automations. 
 
+[//]: # (
 You might need a developer to help with set up. Don't worry - this is the only stage where they might need to be involved and we cover everything they need to know in our In-Depth documentation [INSERT LINK].
 
-For more walkthroughs and help on how to make the most out of Gather, check out our Guides \[INSERT LINK] section.
+For more walkthroughs and help on how to make the most out of Gather, check out our Guides \[INSERT LINK] section.)
 
 ## Starting out
 
