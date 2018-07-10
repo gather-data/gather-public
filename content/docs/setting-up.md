@@ -39,10 +39,9 @@ On the left side navigation bar, head over to "All Views". Click the "Add View" 
 
 A window will pop up:
 
-![]()
+![](/assets/screen-shot-2018-07-09-at-10.37.49-pm.png)
 
-
-Just enter the name for the View (ex. Customers, Payments, Partners, Users, etc.) and select the data source from the Connections you've already added.
+Just enter the name for the View (ex. Customers, Payments, Partners, Users, etc.) and select the data source from the Connections you've already added. 
 
 Repeat this step as needed for each View you want to see.
 
@@ -54,7 +53,7 @@ On the left side navigation bar, head over to "All Views". Find the View you wan
 
 From "All Views", click into the selected View from the list. Once you're in the View you want to configure, click "Configure" button in the top right corner.
 
-A window will pop up:
+A window will pop up: 
 
 ![](/assets/screen-shot-2018-07-09-at-3.05.57-pm.png)
 
