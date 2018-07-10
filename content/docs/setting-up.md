@@ -10,11 +10,11 @@ You might need a developer to help with set up. Don't worry - this is the only s
 
 ## Starting out
 
-Think about which Connections you need and what automations you’d like to prioritize.
+Think about which integrations you need and what automations you’d like to prioritize.
 
-## Step 1: Connections
+## Step 1: Integrations
 
-### Adding connections
+### Adding integrations
 
 **Database**\
 You will need an API key to connect to your database(s).
@@ -23,7 +23,7 @@ You will need an API key to connect to your database(s).
 You will need an API key to connect to your Chargify account.
 
 **All other integrations**\
-Make sure you have account and login details for the connection you want to add. All you have to do is click the “Connect” button. If you don't have login details to the 3rd party service, you might have to ask whoever is the admin it to help.
+Make sure you have account and login details for the integration you want to add. All you have to do is click the “Connect” button. If you don't have login details to the 3rd party service, you might have to ask whoever is the admin it to help.
 
 ### Invite your developer
 
@@ -43,7 +43,7 @@ A window will pop up:
 
 ![null](/assets/screen-shot-2018-07-09-at-10.37.49-pm.png)
 
-Just enter the name for the View (ex. Customers, Payments, Partners, Users, etc.) and select the data source from the Connections you've already added.
+Just enter the name for the View (ex. Customers, Payments, Partners, Users, etc.) and select the data source from the integrations you've already added.
 
 Repeat this step as needed for each View you want to see.
 
@@ -85,7 +85,7 @@ A window will pop up:
     <source src="/assets/add-module.mp4" />
 </video>
 
-Just enter the name for the Module (ex. Customer Contact Information, Orders, Payments, Salesforce Account Information, etc.) and select the data source from the Connections you've already added.
+Just enter the name for the Module (ex. Customer Contact Information, Orders, Payments, Salesforce Account Information, etc.) and select the data source from the integrations you've already added.
 
 Repeat this step as needed for each Module you want to see on each View.
 
