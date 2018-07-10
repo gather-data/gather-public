@@ -1,7 +1,7 @@
 ---
 path: /help/getting-started/concepts
 title: Concepts
-category: Getting Started
+category: General
 published: true
 ---
 ## Introduction
