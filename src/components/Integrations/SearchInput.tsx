@@ -30,7 +30,7 @@ const StyledInput = styled.input`
 
 const Container = styled.div`
   background: ${colors.white};
-  border-bottom: 1px solid ${colors.border};
+  ${border};
   ${borderRadius};
   ${ph(2)};
 `;
