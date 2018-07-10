@@ -1,10 +1,14 @@
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://gatherdata.co`,
+  },
   plugins: [
     'gatsby-plugin-typescript',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-resolve-src',
+    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
