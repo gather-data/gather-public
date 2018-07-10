@@ -15,11 +15,11 @@ Gather unblocks customer support teams by empowering them to build the internal 
 
 No, keep your favorite helpdesk to communicate with your customers! Gather is the link between your external communications and your internal processes. We help streamline those processes by aggregating data into a single view and automating your repetitive workflows, making the communication seamless.
 
-We currently support integrations with these helpdesks \[INSERT INTEGRATION LINK].
+For a list of helpdesks we support, [see integrations](/integrations).
 
 ## Can I try Gather for free?
 
-Of course! You can trial Gather free for 14 days - [sign up here](https://app.gatherdata.co/signup). When you’re confident Gather is right for you, you can buy any plan from within your trial account.
+Of course! You can trial Gather free for 14 days - [sign up here](https://app.gatherdata.co/signup). When you’re confident Gather is right for you, you can purchase from within your trial account.
 
 ## FAQ & Contact
 
