@@ -3,7 +3,7 @@ path: /help/faq
 title: FAQ
 category: FAQ
 ---
-## **General**
+## General
 
 **What is Gather?**
 
@@ -23,7 +23,7 @@ We currently work with these helpdesks [see integrations](/integrations).
 
 Yes. We integrate with a wide range of partners including Zendesk, Stripe, Chargify, Slack, Salesforce, databases and more. Don’t see the one you need? Let us know at integrations@gatherdata.co. It could already be on our roadmap!
 
-## **Set up**
+## Set up
 
 **How do I get started?**
 
@@ -37,7 +37,7 @@ Only for set up, which should take 15 minutes for connections and maximum 1 hour
 
 **Setting up Magic Actions:** For 3rd party services that you have account details for, you can configure it all yourself using our easy step-by-step Builder. If your actions involve your database or internal API, you will need to get help from your developer team. This could include actions like extending a trial. The developer would create an API endpoint and hook it up to an action that triggers it. It can be as simple or as complex as you want it to be.
 
-## **Account and Billing**
+## Account and Billing
 
 **What happens after the trial?**
 
@@ -55,7 +55,7 @@ It’s really easy to add or remove reps whenever you like from within your acco
 
 We have no minimum number of seats. If you need custom enterprise pricing, please contact us at sales@gatherdata.co.
 
-## **Security**
+## Security
 
 **Is Gather secure?**
 
@@ -65,6 +65,6 @@ Yes. We treat security very seriously. We securely encrypt API keys, we don't do
 
 Yes. Customer security and privacy is core to our values at Gather, and our team has extensive experience building secure applications.
 
-## **Contact**
+## Contact
 
 Have more questions? Reach out at support@gatherdata.co. We're here to help!
