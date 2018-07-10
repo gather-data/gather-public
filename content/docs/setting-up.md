@@ -2,15 +2,11 @@
 path: /help/getting-started/setting-up
 title: Setting Up
 category: Getting Started
-published: true
 ---
 
-This article will help you set up and configure Connections, Views, Modules and Magic Actions as well inviting your team members. Set up should only take about 15 minutes for connections and maximum 1 hour for automations.
+This article will help you set up and configure Connections, Views, Modules and Magic Actions as well inviting your team members. Set up should only take about 15 minutes for connections and most automations will take only 5 minutes each but some could take longer.
 
-[//]: # (
-You might need a developer to help with set up. Don't worry - this is the only stage where they might need to be involved and we cover everything they need to know in our In-Depth documentation [INSERT LINK].
-
-For more walkthroughs and help on how to make the most out of Gather, check out our Guides \[INSERT LINK] section.)
+You might need a developer to help with set up. Don't worry - this is the only stage where they would need to be involved and we will cover everything they need to know.
 
 ## Starting out
 
@@ -33,7 +29,7 @@ Make sure you have account and login details for the connection you want to add.
 
 On the left side navigation bar, go to Team Settings > Members. Then click "Invite New Member". You should see their name and email pop up in the Invites section.
 
-**\[Insert Screenshot]**
+**\[Insert GIF]**
 
 ## Step 2: Views
 
