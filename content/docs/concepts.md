@@ -8,7 +8,7 @@ published: true
 
 In order for Gather to pull data from a third-party source or to perform an operation in another app, you need to add a Connection. Connections in Gather have two main functions: providing data to Views and Modules and providing operations that can be used in Magic Actions. For example, the database Connection can be used to create Views that show all your customers or their order data while the Stripe Connection provides operations like creating refunds that can be used to build Magic Actions. All Connection credentials are securely encrypted.
 
-\[Insert image]
+For our current list of Connections, [see this list](/integrations).
 
 ## Magic Actions
 
