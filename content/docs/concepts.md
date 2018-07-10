@@ -12,7 +12,7 @@ In order for Gather pull data from a third-party source or to perform an operati
 
 ## Magic Actions
 
-Step by step automations created in Builder. Create a single button to handle repetitive internal processes for customer requests like refunding payments and resetting passwords.
+Step-by-step automations created in Builder. Create a single button to handle repetitive internal processes for customer requests like refunding payments and resetting passwords.
 
 \[Insert image]
 
@@ -36,4 +36,8 @@ Views are the powerhouse of Gather. No matter how your data is structured, views
 
 When looking at an individual entity within a View (like an individual customer), you often want to see associated information about that entity. For example, when looking at an individual customer you probably need to see their Stripe account information or their latest order in Shopify. Modules are where that associated data get displayed.
 
-\[Insert image]
+SHOWMODULEIMAGE
+
+Modules can display any data supported by an connection in Gather, from Stripe payments, to Chargify subscriptions, to Shopfiy orders. You just add a module to a view for any associated data you need with a couple of simple clicks. You can easily customise each module so that it shows you only the fields you need to see.
+
+SHOWMODULE CUSTOMISATIONGIF
