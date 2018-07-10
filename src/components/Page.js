@@ -105,14 +105,14 @@ const Content = styled.div`
     h1 {
       color: ${colors.purple};
       ${TextTypeToStyle[TextTypes.HEADING_1]};
-      font-weight: normal;
+      font-weight: bold;
       ${mt(4)};
     }
 
     h2 {
       color: ${colors.purple};
       ${TextTypeToStyle[TextTypes.HEADING_2]};
-      font-weight: normal;
+      font-weight: bold;
       ${mt(4)};
     }
 
@@ -120,14 +120,14 @@ const Content = styled.div`
       color: ${colors.purple};
       ${TextTypeToStyle[TextTypes.HEADING_3]};
       font-weight: normal;
-      ${mt(4)};
+      ${mt(2)};
     }
 
     h4 {
       color: ${colors.purple};
       ${TextTypeToStyle[TextTypes.HEADING_4]};
       font-weight: normal;
-      ${mt(4)};
+      ${mt(2)};
     }
   }
 `;
@@ -155,19 +155,21 @@ export default function Doc({ data, pathContext }) {
         <Tag heavy type={TextTypes.BODY_TINY}>
           {`${post.timeToRead} min read`}
         </Tag>
-        <Contents>
-          <Text color={colors.navy} heavy mb={1}>
-            Contents
-          </Text>
-          {post.headings.map(heading => (
-            <Link
-              mb={0.5}
-              to={`#${heading.value.toLowerCase().replace(' ', '-')}`}
-            >
-              {heading.value}
-            </Link>
-          ))}
-        </Contents>
+        {Boolean(post.headings.length) && (
+          <Contents>
+            <Text color={colors.navy} heavy mb={1}>
+              Contents
+            </Text>
+            {post.headings.map(heading => (
+              <Link
+                mb={0.5}
+                to={`#${heading.value.toLowerCase().replace(' ', '-')}`}
+              >
+                {heading.value}
+              </Link>
+            ))}
+          </Contents>
+        )}
         <Content>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </Content>
@@ -223,7 +225,11 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       filter: {
-        frontmatter: { category: { eq: $category }, path: { ne: $path } }
+        frontmatter: {
+          category: { eq: $category }
+          path: { ne: $path }
+          published: { eq: true }
+        }
       }
       limit: 1000
     ) {
