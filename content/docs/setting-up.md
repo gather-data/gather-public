@@ -41,8 +41,6 @@ A window will pop up:
 ![]()
 
 
-\[INSERT ADD VIEW POP UP HERE]
-
 Just enter the name for the View (ex. Customers, Payments, Partners, Users, etc.) and select the data source from the Connections you've already added.
 
 Repeat this step as needed for each View you want to see.
