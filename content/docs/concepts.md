@@ -4,7 +4,6 @@ title: Concepts
 category: Getting Started
 published: true
 ---
-
 ## Connections
 
 In order for Gather pull data from a third-party source or to perform an operation in another app, you need to add a connection. Connections in Gather have two main functions: providing data to Views and Modules and providing operations that can be used in Magic Actions. For example, the database connection can be used to create Views that show all your customers or their order data. And the Stripe Connection provides operations like creating refunds that can be used as steps in Magic Actions. All credentials are securely encrypted.
@@ -21,7 +20,17 @@ Step by step automations created in Builder. Create a single button to handle re
 
 Views are windows into data. For example, a customer View will allow you to list all of your customers, filter them by location, search them by name, or view all the data for an individual customer.
 
-\[Insert image]
+CUSTOMTABLEGIF.
+
+You could then add a view for your orders and Gather will intelligently link your customer view with your order view, allowing your to seamlessly navigate through your most important data.
+
+ORDERGIFLINKEDWITHCUSTOMER
+
+Views can also be added for third-party connections like Stripe. For example with a couple clicks, you can create a view that shows you all Stripe payments that have been made, again with the ability to filter and search to find the payment you need and automatically linked with the right customer using Gather’s intelligent linking functionality.
+
+STRIPEVIEWGIF
+
+Views are the powerhouse of Gather. No matter how your data is structured, views can be created and configured to display the information you need.
 
 ## Modules
 
