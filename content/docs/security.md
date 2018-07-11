@@ -1,6 +1,6 @@
 ---
 path: /help/company/security
-title: Security Overview
+title: Security
 category: Company
 published: true
 ---
