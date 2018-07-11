@@ -29,7 +29,7 @@ Our user authentication system uses BCrypt to hash and salt user passwords. We e
 
 ## Is data encrypted in transit between networks?
 
-Yes. All traffic from your browser, to our servers, and to our database are all encrypted using 256-bit AES Transport Level Security (TLS). Non-encrypted access to our API or database is not allowed. SSL certificates are issues and managed with Lets Encrypt.
+Yes. All traffic from your browser, to our servers, and to our database are all encrypted using 256-bit AES Transport Level Security (TLS). Non-encrypted access to our API or database is not allowed. SSL certificates are issued and managed with Lets Encrypt.
 
 ## How is security thought about at Gather?
 
