@@ -28,7 +28,7 @@ const CategoryGroup = ({ category, servicesForCategory }) => (
           md={6}
           key={service.id}
         >
-          <ServiceDetail service={service} />
+          <ServiceDetail key={service.id} service={service} />
         </StyledColumn>
       ))}
     </GroupContainer>

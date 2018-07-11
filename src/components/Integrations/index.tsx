@@ -55,6 +55,7 @@ const Integrations = ({
       </Row>
       {serviceGroups.map(([category, servicesForCategory]) => (
         <CategoryGroup
+          key={category}
           category={category}
           servicesForCategory={servicesForCategory}
         />
