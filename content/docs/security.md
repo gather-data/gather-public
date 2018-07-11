@@ -13,15 +13,15 @@ Gather **does not** store any of your customer data. All data accessible via Gat
 
 What we do store are the credentials for your database and other sources, but these are encrypted at-rest using regularly rotated keys stored in Google KMS. We also store metadata for any actions run within Gather, but here we only store the ID of the entity that the action was run for (for example, a customer ID).
 
-Data is further encrypted at disc-level by Google.
+Data is further encrypted at disc-level by Google Cloud Platform.
 
 ## What infrastructure do you run on?
 
 We run entirely on Google Cloud Platform. Our servers are run within a secure VPC with only the necessary hosts/ports exposed to the internet.
 
-## Can employees access my data?
+## Can Gather employees access my data?
 
-No. Only members of your team are able to access your customer data. Our employees are not given `shell` access to any of our servers and all data access requires access to your encrypted database credentials. Our IAM permissions are such that it's not possible for employees to access or decrypt these credentials.
+No. Only members of your team are able to access your customer data. Our employees are not given `shell` access to any of our servers and all data access requires access to your encrypted database credentials. Our IAM permissions are such that it's not possible for Gather employees to access or decrypt these credentials.
 
 ## How are passwords stored?
 
