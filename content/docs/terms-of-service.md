@@ -5,7 +5,7 @@ category: Company
 published: true
 ---
 
-Effective date: June 21, 2018
+Effective date: July 12, 2018
 
 THESE "TERMS OF SERVICE" (THE "AGREEMENT") GOVERN THE USE OF THE SERVICES PROVIDED BY GATHER INC. AND FORM A LEGAL AGREEMENT BETWEEN THE INDIVIDUAL OR LEGAL ENTITY OR ASSOCIATION INTENDING TO USE THE SERVICES ("YOU" OR "CUSTOMER") AND GATHER. BY REGISTERING FOR OR BY USING THE SERVICES, YOU REPRESENT AND WARRANT THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND TO THE TERMS OF THE AGREEMENT. IF YOU DO NOT AGREE TO BE BOUND BY THE AGREEMENT, OR YOU DO NOT HAVE AUTHORITY TO BIND CUSTOMER TO THE AGREEMENT, YOU MAY NOT USE THE SERVICES.
 
@@ -27,6 +27,8 @@ You can find the most current version of the agreement at [https://gatherdata.co
 "Staff User Account" means a staff user account that has been validly registered for use with the Software.
 
 “Software” means the proprietary software developed by Gather and its corresponding documentation or data which are related to the Services.
+
+"Subscription Term" means the period during which You have agreed to subscribe to a Service with respect to any individual Staff User Account.
 
 "Third Party Software" means any third-party products incorporated into the Software, including any open source software available under the GNU Affero General Public License (AGPL), GNU General Public License (GPL), GNU Lesser General Public License (LGPL), Mozilla Public License (MPL), Apache License, BSD licenses, or any other license that is approved by the Open Source Initiative.
 
@@ -86,19 +88,23 @@ You can find the most current version of the agreement at [https://gatherdata.co
 
 5.  #### PAYMENT OF FEES
 
-    1.  You will pay Gather the applicable fees as accepted and agreed to by you in writing (which can be satisfied via email) during the registration process for the Services (the “Fees”). To the extent applicable, you will pay Gather for additional services, such as integration fees or other consulting fees. All payments will be made in accordance with the payment method and schedule mutually agreed by the Parties in writing (which can be satisfied via email). You agree that Gather will charge you for the Fees on a recurring basis in accordance with such mutually agreed schedules. Specifically, if you submit credit card information to Gather for payment of Fees, unless your account is terminated, you hereby authorize Gather to charge such credit card for the Fees incurred automatically for a subscription term equivalent in length to the then expiring subscription term. If the Parties agree that Gather will invoice you for the Fees, payments will be due within fourteen (14) days of the date of the invoice.
+    1.  Unless otherwise indicated on an Order Form or Statement of Work referencing this Agreement, subject to Section 5.2, all charges associated with Your access to and use of the Services (“Subscription Charges”) are due in full upon commencement of Your Subscription Term. Specifically, if you submit credit card information to Gather for payment of Subscription Charges, unless your account is terminated, you hereby authorize Gather to charge such credit card for the fees incurred automatically for a subscription term equivalent in length to the then expiring Subscription Term. If the Parties agree that Gather will invoice you for the fees, payments will be due within fourteen (14) days of the date of the invoice.
 
-    2.  Unpaid Fees are subject to a finance charge of one percent (1.0%) per month, or the maximum permitted by law, whichever is lower, plus all expenses of collection, including reasonable attorneys’ fees. You agree to pay any applicable taxes not otherwise included in the Fees (excluding US taxes based on Gather’s net income) unless you have provided Gather with a valid exemption certificate. In the case of any withholding requirements, you will pay any required withholding itself and will not reduce the amount paid to you on account thereof.
+    2.  The Subscription Charges You pay is dependent on the number of Staff User Accounts. If You choose to increase the number of Staff User Accounts authorized to access and use the Service during Your Subscription Term (a “Subscription Upgrade”), any incremental Subscription Charges associated with such Subscription Upgrade will be prorated over the remaining period of Your then current Subscription Term, charged to Your Account and due and payable upon implementation of such Subscription Upgrade. In any future Subscription Term, Your Subscription Charges will reflect any such Subscription Upgrades.
+
+    3.  No refunds or credits for Subscription Charges or other fees or payments will be provided to You if You elect to downgrade. Downgrading may cause loss of content, support, features, or capacity of the Service as available to You, and Gather does not accept any liability for such loss.
+
+    3.  You agree to pay any applicable taxes not otherwise included in the fees (excluding US taxes based on Gather’s net income) unless you have provided Gather with a valid exemption certificate. In the case of any withholding requirements, you will pay any required withholding itself and will not reduce the amount paid to you on account thereof.
 
 6.  #### TERM AND TERMINATION
 
-    1.  Subject to earlier termination as provided below, this Agreement will remain in effect for the term specified on the quote provided by Gather (the “Initial Service Term”) or until terminated in accordance with the terms of this Agreement. Following the Initial Service Term, this Agreement will automatically renew for successive renewal terms of equal length to the Initial Service Term, subject to early termination (each, a “Renewal Term”, and together with the Initial Term, the “Service Term”) unless either Party gives the other Party notice of non-renewal prior to the end of the then-current term.
+    1.  Subject to earlier termination as provided below, this Agreement will remain in effect for the Subscription Term or until terminated in accordance with the terms of this Agreement. This Agreement will automatically renew for successive renewal terms of equal length to the initial Subscription Term, subject to early termination unless either Party gives the other Party notice of non-renewal prior to the end of the then-current term.
 
-    2.  Termination by You. You can terminate your account at any time by sending an email or phone request to cancel. If you cancel your account before the end of your current paid up month, your cancellation will take effect immediately, and you will not be charged again. Please note that we do not provide refunds for unused time in the last billing cycle unless we have negotiated terms with you that explicitly supersedes these terms.
+    2.  Termination by You. You can terminate your account at any time by sending an email or phone request to cancel. If you cancel your account before the end of your current paid up month, your cancellation will take effect immediately, and you will not be charged again. Please note that we do not provide refunds for unused time in the last Subscription Term unless we have negotiated terms with you that explicitly supersedes these terms.
 
     3.  Termination and Suspension by Gather. Gather may terminate your account and/or this Agreement at any time and for any reason upon notice to you. We may also suspend our Service to you at any time, with or without cause. If we terminate your account without cause, we will refund a prorated portion of your monthly prepayment. We will not refund or reimburse you if we terminate your account for cause, including (without limitation) for a violation of these Terms of Service.
 
-    4.  Effect of Termination. The termination of your account with Gather for any reason results in the immediate termination of your license to use the Services and upon such termination (i) you shall immediately cease all use of the Services, (ii) you will lose access to all of your Content and Gather will delete it in the normal course of business operations, and (iii) you shall destroy all copies, full or partial, of any components of the Services and Software that may have been downloaded by you or otherwise transmitted to you electronically or otherwise in connection with the Services. Your information cannot be recovered once your account is terminated. No expiration or termination will affect your obligation to pay all Fees that may have become due before such expiration or termination.
+    4.  Effect of Termination. The termination of your account with Gather for any reason results in the immediate termination of your license to use the Services and upon such termination (i) you shall immediately cease all use of the Services, (ii) you will lose access to all of your Content and Gather will delete it in the normal course of business operations, and (iii) you shall destroy all copies, full or partial, of any components of the Services and Software that may have been downloaded by you or otherwise transmitted to you electronically or otherwise in connection with the Services. Your information cannot be recovered once your account is terminated. No expiration or termination will affect your obligation to pay all fees that may have become due before such expiration or termination.
 
 7.  #### WARRANTY DISCLAIMER
 
