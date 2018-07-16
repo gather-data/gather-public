@@ -18,9 +18,9 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-drift',
+      resolve: `gatsby-plugin-intercom`,
       options: {
-        appId: 'mpb9rggby9x2',
+        appId: 'veqeks9l',
       },
     },
     {

@@ -3615,12 +3615,6 @@ gatsby-module-loader@^1.0.11:
     babel-runtime "^6.26.0"
     loader-utils "^0.2.16"
 
-gatsby-plugin-drift@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-drift/-/gatsby-plugin-drift-1.0.0.tgz#2c26ac9f588908c888d3782f694d3e23cd06950f"
-  dependencies:
-    babel-runtime "^6.26.0"
-
 gatsby-plugin-favicon@2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-favicon/-/gatsby-plugin-favicon-2.1.1.tgz#da3cf0c8d9ea50e13b09916aac57ef9fdbfe428b"
@@ -3631,6 +3625,12 @@ gatsby-plugin-favicon@2.1.1:
 gatsby-plugin-google-analytics@1.0.31:
   version "1.0.31"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-1.0.31.tgz#eaf16e1809461b10badf12c05038c429745783c0"
+  dependencies:
+    babel-runtime "^6.26.0"
+
+gatsby-plugin-intercom@0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-intercom/-/gatsby-plugin-intercom-0.1.4.tgz#5942ba9f8588fcb736a2e31bf91618500973b40a"
   dependencies:
     babel-runtime "^6.26.0"
 
