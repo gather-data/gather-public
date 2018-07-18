@@ -1,5 +1,5 @@
 ---
-path: /company/compliance
+path: /help/company/compliance
 title: Compliance
 category: Company
 published: false
