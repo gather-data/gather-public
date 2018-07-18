@@ -2,7 +2,7 @@
 path: /company/compliance
 title: Compliance
 category: Company
-published: false
+published: true
 ---
 ## Compliance
 
