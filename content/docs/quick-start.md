@@ -21,7 +21,7 @@ For a list of helpdesks we support, [see integrations](/integrations).
 
 ## Can I try Gather for free?
 
-Of course! You can trial Gather free for 14 days - [sign up here](https://app.gatherdata.co/request-demo). When you’re confident Gather is right for you, you can purchase from within your trial account.
+Of course! You can trial Gather free for 14 days - [sign up here](https://app.gatherdata.co/signup). When you’re confident Gather is right for you, you can purchase from within your trial account.
 
 ## FAQ & Contact
 
