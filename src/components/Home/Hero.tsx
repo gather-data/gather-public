@@ -35,7 +35,7 @@ const Container = styled(Row)`
   ${utils.breakpoint(
     'md',
     () => `
-    height: 876px;
+    height: 680px;
   `
   )};
 `;
