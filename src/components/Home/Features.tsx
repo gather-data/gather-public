@@ -56,12 +56,12 @@ const FeatureContent = styled(Column)`
 `;
 
 const Container = styled(Page)`
-  ${mt(15)};
+  ${mt(10)};
 
   ${utils.breakpoint(
     'md',
     () => `
-      ${mt(30)()};
+      ${mt(24)()};
     `
   )};
 `;

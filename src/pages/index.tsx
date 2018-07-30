@@ -7,8 +7,16 @@ import Hero from '../components/Home/Hero';
 import Demo from '../components/Home/Demo';
 import Features from '../components/Home/Features';
 import Customers from '../components/Home/Customers';
+import WorksWith from '../components/Home/WorksWith';
+import Techstars from '../components/Home/Techstars';
 
-const Home = ({ data: { homeJson: home, footerJson: footer } }) => (
+const Home = ({
+  data: {
+    homeJson: home,
+    footerJson: footer,
+    allGatherServices: { edges: servicesWithNodes },
+  },
+}) => (
   <div>
     <Helmet title={`Gather | ${home.title}`} />
     <Hero
@@ -17,8 +25,11 @@ const Home = ({ data: { homeJson: home, footerJson: footer } }) => (
       subtitle={home.subtitle}
       ctaText={home.ctaText}
       trialText={home.trialText}
+      newItem={home.newItem}
     />
+    <Techstars />
     <Demo />
+    <WorksWith services={servicesWithNodes.map(sn => sn.node)} />
     <Features
       featureData={home.featureData}
       featurePrivacy={home.featurePrivacy}
@@ -62,6 +73,11 @@ export const query = graphql`
       ctaText
       trialText
       subtitle
+      newItem {
+        newText
+        newHref
+        newLabel
+      }
       featureData {
         title
         copy
@@ -110,6 +126,44 @@ export const query = graphql`
         title
         subtitle
         ctaText
+      }
+    }
+    allGatherServices {
+      edges {
+        node {
+          name
+          description
+          categories
+          type
+          logo
+          screenshot
+          alternative_fields {
+            alternative_id
+            name
+            input_type
+            required
+          }
+          tutorials
+          service
+          enabled
+          is_available
+          show_marketing
+          nodes {
+            type
+            name
+            documentation
+            supports_variable_inputs
+            version
+            upgrade_documentation
+            use_input_as_outputs
+          }
+          flow_templates {
+            alternative_id
+            name
+            description
+          }
+          brand_color
+        }
       }
     }
   }

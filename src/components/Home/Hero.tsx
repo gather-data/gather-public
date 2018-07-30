@@ -16,9 +16,14 @@ import {
   colors,
   mt,
   pv,
+  ph,
   pt,
   pb,
+  p,
+  borderRadius,
 } from 'gather-style';
+
+import Tag from '../Tag';
 
 import hero from './hero.svg';
 
@@ -30,7 +35,7 @@ const Container = styled(Row)`
   ${utils.breakpoint(
     'md',
     () => `
-    height: 776px;
+    height: 876px;
   `
   )};
 `;
@@ -70,6 +75,14 @@ const TrialText = styled(Text)`
   )};
 `;
 
+const NewContainer = styled(Flex)`
+  background: ${colors.purple10};
+  display: inline-flex;
+  ${borderRadius};
+  ${pv(1)};
+  ${ph(1)};
+`;
+
 function splitTextWithHighlight(text, highlight) {
   const match = text.match(`(${highlight})`);
   const start = match.index;
@@ -82,13 +95,42 @@ function splitTextWithHighlight(text, highlight) {
   return [first, second, last];
 }
 
-const Hero = ({ title, titleHighlight, subtitle, ctaText, trialText }) => {
+const Hero = ({
+  title,
+  titleHighlight,
+  subtitle,
+  ctaText,
+  trialText,
+  newItem,
+}) => {
   const [first, second, last] = splitTextWithHighlight(title, titleHighlight);
 
   return (
     <Page width={pageSmallWidth}>
       <Container>
-        <Column sm={6}>
+        <Column sm={7}>
+          {newItem.newText && (
+            <NewContainer
+              flow="row"
+              alignItems="center"
+              justifyContent="flex-start"
+              mb={3}
+            >
+              <Tag type={TextTypes.BODY_TINY} heavy color={colors.blue}>
+                {newItem.newText}
+              </Tag>
+              <Link
+                type={LinkTypes.TEXT}
+                size="small"
+                iconEnd
+                icon={<AndroidArrowForward size={16} />}
+                href={newItem.newHref}
+                target="_blank"
+              >
+                {newItem.newLabel}
+              </Link>
+            </NewContainer>
+          )}
           <span>
             {first && (
               <Text
@@ -133,7 +175,7 @@ const Hero = ({ title, titleHighlight, subtitle, ctaText, trialText }) => {
             {trialText}
           </TrialText>
         </Column>
-        <Column sm={6}>
+        <Column sm={5}>
           <HeroImage src={hero} />
         </Column>
       </Container>
