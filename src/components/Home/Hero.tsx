@@ -161,7 +161,7 @@ const Hero = ({
           </Text>
           <CtaRow alignItems="flex-start" flow="column">
             <Link
-              to="/"
+              href="https://app.gatherdata.co/signup"
               type={LinkTypes.BUTTON_PRIMARY}
               mb={1}
               size="large"
