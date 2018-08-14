@@ -63,18 +63,21 @@ const Box = styled(Flex)`
   ${mr(4)};
 
   background: ${colors.white};
-  box-shadow: 0 2px 5px 0 ${colors.navy10}, 0 4px 16px 0 ${colors.navy10};
   border: 1px solid ${colors.purple10};
   display: inline-flex;
   height: 144px;
   width: 200px;
-  margin-top: ${props => `${props.offset}px`};
 
-  ${transition(['transform'], '0.24s')};
+  ${transition(['transform', 'box-shadow'])};
 
   &:hover {
-    transform: scale(1.08) translate(0, -4px);
+    transform: translate(0, -4px);
+    border: 1px solid ${colors.primary};
   }
+
+  ${boxShadow};
+  ${border};
+  ${borderRadius};
 `;
 
 const OuterBox = styled(ReactRouterLink)`
@@ -87,6 +90,7 @@ const ServiceImage = styled.img`
   ${maxHeight(7)};
   display: block;
   margin: 0;
+  position: absolute;
 `;
 
 const animateRow = keyframes`
@@ -108,16 +112,8 @@ const ServiceRow = styled.div`
 
 const Service = ({ service }) => (
   <OuterBox underline={false} to="/integrations">
-    <Box
-      offset={(Math.random() - 1) * 40}
-      flow="column"
-      alignItems="center"
-      justifyContent="center"
-    >
+    <Box flow="column" alignItems="center" justifyContent="center">
       <ServiceImage src={service.logo} />
-      <Text align="center" type={TextTypes.BODY} mt={1} heavy>
-        {service.name}
-      </Text>
     </Box>
   </OuterBox>
 );

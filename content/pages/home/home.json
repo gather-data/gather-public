@@ -49,6 +49,32 @@
       }
     ]
   },
+  "developers": {
+    "title": "A developer-first admin for your operations team",
+    "subtitle": "Out-of-the-box useful, fully extensible",
+    "ctaText": "Read The Docs",
+    "ctaTo": "/help",
+    "benefits": [
+      {
+        "title": "Out-of-the-box Admin",
+        "copy":
+          "With one-click integrations into popular data sources, you can have an operational admin up and running in 2 minutes.",
+        "image": "/assets/admin.png"
+      },
+      {
+        "title": "Give operations control",
+        "copy":
+          "Allow CX teams the power to handle minor requests like adding/changing fields or adding simple actions. For the big important stuff, you still control it.",
+        "image": "/assets/admin.png"
+      },
+      {
+        "title": "Fully Extensible",
+        "copy":
+          "Gather scales with you with developer APIs and SDKs, ensuring you can always meet business requirements.",
+        "image": "/assets/admin.png"
+      }
+    ]
+  },
   "footerCta": {
     "title": "Let's get started",
     "subtitle": "14 day free trial. No credit card required.",

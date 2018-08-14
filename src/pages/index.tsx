@@ -6,6 +6,7 @@ import FooterCta from '../components/FooterCta';
 import Hero from '../components/Home/Hero';
 import Demo from '../components/Home/Demo';
 import Features from '../components/Home/Features';
+import Developers from '../components/Home/Developers';
 import Customers from '../components/Home/Customers';
 import WorksWith from '../components/Home/WorksWith';
 import Techstars from '../components/Home/Techstars';
@@ -36,6 +37,13 @@ const Home = ({
       featureMagicActions={home.featureMagicActions}
       featureTimeline={home.featureTimeline}
       featureAnalytics={home.featureAnalytics}
+    />
+    <Developers
+      title={home.developers.title}
+      subtitle={home.developers.subtitle}
+      benefits={home.developers.benefits}
+      ctaText={home.developers.ctaText}
+      ctaTo={home.developers.ctaTo}
     />
     <Customers
       title={home.customers.title}
@@ -126,6 +134,17 @@ export const query = graphql`
         title
         subtitle
         ctaText
+      }
+      developers {
+        title
+        subtitle
+        ctaText
+        ctaTo
+        benefits {
+          title
+          copy
+          image
+        }
       }
     }
     allGatherServices {
