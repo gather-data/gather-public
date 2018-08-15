@@ -38,12 +38,12 @@ const InnerContainer = styled(Row)`
     ),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
 
-  ${pv(12)};
+  ${pv(6)};
 
   ${utils.breakpoint(
     'md',
     () => `
-    ${pv(12)()};
+    ${pv(6)()};
   `
   )};
 `;
@@ -60,7 +60,16 @@ const Benefits = styled(Row)`
     'md',
     () => `
     ${mb(8)()};
-    ${mt(8)()};
+    ${mt(6)()};
+  `
+  )};
+`;
+
+const Title = styled(Text)`
+  ${utils.breakpoint(
+    'md',
+    () => `
+    ${ph(8)()};
   `
   )};
 `;
@@ -90,11 +99,11 @@ const Demo: React.SFC<IProps> = ({
     <InnerContainer fluid>
       <Page>
         <Column>
-          <Flex flow="column" mb={3}>
+          <Flex flow="column">
             <Tag type={TextTypes.BODY_TINY} heavy color={colors.blue}>
               DEVELOPERS
             </Tag>
-            <Text
+            <Title
               align="center"
               mt={3}
               mb={3}
@@ -102,7 +111,7 @@ const Demo: React.SFC<IProps> = ({
               color={colors.white}
             >
               {title}
-            </Text>
+            </Title>
             <Text
               align="center"
               type={TextTypes.BODY_LARGE}
@@ -113,13 +122,13 @@ const Demo: React.SFC<IProps> = ({
           </Flex>
           <Benefits>
             {benefits.map(benefit => (
-              <Column md={6}>
+              <Column md={12 / benefits.length}>
                 <Flex flow="column">
                   <BenefitImage src={benefit.image} />
                   <Text
                     mt={2}
                     mb={2}
-                    type={TextTypes.HEADING_4}
+                    type={TextTypes.BODY_LARGE}
                     heavy
                     color={colors.white}
                   >
@@ -127,7 +136,7 @@ const Demo: React.SFC<IProps> = ({
                   </Text>
                   <Text
                     align="center"
-                    type={TextTypes.BODY}
+                    type={TextTypes.BODY_SMALL}
                     color={colors.white}
                   >
                     {benefit.copy}
