@@ -49,7 +49,15 @@ const InnerContainer = styled(Row)`
 `;
 
 const BenefitImage = styled.img`
-  max-width: 66px;
+  max-width: 48px;
+  margin: 0;
+`;
+
+const BenefitImageContainer = styled.div`
+  display: flex;
+  align-items: flex-end;
+  height: 66px;
+  ${mb(2)};
 `;
 
 const Benefits = styled(Row)`
@@ -124,13 +132,16 @@ const Demo: React.SFC<IProps> = ({
             {benefits.map(benefit => (
               <Column md={12 / benefits.length}>
                 <Flex flow="column">
-                  <BenefitImage src={benefit.image} />
+                  <BenefitImageContainer>
+                    <BenefitImage src={benefit.image} />
+                  </BenefitImageContainer>
                   <Text
                     mt={2}
                     mb={2}
                     type={TextTypes.BODY_LARGE}
                     heavy
                     color={colors.white}
+                    align="center"
                   >
                     {benefit.title}
                   </Text>
