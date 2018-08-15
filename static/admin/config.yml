@@ -157,6 +157,19 @@ collections:
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: 'CTA Text', name: ctaText, widget: string}
           - {label: 'Trial Text', name: trialText, widget: string}
+          - label: 'New Item'
+            name: newItem
+            widget: object
+            fields:
+              - label: Label
+                name: newLabel
+                widget: string
+              - label: href
+                name: newHref
+                widget: string
+              - label: Text
+                name: newText
+                widget: string
           - label: 'Feature 1 - Data'
             name: featureData
             widget: object

@@ -1,7 +1,8 @@
 {
   "featureData": {
     "title": "Data at your fingertips",
-    "copy": "Customer context in a single view. Purchases, billing, previous interactions - anything you need. Reduce time navigating administrative tools so you can focus on communicating with the customer.",
+    "copy":
+      "Customer context in a single view. Purchases, billing, previous interactions - anything you need. Reduce time navigating administrative tools so you can focus on communicating with the customer.",
     "tag": "Data view",
     "ctaText": "View integrations",
     "ctaTo": "/integrations"
@@ -9,7 +10,8 @@
   "trialText": "14 day free trial. No credit card required.",
   "featureMagicActions": {
     "title": "Magic Actions",
-    "copy": "Automate repetitive workflows without code. Stop wasting time with manual data entry and Google Sheets. Perform tasks automatically instead.",
+    "copy":
+      "Automate repetitive workflows without code. Stop wasting time with manual data entry and Google Sheets. Perform tasks automatically instead.",
     "tag": "WORKFLOW AUTOMATION BUILDER",
     "ctaText": "",
     "ctaTo": ""
@@ -22,36 +24,42 @@
     "benefits": [
       {
         "title": "Out-of-the-box Admin",
-        "copy": "With one-click integrations into popular data sources, you can have an operational admin up and running in 2 minutes.",
+        "copy":
+          "With one-click integrations into popular data sources, you can have an operational admin up and running in 2 minutes.",
         "image": "/assets/admin.png"
       },
       {
         "title": "Give operations control",
-        "copy": "Allow operations teams the power to handle minor requests like adding/changing fields or adding simple actions. For the big important stuff, you still control it.",
+        "copy":
+          "Allow operations teams the power to handle minor requests like adding/changing fields or adding simple actions. For the big important stuff, you still control it.",
         "image": "/assets/control.png"
       },
       {
         "title": "Fully Extensible",
-        "copy": "With Gather's developer API and SDK, you can be sure that you can always meet business requirements, no matter how they change.",
+        "copy":
+          "With Gather's developer API and SDK, you can be sure that you can always meet business requirements, no matter how they change.",
         "image": "/assets/terminal.png"
       },
       {
         "title": "Security",
-        "copy": "Gather has been designed with security as the highest priority. That's why we do not store any of your customer data (not even in cache) and all credentials are encrypted at-rest.",
+        "copy":
+          "Gather has been designed with security as the highest priority. That's why we do not store any of your customer data (not even in cache) and all credentials are encrypted at-rest.",
         "image": "/assets/security.png"
       }
     ]
   },
   "featureAnalytics": {
     "title": "Be Data Driven",
-    "copy": "Track actions taken and answer simple questions like how many refunds were given this week. Use data to help improve internal policies.",
+    "copy":
+      "Track actions taken and answer simple questions like how many refunds were given this week. Use data to help improve internal policies.",
     "tag": "Analytics",
     "ctaText": "",
     "ctaTo": ""
   },
   "featurePrivacy": {
     "title": "Multi-tier support",
-    "copy": "Roles to control what data each support team member gets to see and which actions are available to them.",
+    "copy":
+      "Roles to control what data each support team member gets to see and which actions are available to them.",
     "tag": "ACCESS & PERMISSIONS",
     "ctaText": "",
     "ctaTo": ""
@@ -60,7 +68,8 @@
     "title": "Powering support for thousands of customers across the world",
     "testimonials": [
       {
-        "testimonial": "Gather enabled our team to streamline support and internal processes, reducing pressure on our engineering team to deliver features for support and reducing ramp up time for new support hires, ultimately leading to more efficient and happier team members. We wouldn’t have been able to keep up with our level of support and scale as quickly without Gather.",
+        "testimonial":
+          "Gather enabled our team to streamline support and internal processes, reducing pressure on our engineering team to deliver features for support and reducing ramp up time for new support hires, ultimately leading to more efficient and happier team members. We wouldn’t have been able to keep up with our level of support and scale as quickly without Gather.",
         "name": "Karim Butt",
         "job": "CTO, GlossGenius",
         "image": "/assets/0.jpeg"
@@ -74,13 +83,20 @@
   },
   "featureTimeline": {
     "title": "Continuity between interactions",
-    "copy": "See every action taken. Easily add and read through notes from teammates for seamless interactions with customers.",
+    "copy":
+      "See every action taken. Easily add and read through notes from teammates for seamless interactions with customers.",
     "tag": "Customer timeline",
     "ctaText": "",
     "ctaTo": ""
   },
-  "subtitle": "Understand customer history and provide support that's relevant. Automate repetitive workflows like refunds and password resets. Stay in control when ticket volumes grow. ",
+  "subtitle":
+    "Understand customer history and provide support that's relevant. Automate repetitive workflows like refunds and password resets. Stay in control when ticket volumes grow. ",
   "title": "Mission Control For Growing Customer Service Teams",
   "titleHighlight": "Mission Control",
-  "ctaText": "Free Trial"
+  "ctaText": "Free Trial",
+  "newItem": {
+    "newLabel": "",
+    "newHref": "",
+    "newText": ""
+  }
 }
