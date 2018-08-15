@@ -99,7 +99,7 @@ const Customers = ({ title, testimonials }) => (
         align="center"
         color={colors.white}
         type={TextTypes.HEADING_3}
-        heavy={false}
+        heavy
       >
         {title}
       </Title>
