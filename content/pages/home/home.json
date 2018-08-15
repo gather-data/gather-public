@@ -32,8 +32,13 @@
       },
       {
         "title": "Fully Extensible",
-        "copy": "Gather scales with you with a developer API and SDK, ensuring you can always meet business requirements.",
+        "copy": "With Gather's developer API and SDK, you can be sure that you can always meet business requirements, no matter how they change.",
         "image": "/assets/terminal.png"
+      },
+      {
+        "title": "Security",
+        "copy": "Gather has been designed with security as the highest priority. That's why we do not store any of your customer data (not even in cache) and all credentials are encrypted at-rest.",
+        "image": "/assets/security.png"
       }
     ]
   },
