@@ -82,9 +82,23 @@ function groupBy(objectArray, getter) {
 
 const categoryOrders = ['Getting Started', 'Guides'];
 
-function groupDocs(docs) {
+function groupDocs(docs, categoryLinks) {
   let groups = groupBy(docs.map(d => d.node), d => d.frontmatter.category);
   groups = Object.entries(groups);
+
+  groups = groups.map(([category, items]) => {
+    let newItems = items.map(item => ({
+      to: item.frontmatter.path,
+      label: item.frontmatter.title,
+    }));
+
+    const categoryLinksForCategory = categoryLinks.filter(
+      link => link.category === category
+    );
+    newItems = newItems.concat(categoryLinksForCategory);
+
+    return [category, newItems];
+  });
 
   groups.sort(
     ([categoryA], [categoryB]) =>
@@ -113,14 +127,19 @@ const Help = ({
       </Row>
       <Row>
         <ContentColumn sm={6}>
-          {groupDocs(docs).map(([category, items]) => (
+          {groupDocs(docs, help.categoryLinks).map(([category, items]) => (
             <Box key={category}>
               <Text color={colors.navy} heavy mb={1}>
                 {category}
               </Text>
               {items.map(item => (
-                <Link mb={0.5} to={item.frontmatter.path}>
-                  {item.frontmatter.title}
+                <Link
+                  mb={0.5}
+                  to={item.to}
+                  href={item.href}
+                  target={item.href ? '_blank' : '_self'}
+                >
+                  {item.label}
                 </Link>
               ))}
             </Box>
@@ -213,6 +232,11 @@ export const query = graphql`
       twitterText
       twitterCta
       twitterTitle
+      categoryLinks {
+        label
+        href
+        category
+      }
       footerCta {
         title
         subtitle

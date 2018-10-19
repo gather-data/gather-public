@@ -80,6 +80,19 @@ collections:
           - {label: 'Twitter Text', name: twitterText, widget: string}
           - {label: 'Twitter CTA', name: twitterCta, widget: string}
           - {label: 'Twitter Title', name: twitterTitle, widget: string}
+          - label: 'Category Links'
+            name: categoryLinks
+            widget: list
+            fields:
+              - label: Category
+                name: category
+                widget: string
+              - label: Link Label
+                name: label
+                widget: string
+              - label: Link Href
+                name: href
+                widget: string
           - label: 'Footer CTA'
             name: footerCta
             widget: object

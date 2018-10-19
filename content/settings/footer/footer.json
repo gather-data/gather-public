@@ -39,6 +39,10 @@
                     "to": "/help/faq"
                 },
                 {
+                    "label": "Developer API",
+                    "to": "https://api.gatherdata.co/docs"
+                },
+                {
                     "label": "Privacy",
                     "to": "/legal/privacy"
                 },

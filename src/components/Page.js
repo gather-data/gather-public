@@ -83,7 +83,10 @@ const Content = styled.div`
     }
 
     code {
-      background: ${colors.purple10};
+      background: ${colors.background};
+      font-family: firaMonoRegular, monospace;
+      color: ${colors.purple};
+
       ${ph(0.25)};
       ${borderRadius};
       ${border};
@@ -93,8 +96,22 @@ const Content = styled.div`
       }
     }
 
+    pre {
+      background-color: ${colors.background};
+      ${border};
+
+      code {
+        border: 0;
+        background: none;
+      }
+    }
+
     a {
       ${LinkTypeToStyle[LinkTypes.TEXT]};
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     h1,
@@ -120,20 +137,23 @@ const Content = styled.div`
       ${TextTypeToStyle[TextTypes.HEADING_2]};
       font-weight: bold;
       ${mt(4)};
+      ${mb(2)};
     }
 
     h3 {
       color: ${colors.purple};
       ${TextTypeToStyle[TextTypes.HEADING_3]};
       font-weight: normal;
-      ${mt(2)};
+      ${mt(4)};
+      ${mb(2)};
     }
 
     h4 {
       color: ${colors.purple};
       ${TextTypeToStyle[TextTypes.HEADING_4]};
       font-weight: normal;
-      ${mt(2)};
+      ${mt(4)};
+      ${mb(2)};
     }
   }
 `;

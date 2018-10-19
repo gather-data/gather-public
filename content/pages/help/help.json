@@ -1,9 +1,12 @@
 {
-  "twitterText": "Follow @gatherdataco for product updates, news, and answers to your questions.",
+  "twitterText":
+    "Follow @gatherdataco for product updates, news, and answers to your questions.",
   "twitterTitle": "Follow us on Twitter",
-  "contactUsText": "Say hi! We're based in NYC and usually respond in a few hours",
+  "contactUsText":
+    "Say hi! We're based in NYC and usually respond in a few hours",
   "blogCta": "Read the blog",
-  "blogText": "Check out our Medium blog for product updates, company news, and tips & tricks.",
+  "blogText":
+    "Check out our Medium blog for product updates, company news, and tips & tricks.",
   "contactUsCta": "support@gatherdata.co",
   "footerCta": {
     "title": "Let's get started",
@@ -11,9 +14,17 @@
     "ctaText": "Start Free Trial"
   },
   "blogTitle": "Blog",
-  "subtitle": "Browse our help documentation and find ways to get in touch with us.",
+  "subtitle":
+    "Browse our help documentation and find ways to get in touch with us.",
   "title": "Help Center",
   "contactUsTitle": "Talk to us",
   "twitterCta": "Follow us on Twitter",
-  "contactUsEmail": "support@gatherdata.co"
+  "contactUsEmail": "support@gatherdata.co",
+  "categoryLinks": [
+    {
+      "label": "API Reference",
+      "href": "https://api.gatherdata.co/docs",
+      "category": "Developers"
+    }
+  ]
 }
