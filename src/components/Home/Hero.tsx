@@ -100,6 +100,7 @@ const Hero = ({
   titleHighlight,
   subtitle,
   ctaText,
+  ctaHref,
   trialText,
   newItem,
 }) => {
@@ -161,7 +162,7 @@ const Hero = ({
           </Text>
           <CtaRow alignItems="flex-start" flow="column">
             <Link
-              href="https://app.gatherdata.co/signup"
+              href={ctaHref}
               type={LinkTypes.BUTTON_PRIMARY}
               mb={1}
               size="large"

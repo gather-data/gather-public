@@ -82,6 +82,7 @@ const FooterCta = ({
   title,
   subtitle,
   ctaText,
+  ctaHref,
   copyright,
   madeIn,
   linkGroups,
@@ -102,7 +103,7 @@ const FooterCta = ({
             <CtaLink
               type={LinkTypes.BUTTON_PRIMARY}
               size="large"
-              href="https://app.gatherdata.co/signup"
+              href={ctaHref}
               iconEnd
               icon={<AndroidArrowForward size={24} />}
               color={colors.white}

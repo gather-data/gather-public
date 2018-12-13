@@ -79,7 +79,8 @@
   "footerCta": {
     "title": "Let's get started",
     "subtitle": "14 day free trial. No credit card required.",
-    "ctaText": "Start Free Trial"
+    "ctaText": "Request a Demo",
+    "ctaHref": "https://app.gatherdata.co/request-demo"
   },
   "featureTimeline": {
     "title": "Continuity between interactions",
@@ -93,7 +94,8 @@
     "Understand customer history and provide support that's relevant. Automate repetitive workflows like refunds and password resets. Stay in control when ticket volumes grow. ",
   "title": "Mission Control For Growing Customer Service Teams",
   "titleHighlight": "Mission Control",
-  "ctaText": "Free Trial",
+  "ctaText": "Request a Demo",
+  "ctaHref": "https://app.gatherdata.co/request-demo",
   "newItem": {
     "newLabel": "",
     "newHref": "",

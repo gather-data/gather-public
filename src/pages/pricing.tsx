@@ -157,7 +157,7 @@ const Pricing = ({ data: { pricingJson: pricing, footerJson: footer } }) => {
                   type={LinkTypes.BUTTON_PRIMARY}
                   textColor={colors.purple}
                   color={colors.white}
-                  href="https://app.gatherdata.co/signup"
+                  href={pricing.standard.ctaHref}
                   mb={3}
                   size="large"
                 >
@@ -191,7 +191,7 @@ const Pricing = ({ data: { pricingJson: pricing, footerJson: footer } }) => {
                   mt={3}
                   type={LinkTypes.BUTTON_DEFAULT}
                   size="large"
-                  href="https://app.gatherdata.co/signup"
+                  href={pricing.enterpise.ctaHref}
                 >
                   {pricing.enterpise.cta}
                 </Link>
@@ -229,6 +229,7 @@ const Pricing = ({ data: { pricingJson: pricing, footerJson: footer } }) => {
         title={pricing.footerCta.title}
         subtitle={pricing.footerCta.subtitle}
         ctaText={pricing.footerCta.ctaText}
+        ctaHref={pricing.footerCta.ctaHref}
         copyright={footer.copyright}
         madeIn={footer.madeIn}
         linkGroups={footer.linkGroups}
@@ -257,12 +258,14 @@ export const query = graphql`
       standard {
         pricePerMonth
         cta
+        ctaHref
         benefits {
           text
         }
       }
       enterpise {
         cta
+        ctaHref
         benefits {
           text
         }
@@ -275,6 +278,7 @@ export const query = graphql`
         title
         subtitle
         ctaText
+        ctaHref
       }
     }
   }

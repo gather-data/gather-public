@@ -1,5 +1,6 @@
 {
-  "ctaText": "Free Trial",
+  "ctaText": "Request a Demo",
+  "ctaHref": "https://app.gatherdata.co/request-demo",
   "links": [
     {
       "label": "Product",

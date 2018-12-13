@@ -197,6 +197,7 @@ const Help = ({
       title={help.footerCta.title}
       subtitle={help.footerCta.subtitle}
       ctaText={help.footerCta.ctaText}
+      ctaHref={help.footerCta.ctaHref}
       copyright={footer.copyright}
       madeIn={footer.madeIn}
       linkGroups={footer.linkGroups}
@@ -241,6 +242,7 @@ export const query = graphql`
         title
         subtitle
         ctaText
+        ctaHref
       }
     }
     allMarkdownRemark(filter: { frontmatter: { published: { eq: true } } }) {

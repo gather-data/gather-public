@@ -165,7 +165,7 @@ class IntegrationsContainer extends Component {
 
   render() {
     const {
-      data: { footerJson: footer },
+      data: { footerJson: footer, integrationsJson: integrations },
     } = this.props;
     const { query, category } = this.state;
 
@@ -181,11 +181,11 @@ class IntegrationsContainer extends Component {
           </Title>
           <Link
             type={LinkTypes.BUTTON_PRIMARY}
-            href="https://app.gatherdata.co/signup"
+            href={integrations.ctaHref}
             iconEnd
             icon={<AndroidArrowForward size={24} />}
           >
-            Free Trial
+            {integrations.ctaText}
           </Link>
           <Text color={colors.purple80} mt={2} type={TextTypes.BODY_SMALL}>
             14 day free trial, no credit card required.
@@ -230,6 +230,10 @@ export const query = graphql`
           to
         }
       }
+    }
+    integrationsJson {
+      ctaText
+      ctaHref
     }
     allGatherServices {
       edges {

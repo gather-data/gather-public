@@ -106,6 +106,9 @@ collections:
               - label: 'CTA Text'
                 name: ctaText
                 widget: string
+              - label: 'CTA Href'
+                name: ctaHref
+                widget: string
       - label: "Pricing"
         name: "pricing"
         file: content/pages/pricing/pricing.json
@@ -121,6 +124,9 @@ collections:
               - label: CTA
                 name: cta
                 widget: string
+              - label: CTA Href
+                name: ctaHref
+                widget: string
               - label: Benefits
                 name: benefits
                 widget: list
@@ -132,6 +138,9 @@ collections:
             fields:
               - label: CTA
                 name: cta
+                widget: string
+              - label: CTA Href
+                name: ctaHref
                 widget: string
               - label: Benefits
                 name: benefits
@@ -161,6 +170,15 @@ collections:
               - label: 'CTA Text'
                 name: ctaText
                 widget: string
+              - label: 'CTA Href'
+                name: ctaHref
+                widget: string
+      - label: "Integrations"
+        name: "integrations"
+        file: content/pages/integrations/integrations.json
+        fields:
+          - {label: 'CTA Text', name: ctaText, widget: string}
+          - {label: 'CTA Href', name: ctaHreff, widget: string}
       - label: "Home"
         name: "home"
         file: content/pages/home/home.json
@@ -169,6 +187,7 @@ collections:
           - {label: Title Highlight, name: titleHighlight, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: 'CTA Text', name: ctaText, widget: string}
+          - {label: 'CTA Href', name: ctaHref, widget: string}
           - {label: 'Trial Text', name: trialText, widget: string}
           - label: 'New Item'
             name: newItem
@@ -352,4 +371,7 @@ collections:
                 widget: string
               - label: 'CTA Text'
                 name: ctaText
+                widget: string
+              - label: 'CTA Href'
+                name: ctaHref
                 widget: string

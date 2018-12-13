@@ -25,6 +25,7 @@ const Home = ({
       titleHighlight={home.titleHighlight}
       subtitle={home.subtitle}
       ctaText={home.ctaText}
+      ctaHref={home.ctaHref}
       trialText={home.trialText}
       newItem={home.newItem}
     />
@@ -53,6 +54,7 @@ const Home = ({
       title={home.footerCta.title}
       subtitle={home.footerCta.subtitle}
       ctaText={home.footerCta.ctaText}
+      ctaHref={home.footerCta.ctaHref}
       copyright={footer.copyright}
       madeIn={footer.madeIn}
       linkGroups={footer.linkGroups}
@@ -79,6 +81,7 @@ export const query = graphql`
       title
       titleHighlight
       ctaText
+      ctaHref
       trialText
       subtitle
       newItem {
@@ -134,6 +137,7 @@ export const query = graphql`
         title
         subtitle
         ctaText
+        ctaHref
       }
       developers {
         title

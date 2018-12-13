@@ -11,7 +11,8 @@
   "footerCta": {
     "title": "Let's get started",
     "subtitle": "14 day free trial, no credit card required.",
-    "ctaText": "Start Free Trial"
+    "ctaText": "Request a Demo",
+    "ctaHref": "https://app.gatherdata.co/request-demo"
   },
   "blogTitle": "Blog",
   "subtitle":
