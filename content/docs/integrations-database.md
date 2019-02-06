@@ -7,8 +7,8 @@ published: true
 
 The Gather `database` integration allows you to connect your relational database to Gather, allowing you to:
 
--   Build models that dynamically pull from a table in your database
--   Sync a table from your database to a custom model
+- Build models that dynamically pull from a table in your database
+- Sync a table from your database to a custom model
 
 | Database    | Dynamic Models | Sync Tables | SSL Authentication | SSH Tunnel |
 | ----------- | -------------- | ----------- | ------------------ | ---------- |
@@ -24,13 +24,13 @@ If your database is publicly accessible over the internet, you can [directly con
 
 Irrespective of the connection method, Gather will connect to your database via a set of external static IP addresses, which you'll need to whitelist in your firewall. Whitelist the following IPs before continuing:
 
--   104.198.46.108
--   35.192.7.98
--   35.194.42.15
+- 104.198.46.108
+- 35.192.7.98
+- 35.194.42.15
 
 ## Step 2a: Direct connection
 
-To directly connect to your publicly accessible database, go to [integrations](https://app.gatherdata.co/dashboard/settings/team/integrations), then:
+To directly connect to your publicly accessible database, go to [integrations](https://app.gatherdata.cohttps://app.gatherdata.co/request-demo/settings/team/integrations), then:
 
 1.  Click **Add New Integration**
 2.  Choose **Database** from the list
@@ -73,7 +73,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDmHhoMgLKG77v0fULT6e3Wz0C+5cUQizz1wDF+K3MX
 
 #### Add the integration in Gather
 
-Go to [integrations](https://app.gatherdata.co/dashboard/settings/team/integrations), then:
+Go to [integrations](https://app.gatherdata.cohttps://app.gatherdata.co/request-demo/settings/team/integrations), then:
 
 1.  Click **Add New Integration**
 2.  Choose **Database** from the list
