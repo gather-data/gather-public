@@ -18,17 +18,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-intercom`,
+      resolve: 'gatsby-plugin-hubspot',
       options: {
-        appId: 'veqeks9l',
-      },
-    },
-    {
-      resolve: `gatsby-plugin-nprogress`,
-      options: {
-        color: `#5D75F6`,
-        // Disable the loading spinner.
-        showSpinner: false,
+        trackingCode: '4070737',
       },
     },
     {

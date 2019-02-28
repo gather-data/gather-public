@@ -3628,6 +3628,10 @@ gatsby-plugin-google-analytics@1.0.31:
   dependencies:
     babel-runtime "^6.26.0"
 
+gatsby-plugin-hubspot@1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-hubspot/-/gatsby-plugin-hubspot-1.2.1.tgz#1f06f17b5b06ff193da53d1d61981f20c56a3b7c"
+
 gatsby-plugin-intercom@0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-intercom/-/gatsby-plugin-intercom-0.1.4.tgz#5942ba9f8588fcb736a2e31bf91618500973b40a"

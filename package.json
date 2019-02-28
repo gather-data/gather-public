@@ -15,6 +15,7 @@
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-favicon": "2.1.1",
     "gatsby-plugin-google-analytics": "1.0.31",
+    "gatsby-plugin-hubspot": "1.2.1",
     "gatsby-plugin-intercom": "0.1.4",
     "gatsby-plugin-netlify-cms": "2.0.1",
     "gatsby-plugin-nprogress": "1.0.14",
