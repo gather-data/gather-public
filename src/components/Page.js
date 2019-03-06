@@ -61,6 +61,34 @@ const Contents = styled(Box)`
   ${mt(3)};
 `;
 
+// code {
+//   background: ${colors.background};
+//   font-family: firaMonoRegular, monospace;
+//   font-size: 14px;
+//   color: ${colors.purple};
+
+//   ${ph(0.5)};
+//   ${borderRadius};
+//   ${border};
+
+//   &::after {
+//     content: '';
+//   }
+// }
+
+// pre {
+//   background-color: ${colors.background};
+//   ${border};
+//   ${borderRadius};
+//   ${ph(1)};
+//   ${pv(1)};
+
+//   code {
+//     border: 0;
+//     background: none;
+//   }
+// }
+
 const Content = styled.div`
   ${TextTypeToStyle[TextTypes.BODY]};
   -webkit-font-smoothing: antialiased;
@@ -80,30 +108,6 @@ const Content = styled.div`
       ${boxShadowBig};
       ${border};
       ${mv(3)};
-    }
-
-    code {
-      background: ${colors.background};
-      font-family: firaMonoRegular, monospace;
-      color: ${colors.purple};
-
-      ${ph(0.25)};
-      ${borderRadius};
-      ${border};
-
-      &::after {
-        content: '';
-      }
-    }
-
-    pre {
-      background-color: ${colors.background};
-      ${border};
-
-      code {
-        border: 0;
-        background: none;
-      }
     }
 
     a {
