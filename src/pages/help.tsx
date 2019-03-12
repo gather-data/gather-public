@@ -17,11 +17,16 @@ import {
   p,
   pb,
   mb,
+  border,
+  Flex,
 } from 'gather-style';
 import IOSEmail from 'react-icons/lib/io/ios-email';
+import ArrowRight from 'react-icons/lib/io/arrow-right-c';
 import RSS from 'react-icons/lib/io/social-rss';
 import Twitter from 'react-icons/lib/io/social-twitter';
+import groupBy from 'lodash/groupBy';
 
+import Tag from '../components/Tag';
 import FooterCta from '../components/FooterCta';
 
 const TitleContainer = styled(Column)`
@@ -57,7 +62,21 @@ const ContactColumn = styled(Column)`
 `;
 
 const Box = styled.div`
-  background: ${colors.purple10};
+  background: ${colors.purple5};
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  ${borderRadius};
+  ${p(3)};
+  ${border};
+
+  &:not(:last-child) {
+    ${mb(3)};
+  }
+`;
+
+const BoxOutline = styled.div`
+  ${border};
   display: flex;
   flex-flow: column;
   align-items: flex-start;
@@ -69,41 +88,95 @@ const Box = styled.div`
   }
 `;
 
-function groupBy(objectArray, getter) {
-  return objectArray.reduce(function(acc, obj) {
-    var key = getter(obj);
-    if (!acc[key]) {
-      acc[key] = [];
-    }
-    acc[key].push(obj);
-    return acc;
-  }, {});
+const Category = styled(Flex)`
+  &:not(:last-child) {
+    ${mb(2)};
+  }
+`;
+
+interface CollectionLink {
+  label: string;
+  category: string;
+  href?: string;
+  to?: string;
 }
 
-const categoryOrders = ['Getting Started', 'Guides'];
+interface Category {
+  name: string;
+  links: CollectionLink[];
+}
 
-function groupDocs(docs, categoryLinks) {
-  let groups = groupBy(docs.map(d => d.node), d => d.frontmatter.category);
-  groups = Object.entries(groups);
+interface Collection {
+  name: string;
+  description: string;
+  links: CollectionLink[];
+  categories: Category[];
+}
 
-  groups = groups.map(([category, items]) => {
-    let newItems = items.map(item => ({
-      to: item.frontmatter.path,
-      label: item.frontmatter.title,
-    }));
+interface DocNode {
+  frontmatter: {
+    collection: string;
+    category: string;
+    path: string;
+    title: string;
+  };
+}
 
-    const categoryLinksForCategory = categoryLinks.filter(
-      link => link.category === category
+interface Doc {
+  node: DocNode;
+}
+
+function groupDocs(docs: Doc[], collections: Collection[]) {
+  const collectionNames = collections.map(info => info.name);
+
+  const groups: Collection[] = Object.entries(
+    groupBy(docs.map(d => d.node), (d: DocNode) => d.frontmatter.collection)
+  )
+    .map(([name, links]) => ({ name, links }))
+    .filter(group => collectionNames.includes(group.name))
+    .map(group => {
+      const info = collections.find(i => i.name === group.name);
+
+      let newItems: CollectionLink[] = group.links.map(item => ({
+        to: item.frontmatter.path,
+        label: item.frontmatter.title,
+        category: item.frontmatter.category,
+      }));
+
+      newItems = newItems.concat((info ? info.links : []) || []);
+
+      const categories = Object.entries(
+        groupBy(newItems, link => link.category || '')
+      )
+        .map(([categoryName, links]) => ({ name: categoryName, links }))
+        .sort((categoryA, categoryB) => {
+          if (!categoryA.name) {
+            return -1;
+          }
+
+          if (!info) {
+            return -1;
+          }
+
+          return (
+            info.categories.findIndex(c => c.name === categoryA.name) -
+            info.categories.findIndex(c => c.name === categoryB.name)
+          );
+        });
+
+      return {
+        name: group.name,
+        links: newItems,
+        categories,
+        description: info ? info.description : '',
+      };
+    })
+    .sort(
+      (groupA, groupB) =>
+        collections.findIndex(info => info.name === groupA.name) -
+        collections.findIndex(info => info.name === groupB.name)
     );
-    newItems = newItems.concat(categoryLinksForCategory);
 
-    return [category, newItems];
-  });
-
-  groups.sort(
-    ([categoryA], [categoryB]) =>
-      categoryOrders.indexOf(categoryA) - categoryOrders.indexOf(categoryB)
-  );
   return groups;
 }
 
@@ -126,26 +199,50 @@ const Help = ({
         </TitleContainer>
       </Row>
       <Row>
-        <ContentColumn sm={6}>
-          {groupDocs(docs, help.categoryLinks).map(([category, items]) => (
-            <Box key={category}>
-              <Text color={colors.navy} heavy mb={1}>
-                {category}
+        <ContentColumn sm={8}>
+          {groupDocs(docs, help.collections).map(collection => (
+            <Box key={collection.name} id={collection.name}>
+              <Text
+                color={colors.navy}
+                heavy
+                mb={collection.description ? 1 : 2}
+                type={TextTypes.BODY_LARGE}
+              >
+                {collection.name}
               </Text>
-              {items.map(item => (
-                <Link
-                  mb={0.5}
-                  to={item.to}
-                  href={item.href}
-                  target={item.href ? '_blank' : '_self'}
-                >
-                  {item.label}
-                </Link>
+              {collection.description && (
+                <Text color={colors.navy} mb={2} type={TextTypes.BODY_SMALL}>
+                  {collection.description}
+                </Text>
+              )}
+              {collection.categories.map(category => (
+                <Category flow="column" alignItems="flex-start" mb={3}>
+                  <Text
+                    heavy
+                    type={TextTypes.BODY_SMALL}
+                    uppercase
+                    color={colors.navy}
+                    mb={0.5}
+                  >
+                    {category.name}
+                  </Text>
+                  {category.links.map(link => (
+                    <Link
+                      mb={0.5}
+                      to={link.to}
+                      href={link.href}
+                      icon={link.href && <ArrowRight />}
+                      iconEnd
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </Category>
               ))}
             </Box>
           ))}
         </ContentColumn>
-        <ContactColumn sm={6}>
+        <ContactColumn sm={4}>
           <Box>
             <Text color={colors.navy} heavy mb={1}>
               {help.contactUsTitle}
@@ -160,21 +257,23 @@ const Help = ({
               {help.contactUsCta}
             </Link>
           </Box>
-          <Box>
-            <Text color={colors.navy} heavy mb={1}>
-              {help.blogTitle}
-            </Text>
-            <Text mb={2}>{help.blogText}</Text>
-            <Link
-              color="#029e74"
-              type={LinkTypes.BUTTON_PRIMARY}
-              href="https://blog.gatherdata.co"
-              target="_blank"
-              icon={<RSS color={colors.white} size={24} />}
-            >
-              {help.blogCta}
-            </Link>
-          </Box>
+          {help.showBlog && (
+            <Box>
+              <Text color={colors.navy} heavy mb={1}>
+                {help.blogTitle}
+              </Text>
+              <Text mb={2}>{help.blogText}</Text>
+              <Link
+                color="#029e74"
+                type={LinkTypes.BUTTON_PRIMARY}
+                href="https://blog.gatherdata.co"
+                target="_blank"
+                icon={<RSS color={colors.white} size={24} />}
+              >
+                {help.blogCta}
+              </Link>
+            </Box>
+          )}
           <Box>
             <Text color={colors.navy} heavy mb={1}>
               {help.twitterTitle}
@@ -230,19 +329,26 @@ export const query = graphql`
       blogText
       blogCta
       blogTitle
+      showBlog
       twitterText
       twitterCta
       twitterTitle
-      categoryLinks {
-        label
-        href
-        category
-      }
       footerCta {
         title
         subtitle
         ctaText
         ctaHref
+      }
+      collections {
+        name
+        description
+        links {
+          label
+          href
+        }
+        categories {
+          name
+        }
       }
     }
     allMarkdownRemark(filter: { frontmatter: { published: { eq: true } } }) {
@@ -252,6 +358,7 @@ export const query = graphql`
           frontmatter {
             title
             path
+            collection
             category
             _PARENT
             parent

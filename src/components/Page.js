@@ -25,6 +25,7 @@ import {
   Column,
   pageSmallWidth,
   Flex,
+  Row,
 } from 'gather-style';
 
 import Tag from './Tag';
@@ -57,43 +58,18 @@ const Box = styled.div`
   }
 `;
 
-const Contents = styled(Box)`
-  ${mt(3)};
+const LeftContainer = styled.div`
+  position: sticky;
+  top: 102px;
 `;
 
-// code {
-//   background: ${colors.background};
-//   font-family: firaMonoRegular, monospace;
-//   font-size: 14px;
-//   color: ${colors.purple};
-
-//   ${ph(0.5)};
-//   ${borderRadius};
-//   ${border};
-
-//   &::after {
-//     content: '';
-//   }
-// }
-
-// pre {
-//   background-color: ${colors.background};
-//   ${border};
-//   ${borderRadius};
-//   ${ph(1)};
-//   ${pv(1)};
-
-//   code {
-//     border: 0;
-//     background: none;
-//   }
-// }
+const Contents = styled(Box)``;
 
 const Content = styled.div`
   ${TextTypeToStyle[TextTypes.BODY]};
   -webkit-font-smoothing: antialiased;
   color: ${colors.navy};
-  ${mt(5)};
+  ${mt(3)};
 
   & {
     img,
@@ -162,6 +138,26 @@ const Content = styled.div`
   }
 `;
 
+const BreadcrumbText = styled(Text)`
+  white-space: nowrap;
+`;
+
+const BreadcrumbLink = styled(Link)`
+  white-space: nowrap;
+`;
+
+const CategoryArticleText = styled(Text)`
+  max-width: 100%;
+`;
+
+const CategoryArticleLink = styled(Link)`
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: block;
+`;
+
 export default function Doc({ data, pathContext }) {
   const {
     markdownRemark: post,
@@ -171,65 +167,114 @@ export default function Doc({ data, pathContext }) {
   return (
     <div>
       <Helmet title={`${post.frontmatter.title} | Gather`} />
-      <StyledPage width="660px">
-        <Column>
-          <Flex>
-            <Link heavy to="/help">
-              All help articles
-            </Link>
-            <Text ml={1}>/</Text>
-            <Text ml={1}>{post.frontmatter.title}</Text>
-          </Flex>
-          <Text mt={3} mb={2} type={TextTypes.HEADING_1}>
-            {post.frontmatter.title}
-          </Text>
-          <Tag heavy type={TextTypes.BODY_TINY}>
-            {`${post.timeToRead} min read`}
-          </Tag>
-          {Boolean(post.headings.length) && (
-            <Contents>
-              <Text color={colors.navy} heavy mb={1}>
-                Contents
-              </Text>
-              {post.headings.map(heading => (
-                <Link
-                  mb={0.5}
-                  to={`#${heading.value.toLowerCase().replace(' ', '-')}`}
+      <StyledPage width={pageSmallWidth}>
+        <Row>
+          <Column md={4}>
+            <LeftContainer>
+              <Box>
+                <Text
+                  color={colors.navy}
+                  heavy
+                  mb={1}
+                  type={TextTypes.BODY_SMALL}
+                  uppercase
                 >
-                  {heading.value}
+                  {post.frontmatter.collection}
+                </Text>
+                {otherPostsFromCategory &&
+                  otherPostsFromCategory.edges.map(
+                    ({ node: item }) =>
+                      item.frontmatter.path.includes(post.frontmatter.path) ? (
+                        <CategoryArticleText
+                          truncate
+                          mb={0.5}
+                          to={item.frontmatter.path}
+                          heavy
+                        >
+                          {item.frontmatter.title}
+                        </CategoryArticleText>
+                      ) : (
+                        <CategoryArticleLink
+                          mb={0.5}
+                          to={item.frontmatter.path}
+                        >
+                          {item.frontmatter.title}
+                        </CategoryArticleLink>
+                      )
+                  )}
+              </Box>
+              {Boolean(post.headings.length) && (
+                <Contents>
+                  <Text
+                    uppercase
+                    color={colors.navy}
+                    heavy
+                    mb={1}
+                    type={TextTypes.BODY_SMALL}
+                  >
+                    Contents
+                  </Text>
+                  {post.headings.map(heading => (
+                    <Link
+                      mb={0.5}
+                      to={`#${heading.value.toLowerCase().replace(/ /g, '-')}`}
+                    >
+                      {heading.value}
+                    </Link>
+                  ))}
+                </Contents>
+              )}
+              <Text mt={3} ml={3}>
+                <Text inline>Noticed an error?</Text>
+                <Link inline ml={1} href="mailto:support@gatherdata.co">
+                  Let us know
                 </Link>
-              ))}
-            </Contents>
-          )}
-          <Content>
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          </Content>
-          <Divider />
-          <Flex flow="column" alignItems="flex-start">
+              </Text>
+            </LeftContainer>
+          </Column>
+          <Column md={8}>
             <Flex>
-              <Link mb={3} heavy to="/help">
-                All help articles
-              </Link>
-              <Text mb={3} ml={1}>
-                /
-              </Text>
-              <Text mb={3} ml={1}>
+              <BreadcrumbLink heavy to="/help">
+                All articles
+              </BreadcrumbLink>
+              <Text ml={1}>/</Text>
+              <BreadcrumbLink
+                heavy
+                to={`/help#${post.frontmatter.collection}`}
+                ml={1}
+              >
+                {post.frontmatter.collection}
+              </BreadcrumbLink>
+              <Text ml={1}>/</Text>
+              <BreadcrumbText truncate ml={1}>
                 {post.frontmatter.title}
-              </Text>
+              </BreadcrumbText>
             </Flex>
-            <Box>
-              <Text color={colors.navy} heavy mb={1}>
-                {`More from ${post.frontmatter.category}`}
-              </Text>
-              {otherPostsFromCategory &&
-                otherPostsFromCategory.edges.map(({ node: item }) => (
-                  <Link mb={0.5} to={item.frontmatter.path}>
-                    {item.frontmatter.title}
-                  </Link>
-                ))}
-            </Box>
-          </Flex>
-        </Column>
+            <Text mt={3} mb={2} type={TextTypes.HEADING_1}>
+              {post.frontmatter.title}
+            </Text>
+            <Tag heavy type={TextTypes.BODY_TINY}>
+              {`${post.timeToRead} min read`}
+            </Tag>
+            <Content>
+              <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            </Content>
+            <Divider />
+            <Flex flow="column" alignItems="flex-start">
+              <Flex>
+                <Link mb={3} heavy to="/help">
+                  All help articles
+                </Link>
+                <Text mb={3} ml={1}>
+                  /
+                </Text>
+                <Text mb={3} ml={1}>
+                  {post.frontmatter.title}
+                </Text>
+              </Flex>
+            </Flex>
+          </Column>
+        </Row>
       </StyledPage>
       <Footer
         copyright={footer.copyright}
@@ -241,7 +286,7 @@ export default function Doc({ data, pathContext }) {
 }
 
 export const pageQuery = graphql`
-  query DocByPath($path: String!, $category: String!) {
+  query DocByPath($path: String!, $collection: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       timeToRead
@@ -252,14 +297,13 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
-        category
+        collection
       }
     }
     allMarkdownRemark(
       filter: {
         frontmatter: {
-          category: { eq: $category }
-          path: { ne: $path }
+          collection: { eq: $collection }
           published: { eq: true }
         }
       }

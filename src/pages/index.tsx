@@ -33,11 +33,13 @@ const Home = ({
     <Demo />
     <WorksWith services={servicesWithNodes.map(sn => sn.node)} />
     <Features
-      featureData={home.featureData}
-      featurePrivacy={home.featurePrivacy}
-      featureMagicActions={home.featureMagicActions}
-      featureTimeline={home.featureTimeline}
-      featureAnalytics={home.featureAnalytics}
+      featureDataEngine={home.featureDataEngine}
+      featureIQ={home.featureIQ}
+      featureOrchestrate={home.featureOrchestrate}
+    />
+    <Customers
+      title={home.customers.title}
+      testimonials={home.customers.testimonials}
     />
     <Developers
       title={home.developers.title}
@@ -45,10 +47,7 @@ const Home = ({
       benefits={home.developers.benefits}
       ctaText={home.developers.ctaText}
       ctaTo={home.developers.ctaTo}
-    />
-    <Customers
-      title={home.customers.title}
-      testimonials={home.customers.testimonials}
+      codeSamples={home.developers.codeSamples}
     />
     <FooterCta
       title={home.footerCta.title}
@@ -89,40 +88,26 @@ export const query = graphql`
         newHref
         newLabel
       }
-      featureData {
+      featureDataEngine {
         title
         copy
-        tag
-        ctaText
-        ctaTo
+        benefits {
+          title
+        }
       }
-      featurePrivacy {
+      featureIQ {
         title
         copy
-        tag
-        ctaText
-        ctaTo
+        benefits {
+          title
+        }
       }
-      featureMagicActions {
+      featureOrchestrate {
         title
         copy
-        tag
-        ctaText
-        ctaTo
-      }
-      featureAnalytics {
-        title
-        copy
-        tag
-        ctaText
-        ctaTo
-      }
-      featureTimeline {
-        title
-        copy
-        tag
-        ctaText
-        ctaTo
+        benefits {
+          title
+        }
       }
       customers {
         title
@@ -148,6 +133,11 @@ export const query = graphql`
           title
           copy
           image
+        }
+        codeSamples {
+          title
+          code
+          language
         }
       }
     }

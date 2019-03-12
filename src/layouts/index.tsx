@@ -9,7 +9,7 @@ import Navbar from '../components/navbar';
 const GlobalContainer = styled.div`
   html {
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 10px;
     height: 100%;
   }
 

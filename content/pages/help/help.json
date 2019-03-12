@@ -3,7 +3,8 @@
     "Follow @gatherdataco for product updates, news, and answers to your questions.",
   "twitterTitle": "Follow us on Twitter",
   "contactUsText":
-    "Say hi! We're based in NYC and usually respond in a few hours",
+    "Say hi! We're based in San Francisco and usually respond in a few hours",
+  "showBlog": false,
   "blogCta": "Read the blog",
   "blogText":
     "Check out our Medium blog for product updates, company news, and tips & tricks.",
@@ -21,11 +22,37 @@
   "contactUsTitle": "Talk to us",
   "twitterCta": "Follow us on Twitter",
   "contactUsEmail": "support@gatherdata.co",
-  "categoryLinks": [
+  "collections": [
     {
-      "label": "API Reference",
-      "href": "https://api.gatherdata.co/docs",
-      "category": "Developers"
+      "name": "Installing & Configuring Gather",
+      "description":
+        "Simple guides on how to sync your customer data with Gather",
+      "links": [],
+      "categories": [{ "name": "Intro" }, { "name": "Install" }]
+    },
+    {
+      "name": "Integrations",
+      "description": "Guides on how to configure integrations",
+      "links": [],
+      "categories": []
+    },
+    {
+      "name": "Developers",
+      "description":
+        "Technical guides on how Gather works, our client libaries, and our API reference",
+      "links": [
+        {
+          "label": "API Reference",
+          "href": "https://api.gatherdata.co/docs"
+        }
+      ],
+      "categories": []
+    },
+    {
+      "name": "Company",
+      "description": "",
+      "links": [],
+      "categories": []
     }
   ]
 }

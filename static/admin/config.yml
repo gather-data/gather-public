@@ -53,6 +53,9 @@ collections:
     fields:
       - {name: path, label: Path}
       - {name: title, label: Title}
+      - label: Collection
+        name: collection
+        widget: string
       - label: Category
         name: category
         widget: string
@@ -74,25 +77,37 @@ collections:
           - {label: 'Contact Us CTA', name: contactUsCta, widget: string}
           - {label: 'Contact Us Title', name: contactUsTitle, widget: string}
           - {label: 'Contact Us Email', name: contactUsEmail, widget: string}
+          - {label: 'Show blog', name: showBlog, widget: boolean}
           - {label: 'Blog Text', name: blogText, widget: string}
           - {label: 'Blog CTA', name: blogCta, widget: string}
           - {label: 'Blog Title', name: blogTitle, widget: string}
           - {label: 'Twitter Text', name: twitterText, widget: string}
           - {label: 'Twitter CTA', name: twitterCta, widget: string}
           - {label: 'Twitter Title', name: twitterTitle, widget: string}
-          - label: 'Category Links'
-            name: categoryLinks
+          - label: 'Collections'
+            name: collections
             widget: list
             fields:
-              - label: Category
-                name: category
+              - label: Name
+                name: name
                 widget: string
-              - label: Link Label
-                name: label
+              - label: Description
+                name: description
                 widget: string
-              - label: Link Href
-                name: href
-                widget: string
+              - label: Links
+                name: links
+                widget: list
+                fields:
+                  - label: Label
+                    name: label
+                  - label: href
+                    name: href
+              - label: Categories
+                name: categories
+                widget: list
+                fields:
+                  - label: Name
+                    name: name
           - label: 'Footer CTA'
             name: footerCta
             widget: object
@@ -202,8 +217,8 @@ collections:
               - label: Text
                 name: newText
                 widget: string
-          - label: 'Feature 1 - Data'
-            name: featureData
+          - label: 'Feature 1 - Data Engine'
+            name: featureDataEngine
             widget: object
             fields:
               - label: Title
@@ -212,19 +227,15 @@ collections:
               - label: Copy
                 name: copy
                 widget: string
-              - label: Tag
-                name: tag
-                widget: string
-              - label: CTA
-                name: ctaText
-                widget: string
-                required: false
-              - label: CTA To
-                name: ctaTo
-                widget: string
-                required: false
-          - label: 'Feature 2 - Magic Actions'
-            name: featureMagicActions
+              - label: Benefits
+                name: benefits
+                widget: list
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+          - label: 'Feature 2 - IQ'
+            name: featureIQ
             widget: object
             fields:
               - label: Title
@@ -233,19 +244,15 @@ collections:
               - label: Copy
                 name: copy
                 widget: string
-              - label: Tag
-                name: tag
-                widget: string
-              - label: CTA
-                name: ctaText
-                widget: string
-                required: false
-              - label: CTA To
-                name: ctaTo
-                widget: string
-                required: false
-          - label: 'Feature 3 - Customer Timeline'
-            name: featureTimeline
+              - label: Benefits
+                name: benefits
+                widget: list
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+          - label: 'Feature 3 - Orchestrate'
+            name: featureOrchestrate
             widget: object
             fields:
               - label: Title
@@ -254,59 +261,13 @@ collections:
               - label: Copy
                 name: copy
                 widget: string
-              - label: Tag
-                name: tag
-                widget: string
-              - label: CTA
-                name: ctaText
-                widget: string
-                required: false
-              - label: CTA To
-                name: ctaTo
-                widget: string
-                required: false
-          - label: 'Feature 4 - Data Driven'
-            name: featureAnalytics
-            widget: object
-            fields:
-              - label: Title
-                name: title
-                widget: string
-              - label: Copy
-                name: copy
-                widget: string
-              - label: Tag
-                name: tag
-                widget: string
-              - label: CTA
-                name: ctaText
-                widget: string
-                required: false
-              - label: CTA To
-                name: ctaTo
-                widget: string
-                required: false
-          - label: 'Feature 5 - Privacy Compliance'
-            name: featurePrivacy
-            widget: object
-            fields:
-              - label: Title
-                name: title
-                widget: string
-              - label: Copy
-                name: copy
-                widget: string
-              - label: Tag
-                name: tag
-                widget: string
-              - label: CTA
-                name: ctaText
-                widget: string
-                required: false
-              - label: CTA To
-                name: ctaTo
-                widget: string
-                required: false
+              - label: Benefits
+                name: benefits
+                widget: list
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
           - label: 'Customers'
             name: customers
             widget: object
@@ -353,12 +314,19 @@ collections:
                   - label: Title
                     name: title
                     widget: string
-                  - label: Copy
-                    name: copy
+              - label: Code Samples
+                name: codeSamples
+                widget: list
+                fields:
+                  - label: Title
+                    name: title
                     widget: string
-                  - label: Image
-                    name: image
-                    widget: image
+                  - label: Language
+                    name: language
+                    widget: string
+                  - label: Code
+                    name: code
+                    widget: text
           - label: 'Footer CTA'
             name: footerCta
             widget: object

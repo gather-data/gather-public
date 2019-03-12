@@ -17,6 +17,7 @@ import {
   mb,
   mr,
   pt,
+  pb,
   maxHeight,
   maxWidth,
   Link,
@@ -28,13 +29,21 @@ import Tag from '../Tag';
 
 const Container = styled.div`
   overflow-x: hidden;
+  background-image: linear-gradient(
+    -167deg,
+    #ffffff 0%,
+    #ffffff 25%,
+    #fafaff 61%
+  );
 
-  ${pt(10)};
+  ${pt(15)};
+  ${pb(10)()};
 
   ${utils.breakpoint(
     'md',
     () => `
-    ${pt(20)()};
+    ${pt(30)()};
+    ${pb(15)()};
   `
   )};
 `;
@@ -133,7 +142,7 @@ const WorksWith = ({ services }) => (
               type={TextTypes.HEADING_2}
               color={colors.primary}
             >
-              Gather Works With
+              Integrations
             </Text>
           </Flex>
         </Column>

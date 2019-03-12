@@ -1,68 +1,39 @@
 {
-  "featureData": {
-    "title": "Data at your fingertips",
-    "copy":
-      "Customer context in a single view. Purchases, billing, previous interactions - anything you need. Reduce time navigating administrative tools so you can focus on communicating with the customer.",
-    "tag": "Data view",
-    "ctaText": "View integrations",
-    "ctaTo": "/integrations"
-  },
   "trialText": "14 day free trial. No credit card required.",
-  "featureMagicActions": {
-    "title": "Magic Actions",
-    "copy":
-      "Automate repetitive workflows without code. Stop wasting time with manual data entry and Google Sheets. Perform tasks automatically instead.",
-    "tag": "WORKFLOW AUTOMATION BUILDER",
-    "ctaText": "",
-    "ctaTo": ""
-  },
   "developers": {
-    "title": "A developer-first admin for your operations team",
-    "subtitle": "Out-of-the-box useful, fully extensible",
+    "title": "Built for Developers",
+    "subtitle":
+      "Built on top of a extensible data model, Gather is designed to be easy to integrate and easy to extend. ",
     "ctaTo": "/help",
-    "ctaText": "Read The Docs",
+    "ctaText": "Explore The Docs",
     "benefits": [
       {
-        "title": "Out-of-the-box Admin",
-        "copy":
-          "With one-click integrations into popular data sources, you can have an operational admin up and running in 2 minutes.",
-        "image": "/assets/admin.png"
+        "title": "Out-of-the-box Admin"
       },
       {
-        "title": "Give operations control",
-        "copy":
-          "Allow operations teams the power to handle minor requests like adding/changing fields or adding simple actions. For the big important stuff, you still control it.",
-        "image": "/assets/control.png"
+        "title": "Give operations control"
       },
       {
-        "title": "Fully Extensible",
-        "copy":
-          "With Gather's developer API and SDK, you can be sure that you can always meet business requirements, no matter how they change.",
-        "image": "/assets/terminal.png"
+        "title": "Fully Extensible"
       },
       {
-        "title": "Security",
-        "copy":
-          "Gather has been designed with security as the highest priority. That's why we do not store any of your customer data (not even in cache) and all credentials are encrypted at-rest.",
-        "image": "/assets/security.png"
+        "title": "Security"
+      }
+    ],
+    "codeSamples": [
+      {
+        "title": "Gather.js",
+        "language": "javascript",
+        "code":
+          "const gather = new Gather({\n    clientId: 'my_client_id'\n})\n\ngather.account('account_123', {\n    name: 'Lovelace, Inc',\n    country: 'England'\n});\n\ngather.user('user_123', {\n    first_name: 'Ada',\n    last_name: 'Lovelace',\n    email: 'ada@lovelace.com'\n    account: 'account_123'\n});"
+      },
+      {
+        "title": "API",
+        "language": "bash",
+        "code":
+          "curl https://api.gatherdata.co/models/account/records \\\n  -d id=\"account_123\"\n  -d name=\"Lovelace, Inc\"\n  -d country=\"England\"\n\n{\n    \"id\": \"account_123\",\n    \"name\": \"Lovelace, Inc\",\n    \"country\": \"England\",\n}"
       }
     ]
-  },
-  "featureAnalytics": {
-    "title": "Be Data Driven",
-    "copy":
-      "Track actions taken and answer simple questions like how many refunds were given this week. Use data to help improve internal policies.",
-    "tag": "Analytics",
-    "ctaText": "",
-    "ctaTo": ""
-  },
-  "featurePrivacy": {
-    "title": "Multi-tier support",
-    "copy":
-      "Roles to control what data each support team member gets to see and which actions are available to them.",
-    "tag": "ACCESS & PERMISSIONS",
-    "ctaText": "",
-    "ctaTo": ""
   },
   "customers": {
     "title": "Powering support for thousands of customers across the world",
@@ -82,18 +53,58 @@
     "ctaText": "Request a Demo",
     "ctaHref": "https://app.gatherdata.co/request-demo"
   },
-  "featureTimeline": {
-    "title": "Continuity between interactions",
+  "featureDataEngine": {
+    "title": "Data Engine",
     "copy":
-      "See every action taken. Easily add and read through notes from teammates for seamless interactions with customers.",
-    "tag": "Customer timeline",
-    "ctaText": "",
-    "ctaTo": ""
+      "Identify who your at risk, stable, best and champion customers are so you can focus your attention on the customers who need it most.",
+    "benefits": [
+      {
+        "title": "A Great Feature"
+      },
+      {
+        "title": "A Great Feature"
+      },
+      {
+        "title": "A Great Feature"
+      }
+    ]
+  },
+  "featureIQ": {
+    "title": "Auto IQ",
+    "copy":
+      "Identify who your at risk, stable, best and champion customers are so you can focus your attention on the customers who need it most.",
+    "benefits": [
+      {
+        "title": "A Great Feature"
+      },
+      {
+        "title": "A Great Feature"
+      },
+      {
+        "title": "A Great Feature"
+      }
+    ]
+  },
+  "featureOrchestrate": {
+    "title": "Orchestrate",
+    "copy":
+      "Identify who your at risk, stable, best and champion customers are so you can focus your attention on the customers who need it most.",
+    "benefits": [
+      {
+        "title": "A Great Feature"
+      },
+      {
+        "title": "A Great Feature"
+      },
+      {
+        "title": "A Great Feature"
+      }
+    ]
   },
   "subtitle":
-    "Understand customer history and provide support that's relevant. Automate repetitive workflows like refunds and password resets. Stay in control when ticket volumes grow. ",
-  "title": "Mission Control For Growing Customer Service Teams",
-  "titleHighlight": "Mission Control",
+    "Increase your activation rate and reduce churn by knowing who to target, who’s at risk and measuring the results of your campaigns. ",
+  "title": "Do you know who your most at risk customers are?",
+  "titleHighlight": "at risk",
   "ctaText": "Request a Demo",
   "ctaHref": "https://app.gatherdata.co/request-demo",
   "newItem": {

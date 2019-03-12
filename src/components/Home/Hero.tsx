@@ -54,6 +54,7 @@ const CtaRow = styled(Flex)`
 
 const HeroImage = styled.img`
   display: none;
+  max-width: 100%;
 
   ${utils.breakpoint(
     'md',
@@ -138,12 +139,13 @@ const Hero = ({
                 color={colors.primary}
                 type={TextTypes.HEADING_1}
                 heavy={false}
+                inline
               >
                 {first}
               </Text>
             )}
             {second && (
-              <Text color={colors.primary} type={TextTypes.HEADING_1}>
+              <Text color={colors.primary} type={TextTypes.HEADING_1} inline>
                 {second}
               </Text>
             )}
@@ -152,6 +154,7 @@ const Hero = ({
                 color={colors.primary}
                 type={TextTypes.HEADING_1}
                 heavy={false}
+                inline
               >
                 {last}
               </Text>

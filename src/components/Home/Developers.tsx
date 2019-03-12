@@ -16,36 +16,37 @@ import {
   colors,
   mt,
   mb,
+  ml,
+  mr,
   ph,
   pv,
+  pt,
+  pb,
   maxWidth,
 } from 'gather-style';
 
 import Tag from '../Tag';
+import Checkmark from '../Checkmark';
+import CodeSwiper from '../CodeSwiper';
 
 import demo from './demo.svg';
 
 const Container = styled.div`
-  background-image: radial-gradient(at center -50%, #1e1650 0%, #0e0c18 100%);
+  position: relative;
+
+  ${pb(20)};
+  ${pt(20)};
 `;
 
-const InnerContainer = styled(Row)`
-  background-size: 32px 32px;
-  background-image: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.05) 1px,
-      transparent 1px
-    ),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-
-  ${pv(6)};
-
-  ${utils.breakpoint(
-    'md',
-    () => `
-    ${pv(6)()};
-  `
-  )};
+const Background = styled.svg`
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 `;
 
 const BenefitImage = styled.img`
@@ -60,25 +61,50 @@ const BenefitImageContainer = styled.div`
   ${mb(2)};
 `;
 
-const Benefits = styled(Row)`
-  ${mb(3)};
-  ${mt(3)};
+const Benefits = styled(Flex)`
+  ${mt(4)};
+  ${mb(4)};
+`;
+
+const Benefit = styled(Flex)`
+  width: 50%;
+  ${mb(2)};
+`;
+
+const Title = styled(Text)``;
+
+const InnerContainer = styled(Flex)`
+  flex-flow: column;
+  align-items: stretch;
 
   ${utils.breakpoint(
     'md',
     () => `
-    ${mb(8)()};
-    ${mt(6)()};
-  `
+      align-items: center;
+      flex-flow: row;
+    `
   )};
 `;
 
-const Title = styled(Text)`
+const LeftColumn = styled(Flex)`
   ${utils.breakpoint(
     'md',
     () => `
-    ${ph(8)()};
-  `
+      flex: 3;
+      ${mr(8)()};
+    `
+  )};
+`;
+
+const RightColumn = styled(Flex)`
+  ${mt(6)};
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+      flex: 2;
+      ${mt(0)()};
+    `
   )};
 `;
 
@@ -88,12 +114,19 @@ interface IBenefit {
   image: string;
 }
 
+interface CodeSample {
+  language: string;
+  code: string;
+  title: string;
+}
+
 interface IProps {
   title: string;
   subtitle: string;
   benefits: IBenefit[];
   ctaText: string;
   ctaTo: string;
+  codeSamples: CodeSample[];
 }
 
 const Demo: React.SFC<IProps> = ({
@@ -101,74 +134,82 @@ const Demo: React.SFC<IProps> = ({
   subtitle,
   benefits,
   ctaText,
+  codeSamples,
   ctaTo,
 }) => (
   <Container>
-    <InnerContainer fluid>
-      <Page>
-        <Column>
-          <Flex flow="column">
-            <Tag type={TextTypes.BODY_TINY} heavy color={colors.blue}>
+    <Background viewBox="0 0 1440 847" version="1.1" preserveAspectRatio="none">
+      <defs>
+        <radialGradient
+          cx="47.1347431%"
+          cy="-22.1558843%"
+          fx="47.1347431%"
+          fy="-22.1558843%"
+          r="330.87678%"
+          gradientTransform="translate(0.471347,-0.221559),scale(0.587753,1.000000),rotate(56.785651),translate(-0.471347,0.221559)"
+          id="radialGradient-1"
+        >
+          <stop stop-color="#232B55" offset="0%" />
+          <stop stop-color="#131837" offset="100%" />
+        </radialGradient>
+      </defs>
+      <g id="Home-Copy" fill="url(#radialGradient-1)">
+        <g id="developers">
+          <polygon
+            id="Rectangle-11"
+            points="0 0.635022636 1440 95.3997081 1440 847 0 847"
+          />
+        </g>
+      </g>
+    </Background>
+    <Page>
+      <Column>
+        <InnerContainer>
+          <LeftColumn flow="column" alignItems="flex-start">
+            <Tag
+              type={TextTypes.BODY_TINY}
+              heavy
+              color={colors.blue}
+              textColor="#015D85"
+            >
               DEVELOPERS
             </Tag>
             <Title
-              align="center"
               mt={3}
-              mb={3}
+              mb={1}
               type={TextTypes.HEADING_2}
               color={colors.white}
             >
               {title}
             </Title>
-            <Text
-              align="center"
-              type={TextTypes.BODY_LARGE}
-              color={colors.white}
-            >
+            <Text type={TextTypes.BODY} color={colors.white}>
               {subtitle}
             </Text>
-          </Flex>
-          <Benefits>
-            {benefits.map(benefit => (
-              <Column md={12 / benefits.length}>
-                <Flex flow="column">
-                  <BenefitImageContainer>
-                    <BenefitImage src={benefit.image} />
-                  </BenefitImageContainer>
-                  <Text
-                    mt={2}
-                    mb={2}
-                    type={TextTypes.BODY_LARGE}
-                    heavy
-                    color={colors.white}
-                    align="center"
-                  >
+            <Benefits flow="row wrap">
+              {benefits.map(benefit => (
+                <Benefit mb={2}>
+                  <Checkmark />
+                  <Text ml={1} color="#4CD964">
                     {benefit.title}
                   </Text>
-                  <Text
-                    align="center"
-                    type={TextTypes.BODY_SMALL}
-                    color={colors.white}
-                  >
-                    {benefit.copy}
-                  </Text>
-                </Flex>
-              </Column>
-            ))}
-          </Benefits>
-          <Flex justifyContent="center">
+                </Benefit>
+              ))}
+            </Benefits>
             <Link
-              type={LinkTypes.BUTTON_DEFAULT}
+              type={LinkTypes.BUTTON_PRIMARY}
               to={ctaTo}
               icon={<AndroidArrowForward size={24} />}
               iconEnd
             >
               {ctaText}
             </Link>
-          </Flex>
-        </Column>
-      </Page>
-    </InnerContainer>
+          </LeftColumn>
+          <RightColumn>
+            <CodeSwiper codeSamples={codeSamples} />
+          </RightColumn>
+        </InnerContainer>
+      </Column>
+    </Page>
   </Container>
 );
 

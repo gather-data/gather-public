@@ -5,7 +5,7 @@ import { colors, borderRadius, pv, ph, Text, mr } from 'gather-style';
 
 const Tag = styled(Text)`
   background: ${props => props.color || colors.beige};
-  color: ${colors.white};
+  color: ${props => props.textColor || '#A56E26'};
   text-transform: uppercase;
   width: fit-content;
   ${borderRadius};

@@ -26,6 +26,7 @@ import {
   ml,
 } from 'gather-style';
 import AndroidArrowForward from 'react-icons/lib/io/android-arrow-forward';
+import Hamburger from 'react-icons/lib/io/android-menu';
 
 import Logo from './Logo';
 
@@ -36,7 +37,7 @@ const Container = styled(Flex)`
   ${pv(2)};
   background: ${colors.white};
   position: relative;
-  z-index: 1;
+  z-index: 2;
 
   ${props =>
     props.isSticky &&
@@ -45,7 +46,7 @@ const Container = styled(Flex)`
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 2;
   `};
 
   ${props =>
@@ -56,6 +57,8 @@ const Container = styled(Flex)`
 `;
 
 const MobileMenu = styled(Link)`
+  align-self: stretch;
+
   ${utils.breakpoint(
     'md',
     () => `
@@ -186,7 +189,7 @@ class Navbar extends Component {
             showShadow={distanceFromTop < 0}
           >
             <Flex alignItems="center">
-              <StyledLogo />
+              <StyledLogo showName={false} />
               <MobileMenu
                 href={navbarData.ctaHref}
                 mr={2}
@@ -198,7 +201,7 @@ class Navbar extends Component {
                 onClick={() => this.setState({ isOpen: !isOpen })}
                 type={LinkTypes.BUTTON_DEFAULT}
               >
-                Menu
+                <Hamburger size={20} />
               </MobileMenu>
               <Items isOpen={isOpen} flex1 justifyContent="flex-end">
                 {links}

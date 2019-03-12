@@ -1,77 +1,77 @@
 {
-    "copyright": "© 2018 Gather, Inc. All rights reserved.",
-    "madeIn": "Proudly made in NYC.",
-    "linkGroups": [
+  "copyright": "© 2019 Gather, Inc. All rights reserved.",
+  "madeIn": "Proudly made in San Francisco.",
+  "linkGroups": [
+    {
+      "title": "Product",
+      "links": [
         {
-            "title": "Product",
-            "links": [
-                {
-                    "label": "Request a Demo",
-                    "to": "https://app.gatherdata.co/request-demo"
-                },
-                {
-                    "label": "Login",
-                    "to": "https://app.gatherdata.co/login"
-                },
-                {
-                    "label": "Features",
-                    "to": "/"
-                },
-                {
-                    "label": "Integrations",
-                    "to": "/integrations"
-                },
-                {
-                    "label": "Pricing",
-                    "to": "/pricing"
-                }
-            ]
+          "label": "Request a Demo",
+          "to": "https://app.gatherdata.co/request-demo"
         },
         {
-            "title": "Resources",
-            "links": [
-                {
-                    "label": "Help",
-                    "to": "/help"
-                },
-                {
-                    "label": "FAQ",
-                    "to": "/help/faq"
-                },
-                {
-                    "label": "Developer API",
-                    "to": "https://api.gatherdata.co/docs"
-                },
-                {
-                    "label": "Privacy",
-                    "to": "/legal/privacy"
-                },
-                {
-                    "label": "Terms",
-                    "to": "/legal/terms"
-                }
-            ]
+          "label": "Login",
+          "to": "https://app.gatherdata.co/login"
         },
         {
-            "title": "Company",
-            "links": [
-                {
-                    "label": "Blog",
-                    "to": "https://blog.gatherdata.co"
-                },
-                {
-                    "label": "We're hiring!",
-                    "to": "mailto:hiring@gatherdata.co"
-                },
-                {
-                    "label": "Twitter",
-                    "to": "https://twitter.com/gatherdataco"
-                },
-                {
-                    "label": "Contact Us",
-                    "to": "mailto:hello@gatherdata.co"
-                }
-            ]
+          "label": "Features",
+          "to": "/"
+        },
+        {
+          "label": "Integrations",
+          "to": "/integrations"
+        },
+        {
+          "label": "Pricing",
+          "to": "/pricing"
         }
-    ]
+      ]
+    },
+    {
+      "title": "Resources",
+      "links": [
+        {
+          "label": "Help",
+          "to": "/help"
+        },
+        {
+          "label": "FAQ",
+          "to": "/help/faq"
+        },
+        {
+          "label": "Developer API",
+          "to": "https://api.gatherdata.co/docs"
+        },
+        {
+          "label": "Privacy",
+          "to": "/legal/privacy"
+        },
+        {
+          "label": "Terms",
+          "to": "/legal/terms"
+        }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        {
+          "label": "Blog",
+          "to": "https://blog.gatherdata.co"
+        },
+        {
+          "label": "We're hiring!",
+          "to": "mailto:hiring@gatherdata.co"
+        },
+        {
+          "label": "Twitter",
+          "to": "https://twitter.com/gatherdataco"
+        },
+        {
+          "label": "Contact Us",
+          "to": "mailto:hello@gatherdata.co"
+        }
+      ]
+    }
+  ]
 }
