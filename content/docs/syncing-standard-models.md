@@ -1,7 +1,7 @@
 ---
 path: /help/developers/setting-up-standard-models
 title: Setting Up Accounts and Customers
-category: Developers
+collection: Developers
 published: true
 ---
 
@@ -13,7 +13,7 @@ Accounts are a standard model that represent a company for a B2B company. For ex
 
 The account model comes with one default field:
 
--   **name** - a unique name for the account
+- **name** - a unique name for the account
 
 To sync records with an account, use the `records` API:
 
@@ -30,8 +30,8 @@ $ curl https://api.gatherdata.co/models/account/records \
 
 Customers are a standard model that represent an employee at a company or an individual customer. There are two default fields:
 
--   **email** - a unique email address for the customer
--   **account** - an account to link the customer with, if it exists. If not provided, the customer will not be linked with an account
+- **email** - a unique email address for the customer
+- **account** - an account to link the customer with, if it exists. If not provided, the customer will not be linked with an account
 
 ## Updating an account or customer
 

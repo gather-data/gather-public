@@ -1,7 +1,7 @@
 ---
 path: /help/billing/card
 title: Switch to a company card
-category: Billing & Payments
+collection: Billing & Payments
 published: false
 ---
 

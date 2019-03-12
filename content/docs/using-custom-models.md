@@ -1,7 +1,7 @@
 ---
 path: /help/developers/using-custom-models
 title: Using Custom Models
-category: Developers
+collection: Developers
 published: true
 ---
 

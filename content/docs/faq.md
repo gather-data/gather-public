@@ -1,9 +1,10 @@
 ---
 path: /help/faq
 title: FAQ
-category: General
+collection: General
 published: true
 ---
+
 ## General
 
 **What is Gather?**

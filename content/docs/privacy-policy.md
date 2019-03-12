@@ -1,9 +1,10 @@
 ---
 path: /legal/privacy
 title: Privacy Policy
-category: Company
+collection: Company
 published: true
 ---
+
 Effective date: June 19, 2018
 
 We at Gather, Inc. (“Gather”, “we”, “us” or “our”) value your privacy and have developed this privacy policy (“Policy”) to describe how we collect, use and disclose the personal information we may possess about you when you access and use our website gatherdata.co or engage with us to use the services we offer (collectively, the “Service”). “Personal information” is any information about an identifiable individual and can include information like your name, email, phone number, etc.

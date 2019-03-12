@@ -1,7 +1,7 @@
 ---
 path: /help/company/security
 title: Security
-category: Company
+collection: Company
 published: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 path: /legal/terms
 title: Terms of Service
-category: Company
+collection: Company
 published: true
 ---
 
@@ -13,7 +13,8 @@ Any new features or tools which are added to the Services, including updates, up
 
 You can find the most current version of the agreement at [https://gatherdata.co/legal/terms](https://gatherdata.co/legal/terms).
 
-### DEFINITIONS 
+### DEFINITIONS
+
 "Site" refers to our website, [gatherdata.co](https://gatherdata.co/).
 
 "Service" and "Services" means the Gather service provided on the website, together with any associated tools, products, services, media, downloaded software, and other content delivered to you through the Site or otherwise by Gather.
@@ -94,7 +95,7 @@ You can find the most current version of the agreement at [https://gatherdata.co
 
     3.  No refunds or credits for Subscription Charges or other fees or payments will be provided to You if You elect to downgrade. Downgrading may cause loss of content, support, features, or capacity of the Service as available to You, and Gather does not accept any liability for such loss.
 
-    3.  You agree to pay any applicable taxes not otherwise included in the fees (excluding US taxes based on Gather’s net income) unless you have provided Gather with a valid exemption certificate. In the case of any withholding requirements, you will pay any required withholding itself and will not reduce the amount paid to you on account thereof.
+    4.  You agree to pay any applicable taxes not otherwise included in the fees (excluding US taxes based on Gather’s net income) unless you have provided Gather with a valid exemption certificate. In the case of any withholding requirements, you will pay any required withholding itself and will not reduce the amount paid to you on account thereof.
 
 6.  #### TERM AND TERMINATION
 

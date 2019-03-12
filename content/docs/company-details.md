@@ -1,7 +1,7 @@
 ---
 path: /company/details
 title: Company Details
-category: Company
+collection: Company
 published: true
 ---
 

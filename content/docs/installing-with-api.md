@@ -1,7 +1,8 @@
 ---
 path: /installation/api
 title: Installing via Gather API
-category: Installing & Configuring Gather
+collection: Installing & Configuring Gather
+category: Install
 published: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 path: /help/account-management/password-reset
 title: Reset your Password
-category: Account Management
+collection: Account Management
 published: false
 ---
 

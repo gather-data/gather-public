@@ -1,7 +1,7 @@
 ---
 path: /help/developers/data-model
 title: Data Model Overview
-category: Developers
+collection: Developers
 published: true
 ---
 
@@ -15,8 +15,8 @@ Models are the data providers in Gather and are used in combination with views, 
 
 Out-of-the-box, Gather provides you with a default data model that works automatically with all our integrations. The standard models are:
 
--   [Account](#account)
--   [Customer](#customer)
+- [Account](#account)
+- [Customer](#customer)
 
 All of the standard models come with a set of default fields that have to be provided when syncing records with the model, which are listed in the next section. Any record for a standard model can contain arbitrary fields beyond the default fields. [Please see the API docs on syncing model records for more information.](https://api.gatherdata.co/docs#operation/Sync)
 
@@ -24,14 +24,14 @@ All of the standard models come with a set of default fields that have to be pro
 
 The account model represents a company. The account model comes with these default fields:
 
--   `name` (string) - a unique name for the company
+- `name` (string) - a unique name for the company
 
 #### Customer
 
 The customer represents an individual at a company. The customer model comes with these default fields:
 
--   `email` (string) - a unique email for the customer
--   `account` (string) - the name of the account to associate the customer with
+- `email` (string) - a unique email for the customer
+- `account` (string) - the name of the account to associate the customer with
 
 #### How integrations work with Standard Models
 

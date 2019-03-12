@@ -1,7 +1,7 @@
 ---
 path: /help/integrations/database
 title: Database Integration
-category: Integrations
+collection: Integrations
 published: true
 ---
 
