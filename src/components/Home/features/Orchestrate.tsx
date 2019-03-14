@@ -208,7 +208,8 @@ const Orchestrate: React.SFC = () => {
 
   // Get line length
   const lineRef = useRef();
-  let lineLength = 0;
+  // This is an approx guess
+  let lineLength = 330;
   if (lineRef.current) {
     lineLength = lineRef.current.getTotalLength();
   }

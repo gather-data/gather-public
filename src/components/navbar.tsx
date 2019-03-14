@@ -28,6 +28,7 @@ import AndroidArrowForward from 'react-icons/lib/io/android-arrow-forward';
 import Hamburger from 'react-icons/lib/io/android-menu';
 
 import Logo from './Logo';
+import { isLoggedIn } from '../services/auth';
 
 configureGlobal();
 
@@ -137,6 +138,7 @@ const StyledLogo = styled(Logo)`
 class Navbar extends Component {
   state = {
     isOpen: false,
+    isLoggedIn: isLoggedIn(),
   };
 
   handleClickOutside = evt => {
@@ -151,7 +153,9 @@ class Navbar extends Component {
 
   render() {
     const { navbarData } = this.props;
-    const { isOpen } = this.state;
+    const { isOpen, isLoggedIn } = this.state;
+
+    const ctaText = isLoggedIn ? 'Go to Dashboard' : navbarData.ctaText;
 
     const links = [
       ...navbarData.links.map(link => (
@@ -169,6 +173,26 @@ class Navbar extends Component {
           {link.label}
         </NavLink>
       )),
+    ];
+
+    if (!isLoggedIn) {
+      links.push(
+        <NavLink
+          key="Log In"
+          exact
+          title="Log In"
+          href="https://app.gatherdata.co/login"
+          linkType={LinkTypes.TEXT}
+          mr={3}
+          useReachRouter
+          isNavLink
+        >
+          Log In
+        </NavLink>
+      );
+    }
+
+    links.push(
       <NavLink
         linkType={LinkTypes.BUTTON_PRIMARY}
         href={navbarData.ctaHref}
@@ -176,9 +200,9 @@ class Navbar extends Component {
         icon={<AndroidArrowForward size={24} />}
         useReachRouter
       >
-        {navbarData.ctaText}
-      </NavLink>,
-    ];
+        {ctaText}
+      </NavLink>
+    );
 
     return (
       <Sticky>
