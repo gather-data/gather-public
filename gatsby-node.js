@@ -7,7 +7,7 @@ if (process.env.NODE_ENV === 'development') {
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
-  const pageTemplate = path.resolve(`src/components/Page.js`);
+  const pageTemplate = path.resolve(`src/pages/HelpPage.js`);
 
   return graphql(`
     {

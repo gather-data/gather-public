@@ -218,7 +218,7 @@ const Help = ({
                 </Text>
               )}
               {collection.categories.map(category => (
-                <Category flow="column" alignItems="flex-start" mb={3}>
+                <Category flow="column" alignItems="flex-start">
                   <Text
                     heavy
                     type={TextTypes.BODY_SMALL}
@@ -235,6 +235,7 @@ const Help = ({
                       href={link.href}
                       icon={link.href && <ArrowRight />}
                       iconEnd
+                      useReachRouter
                     >
                       {link.label}
                     </Link>

@@ -185,9 +185,9 @@ const Demo: React.SFC<IProps> = ({
             <Text type={TextTypes.BODY} color={colors.white}>
               {subtitle}
             </Text>
-            <Benefits flow="row wrap">
+            <Benefits alignItems="flex-start" flow="row wrap">
               {benefits.map(benefit => (
-                <Benefit mb={2}>
+                <Benefit alignItems="flex-start" mb={2}>
                   <Checkmark />
                   <Text ml={1} color="#4CD964">
                     {benefit.title}

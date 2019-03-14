@@ -35,12 +35,15 @@ const Home = ({
     <Demo />
     <WorksWith services={servicesWithNodes.map(sn => sn.node)} />
     <Features
-      featureDataEngine={home.featureDataEngine}
-      featureIQ={home.featureIQ}
-      featureOrchestrate={home.featureOrchestrate}
+      title={home.features.title}
+      subtitle={home.features.subtitle}
+      featureDataEngine={home.features.featureDataEngine}
+      featureIQ={home.features.featureIQ}
+      featureOrchestrate={home.features.featureOrchestrate}
     />
     <Customers
       title={home.customers.title}
+      titleHighlight={home.customers.titleHighlight}
       testimonials={home.customers.testimonials}
     />
     <Developers
@@ -90,29 +93,34 @@ export const query = graphql`
         newHref
         newLabel
       }
-      featureDataEngine {
+      features {
         title
-        copy
-        benefits {
+        subtitle
+        featureDataEngine {
           title
+          copy
+          benefits {
+            title
+          }
         }
-      }
-      featureIQ {
-        title
-        copy
-        benefits {
+        featureIQ {
           title
+          copy
+          benefits {
+            title
+          }
         }
-      }
-      featureOrchestrate {
-        title
-        copy
-        benefits {
+        featureOrchestrate {
           title
+          copy
+          benefits {
+            title
+          }
         }
       }
       customers {
         title
+        titleHighlight
         testimonials {
           testimonial
           name

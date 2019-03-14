@@ -11,7 +11,6 @@ const Tag = styled(Text)`
   ${borderRadius};
   ${pv(0.5)};
   ${ph(1)};
-  ${mr(2)};
 `;
 
 export default Tag;

@@ -23,6 +23,7 @@ import {
   borderRadius,
 } from 'gather-style';
 
+import { splitTextWithHighlight } from '../../utils';
 import Tag from '../Tag';
 
 import hero from './hero.svg';
@@ -83,18 +84,6 @@ const NewContainer = styled(Flex)`
   ${pv(1)};
   ${ph(1)};
 `;
-
-function splitTextWithHighlight(text, highlight) {
-  const match = text.match(`(${highlight})`);
-  const start = match.index;
-  const end = start + highlight.length;
-
-  const first = text.slice(0, start);
-  const second = text.slice(start, end);
-  const last = text.slice(end);
-
-  return [first, second, last];
-}
 
 const Hero = ({
   title,

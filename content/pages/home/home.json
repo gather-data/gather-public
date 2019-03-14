@@ -2,45 +2,42 @@
   "trialText": "14 day free trial. No credit card required.",
   "developers": {
     "title": "Built for Developers",
-    "subtitle":
-      "Built on top of a extensible data model, Gather is designed to be easy to integrate and easy to extend. ",
+    "subtitle": "Built on top of a extensible data model, Gather is designed to be easy to integrate and easy to extend. ",
     "ctaTo": "/help",
     "ctaText": "Explore The Docs",
     "benefits": [
       {
-        "title": "Out-of-the-box Admin"
+        "title": "REST API"
       },
       {
-        "title": "Give operations control"
+        "title": "Extensible data-model"
       },
       {
-        "title": "Fully Extensible"
+        "title": "Simple client libraries"
       },
       {
-        "title": "Security"
+        "title": "Security-first"
       }
     ],
     "codeSamples": [
       {
         "title": "Gather.js",
         "language": "javascript",
-        "code":
-          "const gather = new Gather({\n    clientId: 'my_client_id'\n})\n\ngather.account('account_123', {\n    name: 'Lovelace, Inc',\n    country: 'England'\n});\n\ngather.user('user_123', {\n    first_name: 'Ada',\n    last_name: 'Lovelace',\n    email: 'ada@lovelace.com'\n    account: 'account_123'\n});"
+        "code": "const gather = new Gather({\n    clientId: 'my_client_id'\n})\n\ngather.account('account_123', {\n    name: 'Lovelace, Inc',\n    country: 'England'\n});\n\ngather.user('user_123', {\n    first_name: 'Ada',\n    last_name: 'Lovelace',\n    email: 'ada@lovelace.com'\n    account: 'account_123'\n});"
       },
       {
         "title": "API",
         "language": "javascript",
-        "code":
-          "curl https://api.gatherdata.co/models/account/records \\\n  -d id=\"account_123\"\n  -d name=\"Lovelace, Inc\"\n  -d country=\"England\"\n\n{\n    \"id\": \"account_123\",\n    \"name\": \"Lovelace, Inc\",\n    \"country\": \"England\",\n}"
+        "code": "curl https://api.gatherdata.co/models/account/records \\\n  -d id=\"account_123\"\n  -d name=\"Lovelace, Inc\"\n  -d country=\"England\"\n\n{\n    \"id\": \"account_123\",\n    \"name\": \"Lovelace, Inc\",\n    \"country\": \"England\",\n}"
       }
     ]
   },
   "customers": {
-    "title": "Powering support for thousands of customers across the world",
+    "title": "Powering success & support for thousands of customers",
+    "titleHighlight": "thousands of customers",
     "testimonials": [
       {
-        "testimonial":
-          "Gather enabled our team to streamline support and internal processes, reducing pressure on our engineering team to deliver features for support and reducing ramp up time for new support hires, ultimately leading to more efficient and happier team members. We wouldn’t have been able to keep up with our level of support and scale as quickly without Gather.",
+        "testimonial": "“Gather has helped us to exceed our customers’ expectations. We’ve achieved best-in-breed retention numbers and developed customer champions who have helped us grow organically.”",
         "name": "Karim Butt",
         "job": "CTO, GlossGenius",
         "image": "/assets/0.jpeg"
@@ -50,62 +47,68 @@
   "footerCta": {
     "title": "Let's get started",
     "subtitle": "14 day free trial. No credit card required.",
-    "ctaText": "Request a Demo",
+    "ctaText": "Request access",
     "ctaHref": "https://app.gatherdata.co/request-demo"
   },
-  "featureDataEngine": {
-    "title": "Data Engine",
-    "copy":
-      "Identify who your at risk, stable, best and champion customers are so you can focus your attention on the customers who need it most.",
-    "benefits": [
-      {
-        "title": "A Great Feature"
-      },
-      {
-        "title": "A Great Feature"
-      },
-      {
-        "title": "A Great Feature"
-      }
-    ]
+  "features": {
+    "title": "Customer Success Management",
+    "subtitle": "Understand the customer journey with Gather’s unified customer view, predict customer churn and monitor unexpected behaviors and create sequences to operationalize success to increase activation and prevent churn.",
+    "featureDataEngine": {
+      "title": "Data Engine",
+      "copy": "All of the data you need to ensure your customers are successful integrated in one place. We automatically populate a timeline for you to explore context and help you build smart segments.",
+      "benefits": [
+        {
+          "title": "Native CRM integrations"
+        },
+        {
+          "title": "Customer timeline"
+        },
+        {
+          "title": "Segmentation"
+        },
+        {
+          "title": "Native 3rd party integrations"
+        }
+      ]
+    },
+    "featureIQ": {
+      "title": "Intelligence",
+      "copy": "Predict churn with higher level metrics like the customer health score. Get notified when customers are behaving unexpectedly with monitoring and alerting so your team never misses another opportunity to intervene.",
+      "benefits": [
+        {
+          "title": "Easy-to-configure Health Score"
+        },
+        {
+          "title": "User-configurable threshold-based alerting"
+        },
+        {
+          "title": "Intelligent anomaly detection based on trend analysis"
+        }
+      ]
+    },
+    "featureOrchestrate": {
+      "title": "Orchestrate",
+      "copy": "Build a process to take action when behaviors are unexpected. Improve your team’s productivity and ensure customers continue to receive consistent value from your relationship as you scale.",
+      "benefits": [
+        {
+          "title": "Single step actions"
+        },
+        {
+          "title": "Multi-step workflows"
+        },
+        {
+          "title": "Trigger workflows on Intelligence events "
+        },
+        {
+          "title": "Workflow based on Segments"
+        }
+      ]
+    }
   },
-  "featureIQ": {
-    "title": "Auto IQ",
-    "copy":
-      "Identify who your at risk, stable, best and champion customers are so you can focus your attention on the customers who need it most.",
-    "benefits": [
-      {
-        "title": "A Great Feature"
-      },
-      {
-        "title": "A Great Feature"
-      },
-      {
-        "title": "A Great Feature"
-      }
-    ]
-  },
-  "featureOrchestrate": {
-    "title": "Orchestrate",
-    "copy":
-      "Identify who your at risk, stable, best and champion customers are so you can focus your attention on the customers who need it most.",
-    "benefits": [
-      {
-        "title": "A Great Feature"
-      },
-      {
-        "title": "A Great Feature"
-      },
-      {
-        "title": "A Great Feature"
-      }
-    ]
-  },
-  "subtitle":
-    "Increase your activation rate and reduce churn by knowing who to target, who’s at risk and measuring the results of your campaigns. ",
+  "subtitle": "Understand which customers are at risk of churning, proactively reach them and measure your results. ",
   "title": "Do you know who your most at risk customers are?",
   "titleHighlight": "at risk",
-  "ctaText": "Request a Demo",
+  "ctaText": "Request access",
   "ctaHref": "https://app.gatherdata.co/request-demo",
   "newItem": {
     "newLabel": "",

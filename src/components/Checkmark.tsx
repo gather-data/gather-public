@@ -8,6 +8,7 @@ const Checkmark = styled(CheckmarkIcon)`
   height: 24px;
   border-radius: 12px;
   padding: 6px;
+  flex-shrink: 0;
 `;
 
 export default Checkmark;

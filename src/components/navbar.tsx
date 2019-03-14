@@ -220,6 +220,8 @@ class Navbar extends Component {
                 mr={2}
                 linkType={LinkTypes.BUTTON_PRIMARY}
                 useReachRouter
+                iconEnd
+                icon={<AndroidArrowForward size={24} />}
               >
                 {navbarData.ctaText}
               </MobileMenu>

@@ -27,9 +27,9 @@ import {
   Row,
 } from 'gather-style';
 
-import Tag from './Tag';
-
-import Footer from './Footer';
+import Layout from '../components/Layout';
+import Tag from '../components/Tag';
+import Footer from '../components/Footer';
 
 const StyledPage = styled(Page)`
   ${pt(8)};
@@ -164,7 +164,7 @@ export default function Doc({ data, pageContext }) {
   } = data;
   const { footer } = pageContext;
   return (
-    <div>
+    <Layout>
       <Helmet title={`${post.frontmatter.title} | Gather`} />
       <StyledPage width={pageSmallWidth}>
         <Row>
@@ -181,25 +181,25 @@ export default function Doc({ data, pageContext }) {
                   {post.frontmatter.collection}
                 </Text>
                 {otherPostsFromCategory &&
-                  otherPostsFromCategory.edges.map(
-                    ({ node: item }) =>
-                      item.frontmatter.path.includes(post.frontmatter.path) ? (
-                        <CategoryArticleText
-                          truncate
-                          mb={0.5}
-                          to={item.frontmatter.path}
-                          heavy
-                        >
-                          {item.frontmatter.title}
-                        </CategoryArticleText>
-                      ) : (
-                        <CategoryArticleLink
-                          mb={0.5}
-                          to={item.frontmatter.path}
-                        >
-                          {item.frontmatter.title}
-                        </CategoryArticleLink>
-                      )
+                  otherPostsFromCategory.edges.map(({ node: item }) =>
+                    item.frontmatter.path.includes(post.frontmatter.path) ? (
+                      <CategoryArticleText
+                        truncate
+                        mb={0.5}
+                        to={item.frontmatter.path}
+                        heavy
+                      >
+                        {item.frontmatter.title}
+                      </CategoryArticleText>
+                    ) : (
+                      <CategoryArticleLink
+                        mb={0.5}
+                        to={item.frontmatter.path}
+                        useReachRouter
+                      >
+                        {item.frontmatter.title}
+                      </CategoryArticleLink>
+                    )
                   )}
               </Box>
               {Boolean(post.headings.length) && (
@@ -217,6 +217,7 @@ export default function Doc({ data, pageContext }) {
                     <Link
                       mb={0.5}
                       to={`#${heading.value.toLowerCase().replace(/ /g, '-')}`}
+                      useReachRouter
                     >
                       {heading.value}
                     </Link>
@@ -225,7 +226,12 @@ export default function Doc({ data, pageContext }) {
               )}
               <Text mt={3} ml={3}>
                 <Text inline>Noticed an error?</Text>
-                <Link inline ml={1} href="mailto:support@gatherdata.co">
+                <Link
+                  inline
+                  ml={1}
+                  href="mailto:support@gatherdata.co"
+                  useReachRouter
+                >
                   Let us know
                 </Link>
               </Text>
@@ -233,7 +239,7 @@ export default function Doc({ data, pageContext }) {
           </Column>
           <Column md={8}>
             <Flex>
-              <BreadcrumbLink heavy to="/help">
+              <BreadcrumbLink heavy to="/help" useReachRouter>
                 All articles
               </BreadcrumbLink>
               <Text ml={1}>/</Text>
@@ -241,6 +247,7 @@ export default function Doc({ data, pageContext }) {
                 heavy
                 to={`/help#${post.frontmatter.collection}`}
                 ml={1}
+                useReachRouter
               >
                 {post.frontmatter.collection}
               </BreadcrumbLink>
@@ -261,7 +268,7 @@ export default function Doc({ data, pageContext }) {
             <Divider />
             <Flex flow="column" alignItems="flex-start">
               <Flex>
-                <Link mb={3} heavy to="/help">
+                <Link mb={3} heavy to="/help" useReachRouter>
                   All help articles
                 </Link>
                 <Text mb={3} ml={1}>
@@ -280,7 +287,7 @@ export default function Doc({ data, pageContext }) {
         madeIn={footer.madeIn}
         linkGroups={footer.linkGroups}
       />
-    </div>
+    </Layout>
   );
 }
 

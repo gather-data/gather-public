@@ -135,6 +135,10 @@ const StyledWaypoint = styled(Waypoint)<WaypointInterface>`
   top: 40px;
 `;
 
+const FeaturesContainer = styled.div`
+  position: relative;
+`;
+
 const FeatureContainer = styled(Flex)`
   flex-flow: column;
   align-items: flex-start;
@@ -283,8 +287,16 @@ const AutoIQImage = styled(BaseImage)`
 `;
 
 const CheckmarkRow = styled(Flex)`
-  width: 50%;
+  width: 100%;
   ${mb(1.5)};
+  align-items: flex-start;
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+      width: 50%;
+    `
+  )};
 `;
 
 const Line = styled.div`
@@ -303,6 +315,20 @@ const Line = styled.div`
   )};
 `;
 
+const Header = styled(Flex)`
+  max-width: 620px;
+  margin: 0 auto;
+`;
+
+const Subtitle = styled(Text)`
+  ${utils.breakpoint(
+    'md',
+    () => `
+      ${ph(8)()};
+    `
+  )};
+`;
+
 interface Benefit {
   title: string;
 }
@@ -315,6 +341,8 @@ interface Feature {
 }
 
 interface Props {
+  title: string;
+  subtitle: string;
   featureDataEngine: Feature;
   featureIQ: Feature;
   featureOrchestrate: Feature;
@@ -341,33 +369,64 @@ const getFeatureInfos = ({
 
 const Features = (props: Props) => (
   <Container width={pageSmallWidth}>
-    <Line />
     <Column>
-      {getFeatureInfos(props).map(info => (
-        <FeatureContainer>
-          <FeatureImage>{info.graphic}</FeatureImage>
-          <FeatureContent>
-            <StyledWaypoint bottomOffset="30%" />
-            <Text mt={2} type={TextTypes.HEADING_2} color={colors.navy}>
-              {info.title}
-            </Text>
-            <Text color={colors.navy80} mt={1} type={TextTypes.BODY} mb={3}>
-              {info.copy}
-            </Text>
-            <Flex flow="row wrap">
-              {info.benefits.map(benefit => (
-                <CheckmarkRow>
-                  <Checkmark />
-                  <Text ml={1} type={TextTypes.BODY_SMALL}>
-                    {benefit.title}
-                  </Text>
-                </CheckmarkRow>
-              ))}
-            </Flex>
-          </FeatureContent>
-        </FeatureContainer>
-      ))}
+      <Header flow="column">
+        <Tag
+          color="#95F2A5"
+          textColor="#1C9531"
+          type={TextTypes.BODY_TINY}
+          heavy
+        >
+          Product
+        </Tag>
+        <Text
+          mt={3}
+          type={TextTypes.HEADING_2}
+          color={colors.primary}
+          align="center"
+        >
+          {props.title}
+        </Text>
+        <Subtitle
+          mt={1}
+          mb={15}
+          type={TextTypes.BODY}
+          color={colors.navy80}
+          align="center"
+        >
+          {props.subtitle}
+        </Subtitle>
+      </Header>
     </Column>
+    <FeaturesContainer>
+      <Line />
+      <Column>
+        {getFeatureInfos(props).map(info => (
+          <FeatureContainer>
+            <FeatureImage>{info.graphic}</FeatureImage>
+            <FeatureContent>
+              <StyledWaypoint bottomOffset="30%" />
+              <Text mt={2} type={TextTypes.HEADING_2} color={colors.navy}>
+                {info.title}
+              </Text>
+              <Text color={colors.navy80} mt={1} type={TextTypes.BODY} mb={3}>
+                {info.copy}
+              </Text>
+              <Flex alignItems="flex-start" flow="row wrap">
+                {info.benefits.map(benefit => (
+                  <CheckmarkRow>
+                    <Checkmark />
+                    <Text ml={1} type={TextTypes.BODY_SMALL}>
+                      {benefit.title}
+                    </Text>
+                  </CheckmarkRow>
+                ))}
+              </Flex>
+            </FeatureContent>
+          </FeatureContainer>
+        ))}
+      </Column>
+    </FeaturesContainer>
   </Container>
 );
 
