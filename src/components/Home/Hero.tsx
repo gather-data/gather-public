@@ -122,7 +122,8 @@ const Hero = ({
                 {newItem.newText}
               </Tag>
               <Link
-                type={LinkTypes.TEXT}
+                linkType={LinkTypes.TEXT}
+                useReachRouter
                 size="small"
                 iconEnd
                 icon={<AndroidArrowForward size={16} />}
@@ -166,7 +167,8 @@ const Hero = ({
           <CtaRow alignItems="flex-start" flow="column">
             <Link
               href={ctaHref}
-              type={LinkTypes.BUTTON_PRIMARY}
+              linkType={LinkTypes.BUTTON_PRIMARY}
+              useReachRouter
               mb={1}
               size="large"
               iconEnd

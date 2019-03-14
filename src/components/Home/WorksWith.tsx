@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Link as ReactRouterLink } from 'react-router-dom';
 import { utils } from 'hedron';
+import { Link as GatsbyLink } from 'gatsby';
 import {
   Text,
   TextTypes,
@@ -20,7 +20,6 @@ import {
   pb,
   maxHeight,
   maxWidth,
-  Link,
   transition,
 } from 'gather-style';
 import styled, { keyframes } from 'styled-components';
@@ -89,7 +88,7 @@ const Box = styled(Flex)`
   ${borderRadius};
 `;
 
-const OuterBox = styled(ReactRouterLink)`
+const OuterBox = styled(GatsbyLink)`
   display: inline;
   text-decoration: none;
 `;

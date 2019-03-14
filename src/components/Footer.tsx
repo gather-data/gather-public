@@ -79,7 +79,8 @@ const Footer = ({ copyright, madeIn, linkGroups }) => (
                   </Text>
                   {linkGroup.links.map(link => (
                     <Link
-                      type={LinkTypes.Text}
+                      linkType={LinkTypes.Text}
+                      useReachRouter
                       to={link.to && link.to.startsWith('/') && link.to}
                       href={link.to && !link.to.startsWith('/') && link.to}
                     >

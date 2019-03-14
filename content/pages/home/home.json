@@ -29,7 +29,7 @@
       },
       {
         "title": "API",
-        "language": "bash",
+        "language": "javascript",
         "code":
           "curl https://api.gatherdata.co/models/account/records \\\n  -d id=\"account_123\"\n  -d name=\"Lovelace, Inc\"\n  -d country=\"England\"\n\n{\n    \"id\": \"account_123\",\n    \"name\": \"Lovelace, Inc\",\n    \"country\": \"England\",\n}"
       }

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Sticky } from 'react-sticky';
 import { utils } from 'hedron';
 import onClickOutside from 'react-onclickoutside';
-import { withRouter } from 'react-router-dom';
 import styled from 'styled-components';
 import {
   Flex,
@@ -111,7 +110,8 @@ const NavLink = styled(Link)`
   border-bottom: 0;
 
   &.active,
-  &:hover {
+  &:hover,
+  &[aria-current] {
     border-bottom: 0;
   }
 
@@ -159,21 +159,22 @@ class Navbar extends Component {
           key={link.label}
           exact
           title={link.label}
-          isNavLink
           to={link.to && !link.to.startsWith('https') && link.to}
           href={link.to && link.to.startsWith('https') && link.to}
-          type="text"
+          linkType={LinkTypes.TEXT}
           mr={3}
-          color={colors.navy}
+          useReachRouter
+          isNavLink
         >
           {link.label}
         </NavLink>
       )),
       <NavLink
-        type="buttonPrimary"
+        linkType={LinkTypes.BUTTON_PRIMARY}
         href={navbarData.ctaHref}
         iconEnd
         icon={<AndroidArrowForward size={24} />}
+        useReachRouter
       >
         {navbarData.ctaText}
       </NavLink>,
@@ -193,13 +194,15 @@ class Navbar extends Component {
               <MobileMenu
                 href={navbarData.ctaHref}
                 mr={2}
-                type={LinkTypes.BUTTON_PRIMARY}
+                linkType={LinkTypes.BUTTON_PRIMARY}
+                useReachRouter
               >
                 {navbarData.ctaText}
               </MobileMenu>
               <MobileMenu
                 onClick={() => this.setState({ isOpen: !isOpen })}
-                type={LinkTypes.BUTTON_DEFAULT}
+                linkType={LinkTypes.BUTTON_DEFAULT}
+                useReachRouter
               >
                 <Hamburger size={20} />
               </MobileMenu>
@@ -217,4 +220,4 @@ class Navbar extends Component {
   }
 }
 
-export default withRouter(onClickOutside(Navbar));
+export default onClickOutside(Navbar);

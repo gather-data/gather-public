@@ -1,7 +1,11 @@
 const path = require('path');
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators;
+if (process.env.NODE_ENV === 'development') {
+  process.env.GATSBY_WEBPACK_PUBLICPATH = '/';
+}
+
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions;
 
   const pageTemplate = path.resolve(`src/components/Page.js`);
 

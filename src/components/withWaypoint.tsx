@@ -9,12 +9,10 @@ function withWaypoint() {
       };
 
       onEnter = () => {
-        console.info('ENTERING');
         this.setState({ isVisible: true });
       };
 
       onLeave = () => {
-        console.info('LEAVING');
         this.setState({ isVisible: false });
       };
 

@@ -10,8 +10,6 @@ import {
   Text,
   TextTypes,
   Flex,
-  Link,
-  LinkTypes,
   colors,
   mt,
   mb,

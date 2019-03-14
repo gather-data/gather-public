@@ -17,8 +17,6 @@ import {
   Flex,
   Text,
   TextTypes,
-  Link,
-  LinkTypes,
   pageSmallWidth,
   Page,
   Row,
@@ -28,25 +26,26 @@ import {
   r,
 } from 'gather-style';
 
-import Checkmark from '../Checkmark';
-import withWaypoint from '../withWaypoint';
+import Checkmark from '../../Checkmark';
+import withWaypoint from '../../withWaypoint';
+import Tag from '../../Tag';
 
-import Tag from '../Tag';
-
-import dataImage from './features/data.svg';
-import privacyImage from './features/privacy.svg';
-import actionsImage from './features/actions.svg';
-import timelineImage from './features/timeline.svg';
-import analyticsImage from './features/analytics.svg';
+import DataEngine from './DataEngine';
+import Orchestrate from './Orchestrate';
+import autoIQImage from './auto-iq.svg';
 
 const Container = styled(Page)`
   position: relative;
   ${mt(15)};
   ${mb(5)};
+  overflow: hidden;
+
+  perspective: 2000px;
 
   ${utils.breakpoint(
     'md',
     () => `
+      overflow: visible;
       ${mt(20)()};
       ${mb(26)()};
     `
@@ -65,8 +64,9 @@ const FeatureImage = styled.div`
   display: flex;
   flex-flow: column;
   align-items: center;
-  ${mb(8)};
+  ${mb(12)};
   flex: 1;
+  align-self: stretch;
 
   ${utils.breakpoint(
     'md',
@@ -137,6 +137,7 @@ const StyledWaypoint = styled(Waypoint)<WaypointInterface>`
 
 const FeatureContainer = styled(Flex)`
   flex-flow: column;
+  align-items: flex-start;
   padding-left: 44px;
 
   ${StyledWaypoint} {
@@ -152,6 +153,7 @@ const FeatureContainer = styled(Flex)`
     'md',
     () => `
       flex-flow: row;
+      align-items: center;
       padding-left: 0;
 
       &:not(:last-child) {
@@ -269,27 +271,15 @@ const BaseImage = styled.img`
   )};
 `;
 
-const DataImage = styled(BaseImage)`
-  transform: scale(1.4);
-`;
-const PrivacyImage = styled(BaseImage)`
-  transform: scale(1.3);
-`;
-const ActionsImage = styled(BaseImage)`
-  transform: scale(1.3);
-`;
-const TimelineImage = styled(BaseImage)`
-  transform: scale(1.4);
+const AutoIQImage = styled(BaseImage)`
+  transform: scale(1.6) translate(0, 20px);
 
   ${utils.breakpoint(
     'md',
     () => `
-      transform: scale(1.25);
+      transform: scale(1.6) rotate3d(0, 1, 0, -30deg) translate(30px, 0);
     `
   )};
-`;
-const AnalyticsImage = styled(BaseImage)`
-  transform: scale(1.2) translate(0, 20px);
 `;
 
 const CheckmarkRow = styled(Flex)`
@@ -337,15 +327,15 @@ const getFeatureInfos = ({
 }: Props) => [
   {
     ...featureDataEngine,
-    image: dataImage,
+    graphic: <DataEngine />,
   },
   {
     ...featureIQ,
-    image: dataImage,
+    graphic: <AutoIQImage src={autoIQImage} />,
   },
   {
     ...featureOrchestrate,
-    image: dataImage,
+    graphic: <Orchestrate />,
   },
 ];
 
@@ -355,9 +345,7 @@ const Features = (props: Props) => (
     <Column>
       {getFeatureInfos(props).map(info => (
         <FeatureContainer>
-          <FeatureImage>
-            <DataImage src={info.image} />
-          </FeatureImage>
+          <FeatureImage>{info.graphic}</FeatureImage>
           <FeatureContent>
             <StyledWaypoint bottomOffset="30%" />
             <Text mt={2} type={TextTypes.HEADING_2} color={colors.navy}>

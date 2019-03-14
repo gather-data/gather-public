@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="68px" viewBox="0 0 48 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Negative G</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Copy" transform="translate(-384.000000, -2721.000000)">
+            <g id="features" transform="translate(92.000000, 2230.000000)">
+                <g id="data-engine" transform="translate(9.000000, 233.000000)">
+                    <g id="data-engine-graph">
+                        <g id="Negative-G" transform="translate(307.000000, 292.000000) rotate(-90.000000) translate(-307.000000, -292.000000) translate(273.000000, 268.000000)">
+                            <path d="M24,22 L35.0020796,22 C38.8669243,22 42,25.1418733 42,29 L42,29 C42,32.8659932 38.8646393,36 35.0020796,36 L30.9979204,36 C27.1330757,36 24,32.8581267 24,29 L24,22 Z" id="Rectangle-3" fill="#15BF6F"></path>
+                            <path d="M18,12 L48,12 L48,27.0074602 C48,28.6601943 46.6526814,30 44.9999809,30 L21.0000191,30 C19.3431543,30 18,28.6470745 18,27.0074602 L18,12 Z" id="Rectangle-4" fill="#2F4BFF"></path>
+                            <path d="M10,10 L56,10 L56,16 C56,19.3137085 53.3111444,22 50.0099006,22 L15.9900994,22 C12.6818589,22 10,19.3069658 10,16 L10,10 Z" id="Rectangle-3" fill="#FFDA5F"></path>
+                            <path d="M0,5 C0,2.23857625 2.24311338,0 5.00020236,0 L68,0 L68,5 C68,7.76142375 65.7568866,10 62.9997976,10 L0,10 L0,5 Z" id="Rectangle-2" fill="#FE2072"></path>
+                            <path d="M16,40 L48.0098214,40 C50.2135362,40 52,41.7953562 52,44 L52,48 L19.9901786,48 C17.7864638,48 16,46.2046438 16,44 L16,40 Z" id="Rectangle-2" fill="#7600FF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

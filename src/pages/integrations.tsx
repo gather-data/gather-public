@@ -5,6 +5,7 @@ import { utils } from 'hedron';
 import AndroidArrowForward from 'react-icons/lib/io/android-arrow-forward';
 import Helmet from 'react-helmet';
 import sortBy from 'lodash/sortBy';
+import { graphql } from 'gatsby';
 
 import {
   Column,
@@ -22,6 +23,7 @@ import {
 } from 'gather-style';
 
 import Integrations from '../components/Integrations';
+import Layout from '../components/Layout';
 import Footer from '../components/Footer';
 
 import integrationsBackgroundImage from './integrationsBackground.svg';
@@ -173,45 +175,48 @@ class IntegrationsContainer extends Component {
     const serviceGroups = this.getServiceGroups();
 
     return (
-      <Container>
-        <Helmet title={`Integrations | Gather`} />
-        <TitleContainer>
-          <Title align="center" mb={5} type={TextTypes.HEADING_1}>
-            Integrations for all your data
-          </Title>
-          <Link
-            type={LinkTypes.BUTTON_PRIMARY}
-            href={integrations.ctaHref}
-            iconEnd
-            icon={<AndroidArrowForward size={24} />}
-          >
-            {integrations.ctaText}
-          </Link>
-          <Text color={colors.purple80} mt={2} type={TextTypes.BODY_SMALL}>
-            14 day free trial, no credit card required.
-          </Text>
-        </TitleContainer>
-        <IntegrationsBackground src={integrationsBackgroundImage} />
-        <StyledPage width={pageWidth}>
-          <Row>
-            <Column>
-              <Integrations
-                serviceGroups={serviceGroups}
-                categories={categories}
-                query={query}
-                updateQuery={q => this.setState({ query: q })}
-                category={category}
-                updateSelectedCategory={c => this.setState({ category: c })}
-              />
-            </Column>
-          </Row>
-        </StyledPage>
-        <Footer
-          copyright={footer.copyright}
-          madeIn={footer.madeIn}
-          linkGroups={footer.linkGroups}
-        />
-      </Container>
+      <Layout>
+        <Container>
+          <Helmet title={`Integrations | Gather`} />
+          <TitleContainer>
+            <Title align="center" mb={5} type={TextTypes.HEADING_1}>
+              Integrations for all your data
+            </Title>
+            <Link
+              linkType={LinkTypes.BUTTON_PRIMARY}
+              useReachRouter
+              href={integrations.ctaHref}
+              iconEnd
+              icon={<AndroidArrowForward size={24} />}
+            >
+              {integrations.ctaText}
+            </Link>
+            <Text color={colors.purple80} mt={2} type={TextTypes.BODY_SMALL}>
+              14 day free trial, no credit card required.
+            </Text>
+          </TitleContainer>
+          <IntegrationsBackground src={integrationsBackgroundImage} />
+          <StyledPage width={pageWidth}>
+            <Row>
+              <Column>
+                <Integrations
+                  serviceGroups={serviceGroups}
+                  categories={categories}
+                  query={query}
+                  updateQuery={q => this.setState({ query: q })}
+                  category={category}
+                  updateSelectedCategory={c => this.setState({ category: c })}
+                />
+              </Column>
+            </Row>
+          </StyledPage>
+          <Footer
+            copyright={footer.copyright}
+            madeIn={footer.madeIn}
+            linkGroups={footer.linkGroups}
+          />
+        </Container>
+      </Layout>
     );
   }
 }

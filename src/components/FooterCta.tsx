@@ -101,7 +101,8 @@ const FooterCta = ({
               </Text>
             </TextContainer>
             <CtaLink
-              type={LinkTypes.BUTTON_PRIMARY}
+              linkType={LinkTypes.BUTTON_PRIMARY}
+              useReachRouter
               size="large"
               href={ctaHref}
               iconEnd

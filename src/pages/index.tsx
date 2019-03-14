@@ -1,7 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { graphql } from 'gatsby';
 
 import FooterCta from '../components/FooterCta';
+import Layout from '../components/Layout';
 
 import Hero from '../components/Home/Hero';
 import Demo from '../components/Home/Demo';
@@ -18,7 +20,7 @@ const Home = ({
     allGatherServices: { edges: servicesWithNodes },
   },
 }) => (
-  <div>
+  <Layout>
     <Helmet title={`Gather | ${home.title}`} />
     <Hero
       title={home.title}
@@ -58,7 +60,7 @@ const Home = ({
       madeIn={footer.madeIn}
       linkGroups={footer.linkGroups}
     />
-  </div>
+  </Layout>
 );
 
 export default Home;
@@ -131,8 +133,6 @@ export const query = graphql`
         ctaTo
         benefits {
           title
-          copy
-          image
         }
         codeSamples {
           title

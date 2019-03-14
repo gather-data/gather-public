@@ -196,7 +196,8 @@ const Demo: React.SFC<IProps> = ({
               ))}
             </Benefits>
             <Link
-              type={LinkTypes.BUTTON_PRIMARY}
+              linkType={LinkTypes.BUTTON_PRIMARY}
+              useReachRouter
               to={ctaTo}
               icon={<AndroidArrowForward size={24} />}
               iconEnd

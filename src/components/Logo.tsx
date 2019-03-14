@@ -38,7 +38,7 @@ const StyledText = styled(Text)`
 
 const Logo = ({ showName = true, className }) => {
   return (
-    <StyledLink to="/" className={className}>
+    <StyledLink to="/" className={className} useReachRouter>
       <StyledImg src={gather} />
       {showName && (
         <StyledText ml={2} color={colors.navy} type={TextTypes.BODY} heavy>

@@ -24,8 +24,10 @@ import {
   mt,
 } from 'gather-style';
 import IOSCheckmarkOutline from 'react-icons/lib/io/ios-checkmark-outline';
+import { graphql } from 'gatsby';
 
 import FooterCta from '../components/FooterCta';
+import Layout from '../components/Layout';
 
 const TitleContainer = styled(Column)`
   ${pv(6)};
@@ -118,7 +120,7 @@ const Questions = styled(Row)`
 
 const Pricing = ({ data: { pricingJson: pricing, footerJson: footer } }) => {
   return (
-    <div>
+    <Layout>
       <Helmet title={`Pricing | Gather`} />
       <Page width={pageSmallWidth}>
         <Row>
@@ -154,12 +156,13 @@ const Pricing = ({ data: { pricingJson: pricing, footerJson: footer } }) => {
                   </Text>
                 </Flex>
                 <Link
-                  type={LinkTypes.BUTTON_PRIMARY}
+                  linkType={LinkTypes.BUTTON_PRIMARY}
                   textColor={colors.purple}
                   color={colors.white}
                   href={pricing.standard.ctaHref}
                   mb={3}
                   size="large"
+                  useReachRouter
                 >
                   {pricing.standard.cta}
                 </Link>
@@ -189,7 +192,8 @@ const Pricing = ({ data: { pricingJson: pricing, footerJson: footer } }) => {
                 </Flex>
                 <Link
                   mt={3}
-                  type={LinkTypes.BUTTON_DEFAULT}
+                  linkType={LinkTypes.BUTTON_DEFAULT}
+                  useReachRouter
                   size="large"
                   href={pricing.enterpise.ctaHref}
                 >
@@ -234,7 +238,7 @@ const Pricing = ({ data: { pricingJson: pricing, footerJson: footer } }) => {
         madeIn={footer.madeIn}
         linkGroups={footer.linkGroups}
       />
-    </div>
+    </Layout>
   );
 };
 

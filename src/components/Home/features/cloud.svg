@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="431px" height="458px" viewBox="0 0 431 458" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>cloud</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="48.5522605%" cy="50%" fx="48.5522605%" fy="50%" r="64.125229%" gradientTransform="translate(0.485523,0.500000),scale(0.910906,1.000000),rotate(58.855460),scale(1.000000,1.006255),translate(-0.485523,-0.500000)" id="radialGradient-1">
+            <stop stop-color="#5D75F6" stop-opacity="0.332993659" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.25">
+        <g id="Home-Copy" transform="translate(-189.000000, -2493.000000)" fill="url(#radialGradient-1)">
+            <g id="features" transform="translate(81.000000, 2230.000000)">
+                <g id="data-engine" transform="translate(0.000000, 175.000000)">
+                    <g id="data-engine-graph">
+                        <path d="M430.053453,170.421643 C490.05092,176.073578 538.597142,217.901031 551.692914,284.028868 C570.361418,378.296038 509.92022,486.247917 416.693165,525.14625 C350.233551,552.875858 285.053201,538.02659 246.339713,493.061611 C165.599761,502.87076 96.2926839,457.388661 80.1803503,376.028633 C60.5416358,276.861969 127.367115,161.946825 229.438974,119.357596 C311.736116,85.0198855 391.819018,108.1827 430.053446,170.421642 Z" id="cloud" transform="translate(315.916588, 321.301937) rotate(-125.000000) translate(-315.916588, -321.301937) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

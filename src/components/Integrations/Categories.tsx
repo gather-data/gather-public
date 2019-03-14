@@ -12,7 +12,8 @@ const Categories = ({ categories, updateSelectedCategory, category }) => (
     <CategoryLink
       underline={false}
       color={category === null ? colors.purple : colors.purple60}
-      type={LinkTypes.TEXT_HEAVY}
+      linkType={LinkTypes.TEXT_HEAVY}
+      useReachRouter
       heavy={category === null}
       onClick={
         updateSelectedCategory ? () => updateSelectedCategory(null) : undefined
@@ -25,7 +26,8 @@ const Categories = ({ categories, updateSelectedCategory, category }) => (
       <CategoryLink
         underline={false}
         color={c === category ? colors.purple : colors.purple60}
-        type={LinkTypes.TEXT_HEAVY}
+        linkType={LinkTypes.TEXT_HEAVY}
+        useReachRouter
         heavy={c === category}
         onClick={
           updateSelectedCategory ? () => updateSelectedCategory(c) : undefined

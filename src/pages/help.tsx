@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { utils } from 'hedron';
 import Helmet from 'react-helmet';
+import { graphql } from 'gatsby';
 import {
   Text,
   TextTypes,
@@ -26,6 +27,7 @@ import RSS from 'react-icons/lib/io/social-rss';
 import Twitter from 'react-icons/lib/io/social-twitter';
 import groupBy from 'lodash/groupBy';
 
+import Layout from '../components/Layout';
 import Tag from '../components/Tag';
 import FooterCta from '../components/FooterCta';
 
@@ -187,7 +189,7 @@ const Help = ({
     allMarkdownRemark: { edges: docs },
   },
 }) => (
-  <div>
+  <Layout>
     <Helmet title={`Help | Gather`} />
     <Page width={pageSmallWidth}>
       <Row>
@@ -249,7 +251,8 @@ const Help = ({
             </Text>
             <Text mb={2}>{help.contactUsText}</Text>
             <Link
-              type={LinkTypes.BUTTON_PRIMARY}
+              linkType={LinkTypes.BUTTON_PRIMARY}
+              useReachRouter
               href={`mailto:${help.contactUsEmail}`}
               icon={<IOSEmail color={colors.white} size={24} />}
               target="_blank"
@@ -265,7 +268,8 @@ const Help = ({
               <Text mb={2}>{help.blogText}</Text>
               <Link
                 color="#029e74"
-                type={LinkTypes.BUTTON_PRIMARY}
+                linkType={LinkTypes.BUTTON_PRIMARY}
+                useReachRouter
                 href="https://blog.gatherdata.co"
                 target="_blank"
                 icon={<RSS color={colors.white} size={24} />}
@@ -281,7 +285,8 @@ const Help = ({
             <Text mb={2}>{help.twitterText}</Text>
             <Link
               color="#1da1f2"
-              type={LinkTypes.BUTTON_PRIMARY}
+              linkType={LinkTypes.BUTTON_PRIMARY}
+              useReachRouter
               href={`https://twitter.com/gatherdataco`}
               icon={<Twitter color={colors.white} size={24} />}
               target="_blank"
@@ -301,7 +306,7 @@ const Help = ({
       madeIn={footer.madeIn}
       linkGroups={footer.linkGroups}
     />
-  </div>
+  </Layout>
 );
 
 export default Help;
@@ -360,8 +365,6 @@ export const query = graphql`
             path
             collection
             category
-            _PARENT
-            parent
           }
           html
           timeToRead

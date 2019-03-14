@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { colors, p, ph, Flex, Link, transition } from 'gather-style';
+import Prism from 'prismjs';
 
 interface CodeSample {
   language: string;
@@ -13,7 +14,7 @@ interface Props {
 }
 
 const Container = styled.div`
-  height: 360px;
+  height: 420px;
   width: 100%;
 `;
 
@@ -49,6 +50,7 @@ const CodeBlock = styled.pre`
   padding: 24px !important;
   margin: 0 !important;
   flex: 1;
+  overflow: scroll;
 
   code {
     background: none;
@@ -81,6 +83,7 @@ class CodeSwiper extends React.Component<Props> {
               onClick={() => this.onClick(sample)}
               color={index === selectedIndex ? colors.white : colors.white60}
               ml={3}
+              useReachRouter
             >
               {sample.title}
             </Link>
@@ -93,9 +96,16 @@ class CodeSwiper extends React.Component<Props> {
           >
             {codeSamples.map(sample => (
               <CodeBlock>
-                <code className={`language-${sample.language}`}>
-                  {sample.code}
-                </code>
+                <code
+                  className={`language-${sample.language}`}
+                  dangerouslySetInnerHTML={{
+                    __html: Prism.highlight(
+                      sample.code,
+                      Prism.languages[sample.language],
+                      sample.language
+                    ),
+                  }}
+                />
               </CodeBlock>
             ))}
           </CodeSamples>

@@ -1,14 +1,13 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
+import { graphql } from 'gatsby';
 
 import {
   colors,
   mv,
   mt,
   mb,
-  ph,
-  pv,
   pb,
   pt,
   p,
@@ -158,12 +157,12 @@ const CategoryArticleLink = styled(Link)`
   display: block;
 `;
 
-export default function Doc({ data, pathContext }) {
+export default function Doc({ data, pageContext }) {
   const {
     markdownRemark: post,
     allMarkdownRemark: otherPostsFromCategory,
   } = data;
-  const { footer } = pathContext;
+  const { footer } = pageContext;
   return (
     <div>
       <Helmet title={`${post.frontmatter.title} | Gather`} />
