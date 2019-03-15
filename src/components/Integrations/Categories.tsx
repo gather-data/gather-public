@@ -1,14 +1,28 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { utils } from 'hedron';
 
 import { Link, LinkTypes, colors, mb } from 'gather-style';
+
+const Container = styled.div`
+  padding: 0 12px;
+  ${mb(3)};
+
+  ${utils.breakpoint(
+    'md',
+    () => `
+    padding: 0;
+    ${mb(0)()};
+  `
+  )};
+`;
 
 const CategoryLink = styled(Link)`
   ${mb(1)};
 `;
 
 const Categories = ({ categories, updateSelectedCategory, category }) => (
-  <div>
+  <Container>
     <CategoryLink
       underline={false}
       color={category === null ? colors.purple : colors.purple60}
@@ -37,7 +51,7 @@ const Categories = ({ categories, updateSelectedCategory, category }) => (
         {c}
       </CategoryLink>
     ))}
-  </div>
+  </Container>
 );
 
 export default Categories;

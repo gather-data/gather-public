@@ -1,9 +1,13 @@
 {
   "trialText": "14 day free trial. No credit card required.",
+  "integrations": {
+    "title": "Integrations. Fully-native",
+    "subtitle": "Integrations in Gather are fully native, meaning no fiddly configuring of 3rd party integration tools."
+  },
   "developers": {
     "title": "Built for Developers",
     "subtitle": "Built on top of a extensible data model, Gather is designed to be easy to integrate and easy to extend. ",
-    "ctaTo": "/help",
+    "ctaTo": "/help/",
     "ctaText": "Explore The Docs",
     "benefits": [
       {

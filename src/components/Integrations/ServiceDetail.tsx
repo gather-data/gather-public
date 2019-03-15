@@ -20,8 +20,8 @@ const Container = styled.div`
   background: ${colors.white};
   position: relative;
   padding: 50% 0;
+  border: 1px solid ${colors.navy10};
 
-  ${border};
   ${borderRadius};
 `;
 

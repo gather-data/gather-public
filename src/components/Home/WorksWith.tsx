@@ -67,14 +67,16 @@ const animateUpAndDown = keyframes`
 
 const Box = styled(Flex)`
   ${borderRadius};
+  ${boxShadow};
 
   ${mr(4)};
 
   background: ${colors.white};
-  border: 1px solid ${colors.purple10};
   display: inline-flex;
   height: 144px;
   width: 200px;
+  border: 1px solid ${colors.purple10};
+  position: relative;
 
   ${transition(['transform', 'box-shadow'])};
 
@@ -82,10 +84,6 @@ const Box = styled(Flex)`
     transform: translate(0, -4px);
     border: 1px solid ${colors.primary};
   }
-
-  ${boxShadow};
-  ${border};
-  ${borderRadius};
 `;
 
 const OuterBox = styled(GatsbyLink)`
@@ -118,15 +116,39 @@ const ServiceRow = styled.div`
   animation: ${animateRow} 90s linear infinite;
 `;
 
+const Subtitle = styled(Text)`
+  max-width: 460px;
+`;
+
+const ServiceTag = styled(Tag)`
+  position: absolute;
+  top: 8px;
+  left: 8px;
+`;
+
 const Service = ({ service }) => (
-  <OuterBox underline={false} to="/integrations">
+  <OuterBox
+    underline={false}
+    to="/integrations"
+    yolo={console.info('SERVIE', service)}
+  >
     <Box flow="column" alignItems="center" justifyContent="center">
       <ServiceImage src={service.logo} />
+      {!service.is_available && (
+        <ServiceTag
+          type={TextTypes.BODY_TINY}
+          heavy
+          color="#CEF1FF"
+          textColor={colors.purple80}
+        >
+          Coming soon
+        </ServiceTag>
+      )}
     </Box>
   </OuterBox>
 );
 
-const WorksWith = ({ services }) => (
+const WorksWith = ({ services, title, subtitle }) => (
   <Container>
     <Page width={pageWidth}>
       <Row>
@@ -136,13 +158,22 @@ const WorksWith = ({ services }) => (
               Integrations
             </Tag>
             <Text
+              align="center"
               mt={3}
-              mb={5}
               type={TextTypes.HEADING_2}
               color={colors.primary}
             >
-              Integrations
+              {title}
             </Text>
+            <Subtitle
+              align="center"
+              mt={1}
+              mb={5}
+              type={TextTypes.BODY}
+              color={colors.navy80}
+            >
+              {subtitle}
+            </Subtitle>
           </Flex>
         </Column>
       </Row>
@@ -151,7 +182,9 @@ const WorksWith = ({ services }) => (
       <ServiceRow>
         {[...services, ...services]
           .filter(s => s.show_marketing && s.name)
-          .map(service => <Service service={service} />)}
+          .map(service => (
+            <Service service={service} />
+          ))}
       </ServiceRow>
     </div>
   </Container>

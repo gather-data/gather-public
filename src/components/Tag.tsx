@@ -7,7 +7,7 @@ const Tag = styled(Text)`
   background: ${props => props.color || colors.beige};
   color: ${props => props.textColor || '#A56E26'};
   text-transform: uppercase;
-  width: fit-content;
+  display: inline;
   ${borderRadius};
   ${pv(0.5)};
   ${ph(1)};

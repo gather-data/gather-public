@@ -239,13 +239,13 @@ export default function Doc({ data, pageContext }) {
           </Column>
           <Column md={8}>
             <Flex>
-              <BreadcrumbLink heavy to="/help" useReachRouter>
+              <BreadcrumbLink heavy to="/help/" useReachRouter>
                 All articles
               </BreadcrumbLink>
               <Text ml={1}>/</Text>
               <BreadcrumbLink
                 heavy
-                to={`/help#${post.frontmatter.collection}`}
+                to={`/help/#${post.frontmatter.collection}`}
                 ml={1}
                 useReachRouter
               >
@@ -268,7 +268,7 @@ export default function Doc({ data, pageContext }) {
             <Divider />
             <Flex flow="column" alignItems="flex-start">
               <Flex>
-                <Link mb={3} heavy to="/help" useReachRouter>
+                <Link mb={3} heavy to="/help/" useReachRouter>
                   All help articles
                 </Link>
                 <Text mb={3} ml={1}>

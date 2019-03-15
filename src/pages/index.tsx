@@ -33,7 +33,11 @@ const Home = ({
     />
     <Techstars />
     <Demo />
-    <WorksWith services={servicesWithNodes.map(sn => sn.node)} />
+    <WorksWith
+      services={servicesWithNodes.map(sn => sn.node)}
+      title={home.integrations.title}
+      subtitle={home.integrations.subtitle}
+    />
     <Features
       title={home.features.title}
       subtitle={home.features.subtitle}
@@ -147,6 +151,10 @@ export const query = graphql`
           code
           language
         }
+      }
+      integrations {
+        title
+        subtitle
       }
     }
     allGatherServices {

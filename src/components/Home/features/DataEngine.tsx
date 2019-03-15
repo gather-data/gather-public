@@ -1,5 +1,10 @@
 import React from 'react';
 import Chatboxes from 'react-icons/lib/io/chatboxes';
+import Phone from 'react-icons/lib/io/android-phone-portrait';
+import Bolt from 'react-icons/lib/io/ios-bolt';
+import Person from 'react-icons/lib/io/android-person';
+import Speakerphone from 'react-icons/lib/io/speakerphone';
+import Card from 'react-icons/lib/io/card';
 import {
   ph,
   pv,
@@ -25,37 +30,37 @@ interface CategoryInterface {
 const categories: CategoryInterface[] = [
   {
     name: 'Support',
-    icon: <Chatboxes isize={28} color={colors.white} />,
+    icon: <Chatboxes size={28} color={colors.white} />,
     lightColor: '#F5DAB5',
     boldColor: '#E5A853',
   },
   {
     name: 'Product Usage',
-    icon: <Chatboxes size={28} color="#5D75F6" />,
+    icon: <Phone size={28} color="#5D75F6" />,
     lightColor: '#CEF1FF',
     boldColor: '#85CDED',
   },
   {
     name: 'Activity',
-    icon: <Chatboxes size={28} color="#2F9340" />,
+    icon: <Bolt size={28} color="#2F9340" />,
     lightColor: '#BDF5C7',
     boldColor: '#78DD89',
   },
   {
     name: 'Customer Data',
-    icon: <Chatboxes size={28} color={colors.white} />,
+    icon: <Person size={28} color={colors.white} />,
     lightColor: '#D2D8F8',
     boldColor: '#96A3E8',
   },
   {
     name: 'Feedback',
-    icon: <Chatboxes size={28} color="#AF2525" />,
+    icon: <Speakerphone size={28} color="#AF2525" />,
     lightColor: '#FFD2D2',
     boldColor: '#EE6D6D',
   },
   {
     name: 'Financial',
-    icon: <Chatboxes size={28} color={colors.white} />,
+    icon: <Card size={28} color={colors.white} />,
     lightColor: '#DAE8F5',
     boldColor: '#5C6496',
   },
