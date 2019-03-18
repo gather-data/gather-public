@@ -1,5 +1,5 @@
 ---
-path: /installation/hubspot
+path: /help/installation/hubspot
 title: Installing via HubSpot
 collection: Installing & Configuring Gather
 category: Install

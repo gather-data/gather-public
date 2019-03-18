@@ -1,7 +1,7 @@
 ---
-path: /help/company/security
+path: /help/developers/security
 title: Security
-collection: Company
+collection: Developers
 published: true
 ---
 
@@ -9,13 +9,9 @@ We understand that by using Gather, you're trusting us with your most important 
 
 ## Where is my data stored?
 
-Gather has two strategies for fetching data for views: on-demand or synced.
+Your customer data stored in Gather can come from two places: your internal systems via your use of our API or from integrations. We store this data in the same database to provide filterable, sortable, and searchable views that aggregate data from multiple sources. Data for customers on our standard tier is stored in a multi-tenant database. For our enterprise customers, data can can be stored in a managed database, isolated from other customers. On-prem deployments can also be supported.
 
-On-demand data is fetched when a view is requested. This data passes transparently through our systems and is not stored anywhere on our servers. Not even in cache. The on-demand strategy is limited to single data sources as doing on-demand data aggregation across multiple sources is either very inefficient or impossible.
-
-Synced data is stored on Gather's servers. This allows Gather to provide filterable, sortable, and searchable views that aggregate data from multiple sources. Data for customers on our standard tier is stored in multi-tenant database separated from our production database. For our enterprise customers, data can can be stored in a managed database, isolated from other customers. On-prem deployments can also be supported.
-
-We store credentials for your database and other sources, but these are encrypted at-rest using regularly rotated keys stored in Google KMS. We also store metadata for any actions run within Gather, but here we only store the ID of the entity that the action was run for (for example, a customer ID).
+We store credentials for the integrations you enable, but these are encrypted at-rest using regularly rotated keys stored in Google KMS. We also store metadata for any actions run within Gather, but here we only store the ID of the entity that the action was run for (for example, a customer ID).
 
 Data is further encrypted at disc-level by Google Cloud Platform.
 

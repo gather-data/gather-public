@@ -32,7 +32,7 @@
       "links": [
         {
           "label": "Help",
-          "to": "/help"
+          "to": "/help/"
         },
         {
           "label": "FAQ",

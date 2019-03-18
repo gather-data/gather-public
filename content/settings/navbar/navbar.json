@@ -8,15 +8,11 @@
     },
     {
       "label": "Integrations",
-      "to": "/integrations"
-    },
-    {
-      "label": "Pricing",
-      "to": "/pricing"
+      "to": "/integrations/"
     },
     {
       "label": "Documentation",
-      "to": "/help"
+      "to": "/help/"
     }
   ]
 }

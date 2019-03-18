@@ -216,7 +216,10 @@ export default function Doc({ data, pageContext }) {
                   {post.headings.map(heading => (
                     <Link
                       mb={0.5}
-                      to={`#${heading.value.toLowerCase().replace(/ /g, '-')}`}
+                      href={`#${heading.value
+                        .toLowerCase()
+                        .replace(/ /g, '-')
+                        .replace(/:/g, '')}`}
                       useReachRouter
                     >
                       {heading.value}
@@ -268,15 +271,22 @@ export default function Doc({ data, pageContext }) {
             <Divider />
             <Flex flow="column" alignItems="flex-start">
               <Flex>
-                <Link mb={3} heavy to="/help/" useReachRouter>
-                  All help articles
-                </Link>
-                <Text mb={3} ml={1}>
-                  /
-                </Text>
-                <Text mb={3} ml={1}>
+                <BreadcrumbLink heavy to="/help/" useReachRouter>
+                  All articles
+                </BreadcrumbLink>
+                <Text ml={1}>/</Text>
+                <BreadcrumbLink
+                  heavy
+                  to={`/help/#${post.frontmatter.collection}`}
+                  ml={1}
+                  useReachRouter
+                >
+                  {post.frontmatter.collection}
+                </BreadcrumbLink>
+                <Text ml={1}>/</Text>
+                <BreadcrumbText truncate ml={1}>
                   {post.frontmatter.title}
-                </Text>
+                </BreadcrumbText>
               </Flex>
             </Flex>
           </Column>

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { utils } from 'hedron';
+import { utils as hedronUtils } from 'hedron';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import {
@@ -15,6 +15,7 @@ import {
   pageSmallWidth,
   mt,
   borderRadius,
+  boxShadow,
   p,
   pb,
   mb,
@@ -30,6 +31,8 @@ import groupBy from 'lodash/groupBy';
 import Layout from '../components/Layout';
 import Tag from '../components/Tag';
 import FooterCta from '../components/FooterCta';
+import Footer from '../components/Footer';
+import * as utils from '../services/auth';
 
 const TitleContainer = styled(Column)`
   display: flex;
@@ -43,9 +46,10 @@ const ContentColumn = styled(Column)`
   order: 1;
   ${p(1.5)};
 
-  ${utils.breakpoint(
+  ${hedronUtils.breakpoint(
     'md',
     () => `
+      ${pb(10)()};
       order: 0;
     `
   )};
@@ -55,7 +59,7 @@ const ContactColumn = styled(Column)`
   order: 0;
   ${p(1.5)};
 
-  ${utils.breakpoint(
+  ${hedronUtils.breakpoint(
     'md',
     () => `
       order: 1;
@@ -63,22 +67,23 @@ const ContactColumn = styled(Column)`
   )};
 `;
 
-const Box = styled.div`
+const CollectionBox = styled.div`
   background: ${colors.purple5};
   display: flex;
   flex-flow: column;
   align-items: flex-start;
+  border: 1px solid ${colors.purple10};
+
   ${borderRadius};
   ${p(3)};
-  ${border};
 
   &:not(:last-child) {
     ${mb(3)};
   }
 `;
 
-const BoxOutline = styled.div`
-  ${border};
+const BoxRight = styled.div`
+  border: 1px solid ${colors.navy10};
   display: flex;
   flex-flow: column;
   align-items: flex-start;
@@ -203,7 +208,7 @@ const Help = ({
       <Row>
         <ContentColumn sm={8}>
           {groupDocs(docs, help.collections).map(collection => (
-            <Box key={collection.name} id={collection.name}>
+            <CollectionBox key={collection.name} id={collection.name}>
               <Text
                 color={colors.navy}
                 heavy
@@ -242,11 +247,11 @@ const Help = ({
                   ))}
                 </Category>
               ))}
-            </Box>
+            </CollectionBox>
           ))}
         </ContentColumn>
         <ContactColumn sm={4}>
-          <Box>
+          <BoxRight>
             <Text color={colors.navy} heavy mb={1}>
               {help.contactUsTitle}
             </Text>
@@ -260,9 +265,9 @@ const Help = ({
             >
               {help.contactUsCta}
             </Link>
-          </Box>
+          </BoxRight>
           {help.showBlog && (
-            <Box>
+            <BoxRight>
               <Text color={colors.navy} heavy mb={1}>
                 {help.blogTitle}
               </Text>
@@ -277,9 +282,9 @@ const Help = ({
               >
                 {help.blogCta}
               </Link>
-            </Box>
+            </BoxRight>
           )}
-          <Box>
+          <BoxRight>
             <Text color={colors.navy} heavy mb={1}>
               {help.twitterTitle}
             </Text>
@@ -294,19 +299,27 @@ const Help = ({
             >
               {help.twitterCta}
             </Link>
-          </Box>
+          </BoxRight>
         </ContactColumn>
       </Row>
     </Page>
-    <FooterCta
-      title={help.footerCta.title}
-      subtitle={help.footerCta.subtitle}
-      ctaText={help.footerCta.ctaText}
-      ctaHref={help.footerCta.ctaHref}
-      copyright={footer.copyright}
-      madeIn={footer.madeIn}
-      linkGroups={footer.linkGroups}
-    />
+    {utils.isLoggedIn() ? (
+      <Footer
+        copyright={footer.copyright}
+        madeIn={footer.madeIn}
+        linkGroups={footer.linkGroups}
+      />
+    ) : (
+      <FooterCta
+        title={help.footerCta.title}
+        subtitle={help.footerCta.subtitle}
+        ctaText={help.footerCta.ctaText}
+        ctaHref={help.footerCta.ctaHref}
+        copyright={footer.copyright}
+        madeIn={footer.madeIn}
+        linkGroups={footer.linkGroups}
+      />
+    )}
   </Layout>
 );
 

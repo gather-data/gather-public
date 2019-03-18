@@ -1,5 +1,5 @@
 ---
-path: /installation/api
+path: /help/installation/api
 title: Installing via Gather API
 collection: Installing & Configuring Gather
 category: Install
@@ -22,7 +22,7 @@ Syncing accounts and users to Gather is done by `POST`ing to an endpoint any tim
 
 The `Account` model is the primary model in Gather, containing all of your customers. Accounts have a one-to-many relationship with the `User` model, so can have one or more users.
 
-To sync accounts, use the [/models/account/records](https://reload.api.dev.gatherdata.co/docs#operation/Sync%20an%20account) endpoint:
+To sync accounts, use the [/models/account/records](https://api.gatherdata.co/docs#operation/Sync%20an%20account) endpoint:
 
 ```bash
 curl https://api.gatherdata.co/models/account/records \
@@ -42,7 +42,7 @@ The `/models/account/records` endpoint is idempotent, meaning if an account with
 
 The `User` model is used to store end-users for a given account. It has a many-to-one relationship with an account.
 
-To sync users, use the [/models/user/records](https://reload.api.dev.gatherdata.co/docs#operation/Sync%20a%User) endpoint:
+To sync users, use the [/models/user/records](https://api.gatherdata.co/docs#operation/Sync%20a%User) endpoint:
 
 ```bash
 curl https://api.gatherdata.co/models/user/records \
