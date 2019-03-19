@@ -1,7 +1,7 @@
 ---
 path: /help/installation/hubspot
 title: Installing via HubSpot
-collection: Installing & Configuring Gather
+collection: Installation
 category: Install
 published: true
 ---

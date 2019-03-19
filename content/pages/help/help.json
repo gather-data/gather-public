@@ -20,7 +20,7 @@
   "contactUsEmail": "support@gatherdata.co",
   "collections": [
     {
-      "name": "Installing & Configuring Gather",
+      "name": "Installation",
       "description": "Simple guides on how to sync your customer data with Gather",
       "links": [],
       "categories": [{ "name": "Intro" }, { "name": "Install" }]

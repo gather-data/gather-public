@@ -1,7 +1,7 @@
 ---
 path: /installation/choosing-account-and-user-ids
 title: Choosing Account and User IDs
-collection: Installing & Configuring Gather
+collection: Installation
 category: Intro
 published: true
 ---
