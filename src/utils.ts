@@ -1,5 +1,9 @@
 function splitTextWithHighlight(text, highlight) {
   const match = text.match(`(${highlight})`);
+  if (!match) {
+    return ['', text, ''];
+  }
+
   const start = match.index;
   const end = start + highlight.length;
 

@@ -1,12 +1,12 @@
 {
   "trialText": "14 day free trial. No credit card required.",
   "integrations": {
-    "title": "Integrations. Fully-native",
-    "subtitle": "Integrations in Gather are fully native, meaning no fiddly configuring of 3rd party integration tools."
+    "title": "Native Integrations",
+    "subtitle": "Native integrations for seamless data transfer and increased usability of other popular tools"
   },
   "developers": {
     "title": "Built for Developers",
-    "subtitle": "Built on top of a extensible data model, Gather is designed to be easy to integrate and easy to extend. ",
+    "subtitle": "Built on top of a extensible data model, Gather is easy to integrate and easy to extend. ",
     "ctaTo": "/help/",
     "ctaText": "Explore The Docs",
     "benefits": [
@@ -41,7 +41,7 @@
     "titleHighlight": "thousands of customers",
     "testimonials": [
       {
-        "testimonial": "“Gather has helped us to exceed our customers’ expectations. We’ve achieved best-in-breed retention numbers and developed customer champions who have helped us grow organically.”",
+        "testimonial": "Gather has enabled us to exceed our customers’ expectations. We’ve achieved best-in-breed CSAT and retention numbers, which has helped us to develop customer champions and propel our organic growth.",
         "name": "Karim Butt",
         "job": "CTO, GlossGenius",
         "image": "/assets/0.jpeg"
@@ -55,11 +55,11 @@
     "ctaHref": "https://app.gatherdata.co/request-demo"
   },
   "features": {
-    "title": "Customer Success Management",
-    "subtitle": "Understand the customer journey with Gather’s unified customer view, predict customer churn and monitor unexpected behaviors and create sequences to operationalize success to increase activation and prevent churn.",
+    "title": "Customer Success Stack",
+    "subtitle": "Understand the customer journey with Gather’s unified customer view, leverage signaling to predict customer churn, get notified when warning signals are present and create intervention workflows before customers churn.\n\nAs customers fall out of the danger zone, create maintenance workflows and relationship building workflows to grow the relationship over time.",
     "featureDataEngine": {
-      "title": "Data Engine",
-      "copy": "All of the data you need to ensure your customers are successful integrated in one place. We automatically populate a timeline for you to explore context and help you build smart segments.",
+      "title": "Unified Data Layer",
+      "copy": "A unified customer view with native integrations for all of your existing tools - customer and sales data from HubSpot, payment data and plans from Stripe, support tickets from Zendesk, to name a few. Gather unifies the data and builds an integrated timeline for you so you can piece together the full customer story.",
       "benefits": [
         {
           "title": "Native CRM integrations"
@@ -76,23 +76,23 @@
       ]
     },
     "featureIQ": {
-      "title": "Intelligence",
-      "copy": "Predict churn with higher level metrics like the customer health score. Get notified when customers are behaving unexpectedly with monitoring and alerting so your team never misses another opportunity to intervene.",
+      "title": "Signaling and Alerting",
+      "copy": "Predict churn with higher level metrics like customer health scores. Get notifications in Slack when customer behavior signals dip into the warning zone. Never miss another opportunity to intervene when things go wrong.",
       "benefits": [
         {
           "title": "Easy-to-configure Health Score"
         },
         {
-          "title": "User-configurable threshold-based alerting"
+          "title": "Threshold-based alerting"
         },
         {
-          "title": "Intelligent anomaly detection based on trend analysis"
+          "title": "Alerting based on trends (percentage change WoW)"
         }
       ]
     },
     "featureOrchestrate": {
-      "title": "Orchestrate",
-      "copy": "Build a process to take action when behaviors are unexpected. Improve your team’s productivity and ensure customers continue to receive consistent value from your relationship as you scale.",
+      "title": "Operationalizing",
+      "copy": "Build success processes to help you scale - intervention workflows when negative signals are triggered, maintenance workflows for regularly scheduled check-ins and relationship workflows to set up different touchpoints within your organization. Increase productivity and operationalize your success.",
       "benefits": [
         {
           "title": "Single step actions"
@@ -101,17 +101,17 @@
           "title": "Multi-step workflows"
         },
         {
-          "title": "Trigger workflows on Intelligence events "
+          "title": "Trigger workflows on intelligence events "
         },
         {
-          "title": "Workflow based on Segments"
+          "title": "Workflows based on segments"
         }
       ]
     }
   },
-  "subtitle": "Understand which customers are at risk of churning, proactively reach them and measure your results. ",
-  "title": "Do you know who your most at risk customers are?",
-  "titleHighlight": "at risk",
+  "subtitle": "Identify customers who are at the greatest risk of churning, perform interventions and build automated workflows to help you scale customer success workflows. ",
+  "title": "Operationalize your success",
+  "titleHighlight": "success",
   "ctaText": "Request access",
   "ctaHref": "https://app.gatherdata.co/request-demo",
   "newItem": {

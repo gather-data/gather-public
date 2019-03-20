@@ -127,11 +127,7 @@ const ServiceTag = styled(Tag)`
 `;
 
 const Service = ({ service }) => (
-  <OuterBox
-    underline={false}
-    to="/integrations"
-    yolo={console.info('SERVIE', service)}
-  >
+  <OuterBox underline={false} to="/integrations">
     <Box flow="column" alignItems="center" justifyContent="center">
       <ServiceImage src={service.logo} />
       {!service.is_available && (

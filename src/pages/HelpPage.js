@@ -22,7 +22,7 @@ import {
   LinkTypeToStyle,
   Page,
   Column,
-  pageSmallWidth,
+  pageWidth,
   Flex,
   Row,
 } from 'gather-style';
@@ -166,9 +166,9 @@ export default function Doc({ data, pageContext }) {
   return (
     <Layout>
       <Helmet title={`${post.frontmatter.title} | Gather`} />
-      <StyledPage width={pageSmallWidth}>
+      <StyledPage width={pageWidth}>
         <Row>
-          <Column md={4}>
+          <Column md={3}>
             <LeftContainer>
               <Box>
                 <Text
@@ -240,7 +240,7 @@ export default function Doc({ data, pageContext }) {
               </Text>
             </LeftContainer>
           </Column>
-          <Column md={8}>
+          <Column md={7}>
             <Flex>
               <BreadcrumbLink heavy to="/help/" useReachRouter>
                 All articles

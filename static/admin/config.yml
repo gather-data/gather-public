@@ -5,14 +5,14 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
-  - label: "Settings"
-    name: "settings"
+  - label: 'Settings'
+    name: 'settings'
     files:
-      - label: "Navbar"
-        name: "navbar"
+      - label: 'Navbar'
+        name: 'navbar'
         file: content/settings/navbar/navbar.json
         fields:
-          - {label: 'CTA Text', name: ctaText, widget: string}
+          - { label: 'CTA Text', name: ctaText, widget: string }
           - label: Links
             name: links
             widget: list
@@ -23,12 +23,12 @@ collections:
               - label: to
                 name: to
                 width: string
-      - label: "Footer"
-        name: "footer"
+      - label: 'Footer'
+        name: 'footer'
         file: content/settings/footer/footer.json
         fields:
-          - {label: Copyright, name: copyright, widget: string}
-          - {label: 'Made In', name: madeIn, widget: string}
+          - { label: Copyright, name: copyright, widget: string }
+          - { label: 'Made In', name: madeIn, widget: string }
           - label: 'Link Groups'
             name: linkGroups
             widget: list
@@ -51,8 +51,8 @@ collections:
     folder: content/docs
     create: true
     fields:
-      - {name: path, label: Path}
-      - {name: title, label: Title}
+      - { name: path, label: Path }
+      - { name: title, label: Title }
       - label: Collection
         name: collection
         widget: string
@@ -63,27 +63,27 @@ collections:
         name: published
         widget: boolean
         default: false
-      - {name: body, label: Body, widget: markdown}
-  - label: "Pages"
-    name: "pages"
+      - { name: body, label: Body, widget: markdown }
+  - label: 'Pages'
+    name: 'pages'
     files:
-      - label: "Help"
-        name: "help"
+      - label: 'Help'
+        name: 'help'
         file: content/pages/help/help.json
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
-          - {label: 'Contact Us Text', name: contactUsText, widget: string}
-          - {label: 'Contact Us CTA', name: contactUsCta, widget: string}
-          - {label: 'Contact Us Title', name: contactUsTitle, widget: string}
-          - {label: 'Contact Us Email', name: contactUsEmail, widget: string}
-          - {label: 'Show blog', name: showBlog, widget: boolean}
-          - {label: 'Blog Text', name: blogText, widget: string}
-          - {label: 'Blog CTA', name: blogCta, widget: string}
-          - {label: 'Blog Title', name: blogTitle, widget: string}
-          - {label: 'Twitter Text', name: twitterText, widget: string}
-          - {label: 'Twitter CTA', name: twitterCta, widget: string}
-          - {label: 'Twitter Title', name: twitterTitle, widget: string}
+          - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string }
+          - { label: 'Contact Us Text', name: contactUsText, widget: string }
+          - { label: 'Contact Us CTA', name: contactUsCta, widget: string }
+          - { label: 'Contact Us Title', name: contactUsTitle, widget: string }
+          - { label: 'Contact Us Email', name: contactUsEmail, widget: string }
+          - { label: 'Show blog', name: showBlog, widget: boolean }
+          - { label: 'Blog Text', name: blogText, widget: string }
+          - { label: 'Blog CTA', name: blogCta, widget: string }
+          - { label: 'Blog Title', name: blogTitle, widget: string }
+          - { label: 'Twitter Text', name: twitterText, widget: string }
+          - { label: 'Twitter CTA', name: twitterCta, widget: string }
+          - { label: 'Twitter Title', name: twitterTitle, widget: string }
           - label: 'Collections'
             name: collections
             widget: list
@@ -124,11 +124,11 @@ collections:
               - label: 'CTA Href'
                 name: ctaHref
                 widget: string
-      - label: "Pricing"
-        name: "pricing"
+      - label: 'Pricing'
+        name: 'pricing'
         file: content/pages/pricing/pricing.json
         fields:
-          - {label: Title, name: title, widget: string}
+          - { label: Title, name: title, widget: string }
           - label: Standard
             name: standard
             widget: object
@@ -146,7 +146,7 @@ collections:
                 name: benefits
                 widget: list
                 fields:
-                  - {label: Text, name: text, widget: string}
+                  - { label: Text, name: text, widget: string }
           - label: Enterpise
             name: enterpise
             widget: object
@@ -161,7 +161,7 @@ collections:
                 name: benefits
                 widget: list
                 fields:
-                  - {label: Text, name: text, widget: string}
+                  - { label: Text, name: text, widget: string }
           - label: FAQs
             name: faqs
             widget: list
@@ -188,22 +188,22 @@ collections:
               - label: 'CTA Href'
                 name: ctaHref
                 widget: string
-      - label: "Integrations"
-        name: "integrations"
+      - label: 'Integrations'
+        name: 'integrations'
         file: content/pages/integrations/integrations.json
         fields:
-          - {label: 'CTA Text', name: ctaText, widget: string}
-          - {label: 'CTA Href', name: ctaHreff, widget: string}
-      - label: "Home"
-        name: "home"
+          - { label: 'CTA Text', name: ctaText, widget: string }
+          - { label: 'CTA Href', name: ctaHreff, widget: string }
+      - label: 'Home'
+        name: 'home'
         file: content/pages/home/home.json
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Title Highlight, name: titleHighlight, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
-          - {label: 'CTA Text', name: ctaText, widget: string}
-          - {label: 'CTA Href', name: ctaHref, widget: string}
-          - {label: 'Trial Text', name: trialText, widget: string}
+          - { label: Title, name: title, widget: string }
+          - { label: Title Highlight, name: titleHighlight, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string }
+          - { label: 'CTA Text', name: ctaText, widget: string }
+          - { label: 'CTA Href', name: ctaHref, widget: string }
+          - { label: 'Trial Text', name: trialText, widget: string }
           - label: 'New Item'
             name: newItem
             widget: object
