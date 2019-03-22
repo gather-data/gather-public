@@ -23,7 +23,7 @@ function withWaypoint() {
           <Waypoint
             onEnter={this.onEnter}
             onLeave={this.onLeave}
-            scrollableAncestor={window}
+            scrollableAncestor={typeof window !== 'undefined' && window}
             {...this.props}
           >
             <WrappedComponent {...this.props} isVisible={isVisible} />
