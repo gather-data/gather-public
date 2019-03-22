@@ -1,4 +1,4 @@
-import 'prismjs';
-import './src/prism-theme.css';
+require('prismjs');
+require('./src/prism-theme.css');
 
-export const onClientEntry = () => {};
+exports.disableCorePrefetching = () => true;
