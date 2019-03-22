@@ -239,7 +239,7 @@ const Orchestrate: React.SFC = () => {
       <Waypoint
         onEnter={() => setIsVisible(true)}
         onLeave={() => setIsVisible(false)}
-        scrollableAncestor={window}
+        scrollableAncestor={typeof window !== 'undefined' && window}
         bottomOffset="40%"
       />
       <Title heavy type={TextTypes.BODY_SMALL}>
