@@ -302,7 +302,7 @@ export default function Doc({ data, pageContext }) {
 }
 
 export const pageQuery = graphql`
-  query DocByPath($path: String!, $collection: String!) {
+  query DocByPath($path: String!, $collection: String) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       timeToRead
