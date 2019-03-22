@@ -20,10 +20,6 @@
         {
           "label": "Integrations",
           "to": "/integrations"
-        },
-        {
-          "label": "Pricing",
-          "to": "/pricing"
         }
       ]
     },

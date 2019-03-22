@@ -4,18 +4,10 @@ if (process.env.NODE_ENV === 'development') {
   process.env.GATSBY_WEBPACK_PUBLICPATH = '/';
 }
 
-exports.onCreatePage = ({ page, actions }) => {
-  const { deletePage } = actions;
-
-  if (page.path === '/pricing/') {
-    deletePage(page);
-  }
-};
-
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
-  const pageTemplate = path.resolve(`src/pages/HelpPage.js`);
+  const pageTemplate = path.resolve(`src/components/HelpPage.js`);
 
   return graphql(`
     {
