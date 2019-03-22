@@ -3,16 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import gather from '../assets/images/gather.png';
-import {
-  Flex,
-  Link,
-  Text,
-  TextTypes,
-  configureGlobal,
-  ph,
-  pv,
-  colors,
-} from 'gather-style';
+import { Flex, Link, Text, TextTypes, ph, pv, colors } from 'gather-style';
 
 const StyledLink = styled(Link)`
   align-items: flex-start;

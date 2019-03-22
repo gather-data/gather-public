@@ -8,7 +8,6 @@ import {
   Link,
   LinkTypes,
   Text,
-  configureGlobal,
   ph,
   pv,
   colors,
@@ -29,8 +28,6 @@ import Hamburger from 'react-icons/lib/io/android-menu';
 
 import Logo from './Logo';
 import { isLoggedIn } from '../services/auth';
-
-configureGlobal();
 
 const Container = styled(Flex)`
   ${ph(3)};
