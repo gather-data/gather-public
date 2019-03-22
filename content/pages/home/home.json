@@ -2,7 +2,7 @@
   "trialText": "14 day free trial. No credit card required.",
   "integrations": {
     "title": "Native Integrations",
-    "subtitle": "Native integrations for seamless data transfer and increased usability of other popular tools"
+    "subtitle": "Painless setup, seamless data transfer, and enhanced functionality with the rest of your stack."
   },
   "developers": {
     "title": "Built for Developers",
@@ -37,7 +37,7 @@
     ]
   },
   "customers": {
-    "title": "Powering success & support for thousands of customers",
+    "title": "Powering success for thousands of customers",
     "titleHighlight": "thousands of customers",
     "testimonials": [
       {
@@ -52,11 +52,11 @@
     "title": "Let's get started",
     "subtitle": "14 day free trial. No credit card required.",
     "ctaText": "Request access",
-    "ctaHref": "https://app.gatherdata.co/request-demo"
+    "ctaHref": "https://app.gatherdata.co/request-access"
   },
   "features": {
     "title": "Customer Success Stack",
-    "subtitle": "Understand the customer journey with Gather’s unified customer view, leverage signaling to predict customer churn, get notified when warning signals are present and create intervention workflows before customers churn.\n\nAs customers fall out of the danger zone, create maintenance workflows and relationship building workflows to grow the relationship over time.",
+    "subtitle": "Understand the customer journey with Gather’s unified customer view, leverage signaling to predict customer churn, get notified when warning signals are present and create intervention workflows before customers churn.",
     "featureDataEngine": {
       "title": "Unified Data Layer",
       "copy": "A unified customer view with native integrations for all of your existing tools - customer and sales data from HubSpot, payment data and plans from Stripe, support tickets from Zendesk, to name a few. Gather unifies the data and builds an integrated timeline for you so you can piece together the full customer story.",
@@ -76,7 +76,7 @@
       ]
     },
     "featureIQ": {
-      "title": "Signaling and Alerting",
+      "title": "Signals and Alerts",
       "copy": "Predict churn with higher level metrics like customer health scores. Get notifications in Slack when customer behavior signals dip into the warning zone. Never miss another opportunity to intervene when things go wrong.",
       "benefits": [
         {
@@ -91,7 +91,7 @@
       ]
     },
     "featureOrchestrate": {
-      "title": "Operationalizing",
+      "title": "Operations",
       "copy": "Build success processes to help you scale - intervention workflows when negative signals are triggered, maintenance workflows for regularly scheduled check-ins and relationship workflows to set up different touchpoints within your organization. Increase productivity and operationalize your success.",
       "benefits": [
         {
@@ -109,11 +109,11 @@
       ]
     }
   },
-  "subtitle": "Identify customers who are at the greatest risk of churning, perform interventions and build automated workflows to help you scale customer success workflows. ",
+  "subtitle": "Identify customers who are at the greatest risk of churning, perform interventions and build automated workflows to help your success team perform at scale. ",
   "title": "Operationalize your success",
-  "titleHighlight": "success",
+  "titleHighlight": "Operationalize",
   "ctaText": "Request access",
-  "ctaHref": "https://app.gatherdata.co/request-demo",
+  "ctaHref": "https://app.gatherdata.co/request-access",
   "newItem": {
     "newLabel": "",
     "newHref": "",

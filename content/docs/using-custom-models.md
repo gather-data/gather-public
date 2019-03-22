@@ -32,7 +32,7 @@ Make a note of the `Model ID` for the model as we'll need that when syncing data
 
 Now we have created our Orders model, let's sync data from our system to the model.
 
-First grab your API key from the [developer settings](https://app.gatherdata.cohttps://app.gatherdata.co/request-demo/settings/team/developer).
+First grab your API key from the [developer settings](https://app.gatherdata.co/settings/developer/api).
 
 To sync a record with the model, we'll use the `records` API:
 
@@ -53,7 +53,7 @@ In the payload, the only required trait is `id`. We can provide any other traits
 
 ## Exploring the data
 
-The last step is to create a view to see our model's data. To do so, go to [views](https://app.gatherdata.cohttps://app.gatherdata.co/request-demo/views) and click `Add View`. Choose a name and our order model from the drop-down.
+The last step is to create a view to see our model's data. To do so, go to [views](https://app.gatherdata.co/views) and click `Add View`. Choose a name and our order model from the drop-down.
 
 <video autoplay loop controls>
     <source src="/assets/using-custom-models/add-view.mp4" />

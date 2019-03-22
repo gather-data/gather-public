@@ -144,11 +144,14 @@ function groupDocs(docs: Doc[], collections: Collection[]) {
     .map(group => {
       const info = collections.find(i => i.name === group.name);
 
-      let newItems: CollectionLink[] = group.links.map(item => ({
-        to: item.frontmatter.path,
-        label: item.frontmatter.title,
-        category: item.frontmatter.category,
-      }));
+      let newItems: CollectionLink[] = group.links
+        .map(item => ({
+          to: item.frontmatter.path,
+          label: item.frontmatter.title,
+          category: item.frontmatter.category,
+          order: item.frontmatter.order,
+        }))
+        .sort(item => (item.order !== undefined ? item.order : item.label));
 
       newItems = newItems.concat((info ? info.links : []) || []);
 
@@ -379,6 +382,7 @@ export const query = graphql`
             path
             collection
             category
+            order
           }
           html
           timeToRead

@@ -164,7 +164,7 @@ const TestimonialContainer = styled(Flex)`
 const TitleContainer = styled.span`
   ${mt(3)};
   ${mb(4)};
-  max-width: 520px;
+  max-width: 420px;
   text-align: center;
 `;
 

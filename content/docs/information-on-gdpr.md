@@ -3,6 +3,7 @@ path: /company/compliance
 title: Compliance
 collection: Company
 published: true
+order: 1
 ---
 
 ## Compliance

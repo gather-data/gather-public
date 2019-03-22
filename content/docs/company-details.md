@@ -3,6 +3,7 @@ path: /company/details
 title: Company Details
 collection: Company
 published: true
+order: 0
 ---
 
 **Company name**
@@ -11,7 +12,7 @@ Gather, Inc.
 
 **Location**
 
-303 Spring Street, New York, NY, 10013, USA
+1111 Kearny St, San Francisco, CA, 94133, USA
 
 **Additional information**
 

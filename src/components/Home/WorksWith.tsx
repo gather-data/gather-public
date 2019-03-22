@@ -42,7 +42,7 @@ const Container = styled.div`
     'md',
     () => `
     ${pt(30)()};
-    ${pb(15)()};
+    ${pb(10)()};
   `
   )};
 `;

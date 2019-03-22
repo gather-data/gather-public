@@ -46,7 +46,7 @@ const Container = styled(Page)`
     'md',
     () => `
       overflow: visible;
-      ${mt(20)()};
+      ${mt(15)()};
       ${mb(26)()};
     `
   )};
@@ -288,13 +288,13 @@ const AutoIQImage = styled(BaseImage)`
 
 const CheckmarkRow = styled(Flex)`
   width: 100%;
-  ${mb(1.5)};
-  align-items: flex-start;
+  ${mb(2)};
+  align-items: center;
 
   ${utils.breakpoint(
     'md',
     () => `
-      width: 50%;
+      width: 100%;
     `
   )};
 `;
@@ -305,7 +305,7 @@ const Line = styled.div`
   position: absolute;
   top: 0;
   left: 32px;
-  bottom: 0;
+  bottom: 15%;
 
   ${utils.breakpoint(
     'md',
@@ -316,7 +316,7 @@ const Line = styled.div`
 `;
 
 const Header = styled(Flex)`
-  max-width: 620px;
+  max-width: 720px;
   margin: 0 auto;
 `;
 
@@ -327,6 +327,10 @@ const Subtitle = styled(Text)`
       ${ph(8)()};
     `
   )};
+`;
+
+const FeatureText = styled(Text)`
+  line-height: 1.6;
 `;
 
 interface Benefit {
@@ -389,7 +393,7 @@ const Features = (props: Props) => (
         </Text>
         <Subtitle
           mt={1}
-          mb={15}
+          mb={12}
           type={TextTypes.BODY}
           color={colors.navy80}
           align="center"
@@ -406,17 +410,22 @@ const Features = (props: Props) => (
             <FeatureImage>{info.graphic}</FeatureImage>
             <FeatureContent>
               <StyledWaypoint bottomOffset="30%" />
-              <Text mt={2} type={TextTypes.HEADING_2} color={colors.navy}>
+              <Text mt={2} type={TextTypes.HEADING_4} color="#3e4775" uppercase>
                 {info.title}
               </Text>
-              <Text color={colors.navy80} mt={1} type={TextTypes.BODY} mb={3}>
+              <FeatureText
+                color={colors.navy60}
+                mt={2}
+                type={TextTypes.BODY_SMALL}
+                mb={5}
+              >
                 {info.copy}
-              </Text>
+              </FeatureText>
               <Flex alignItems="flex-start" flow="row wrap">
                 {info.benefits.map(benefit => (
                   <CheckmarkRow>
                     <Checkmark />
-                    <Text ml={1} type={TextTypes.BODY_SMALL}>
+                    <Text ml={1.5} type={TextTypes.BODY_SMALL} color="#159570">
                       {benefit.title}
                     </Text>
                   </CheckmarkRow>

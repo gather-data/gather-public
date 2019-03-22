@@ -30,7 +30,7 @@ Irrespective of the connection method, Gather will connect to your database via 
 
 ## Step 2a: Direct connection
 
-To directly connect to your publicly accessible database, go to [integrations](https://app.gatherdata.cohttps://app.gatherdata.co/request-demo/settings/team/integrations), then:
+To directly connect to your publicly accessible database, go to [integrations](https://app.gatherdata.co/settings/team/integrations), then:
 
 1.  Click **Add New Integration**
 2.  Choose **Database** from the list
@@ -73,7 +73,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDmHhoMgLKG77v0fULT6e3Wz0C+5cUQizz1wDF+K3MX
 
 #### Add the integration in Gather
 
-Go to [integrations](https://app.gatherdata.cohttps://app.gatherdata.co/request-demo/settings/team/integrations), then:
+Go to [integrations](https://app.gatherdata.co/settings/team/integrations), then:
 
 1.  Click **Add New Integration**
 2.  Choose **Database** from the list

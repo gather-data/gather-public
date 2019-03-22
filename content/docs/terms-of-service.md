@@ -135,7 +135,7 @@ You agree that any dispute arising from or relating to this Agreement will be he
 
 If a dispute claims multiple claims and one or more of those claims would be eligible to be heard by the Small Claims Court, you agree not to bring the other claims against us and to instead proceed within the Small Claims Court.
 
-If you would be entitled in a dispute to an amount exceeding the monetary jurisdiction of the Small Claims Court, you agree to waive your right to collect any damages in excess of the monetary jurisdiction and instead still bring your claim within the Small Claims Court. At the time of drafting this Agreement, the monetary jurisdiction of the Small Claims Court is $5,000.
+If you would be entitled in a dispute to an amount exceeding the monetary jurisdiction of the Small Claims Court, you agree to waive your right to collect any damages in excess of the monetary jurisdiction and instead still bring your claim within the Small Claims Court. At the time of drafting this Agreement, the monetary jurisdiction of the Small Claims Court is \$5,000.
 
 You agree that if a dispute is eligible to be heard in Small Claims Court but you would be entitled to an additional or alternative remedy in a higher court, such as injunctive relief, you will waive your right to that remedy and still bring the dispute within the Small Claims Court.
 
@@ -167,4 +167,4 @@ You may not assign your rights and/or obligations under this Agreement to any ot
 
 **Corporate Information**
 
-Gather, Inc. has its head office at 303 Spring St, New York NY, 10013, USA and is a corporation incorporated under the laws of the State of Delaware.
+Gather, Inc. has its head office at 1111 Kearny St, San Francisco, CA, 94133, USA and is a corporation incorporated under the laws of the State of Delaware.
